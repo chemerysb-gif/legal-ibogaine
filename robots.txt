@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://legal-ibogaine.com/sitemap.xml
