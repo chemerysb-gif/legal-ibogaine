@@ -8,6 +8,7 @@
   var MODE = document.body.getAttribute("data-survey");
   if (!MODE) return;
 
+  var ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
 
   function $(sel, root) { return (root || document).querySelector(sel); }
   function $all(sel, root) { return [].slice.call((root || document).querySelectorAll(sel)); }
@@ -45,12 +46,17 @@
     if (e) e.classList.remove("show");
   }
 
-  /* Routes through the shared transport in js/main.js, which posts to
-     the Apps Script receiver. done(outcome): "placeholder" | "ok" | "fail". */
   function postRecord(fields, files, done) {
-    var form = fields.form === "provider-match" ? "provider-match" : "screening-quiz";
-    if (!window.IGForms) { done("placeholder"); return; }
-    window.IGForms.post(form, fields, files, done);
+    if (ENDPOINT.indexOf("YOUR_FORM_ID") !== -1) { done("placeholder"); return; }
+    var fd = new FormData();
+    Object.keys(fields).forEach(function (k) {
+      var v = fields[k];
+      fd.append(k, Array.isArray(v) ? v.join("; ") : (v == null ? "" : String(v)));
+    });
+    (files || []).forEach(function (f, i) { fd.append("upload_" + (i + 1), f, f.name); });
+    fetch(ENDPOINT, { method: "POST", body: fd, headers: { Accept: "application/json" } })
+      .then(function (r) { done(r.ok ? "ok" : "fail"); })
+      .catch(function () { done("fail"); });
   }
 
   /* ================================================================
@@ -534,7 +540,7 @@
           }
           renderResult2();
         });
-        if (!window.IGForms || !window.IGForms.configured()) renderResult2();
+        if (ENDPOINT.indexOf("YOUR_FORM_ID") !== -1) renderResult2();
       });
     }
 
