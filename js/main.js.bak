@@ -1,69 +1,3 @@
-/* Legal Ibogaine — submission transport.
-   Every form on the site posts through here to the Apps Script receiver
-   bound to the submissions spreadsheet (see _generator/apps-script/).
-
-   Posted as text/plain rather than JSON: a JSON content-type triggers a
-   CORS preflight that script.google.com does not answer, and text/plain
-   is a "simple request" that goes straight through. The receiver parses
-   the body as JSON regardless. */
-(function () {
-  "use strict";
-
-  var ENDPOINT = "http://127.0.0.1:8799/exec";
-  var TOKEN = "test-token-abc123";
-  var PLACEHOLDER = /PASTE_YOUR|REPLACE_WITH/;
-
-  /* done(outcome) — "placeholder" | "ok" | "fail" */
-  function post(form, fields, files, done) {
-    if (PLACEHOLDER.test(ENDPOINT) || PLACEHOLDER.test(TOKEN)) { done("placeholder"); return; }
-    readFiles(files, function (encoded) {
-      fetch(ENDPOINT, {
-        method: "POST",
-        body: JSON.stringify({ token: TOKEN, form: form, fields: fields, files: encoded }),
-        headers: { "Content-Type": "text/plain;charset=utf-8" }
-      })
-        .then(function (r) { return r.json(); })
-        .then(function (d) { done(d && d.status === "ok" ? "ok" : "fail"); })
-        .catch(function () { done("fail"); });
-    });
-  }
-
-  /* Uploads travel base64-encoded inside the JSON body; the receiver
-     decodes them into Drive and stores only the links in the sheet. */
-  function readFiles(files, cb) {
-    var list = [].slice.call(files || []);
-    if (!list.length) { cb([]); return; }
-    var out = [];
-    var pending = list.length;
-    list.forEach(function (file, i) {
-      var reader = new FileReader();
-      reader.onload = function () {
-        var s = String(reader.result);
-        out[i] = { name: file.name, type: file.type, data: s.slice(s.indexOf(",") + 1) };
-        if (--pending === 0) cb(out.filter(Boolean));
-      };
-      reader.onerror = function () { if (--pending === 0) cb(out.filter(Boolean)); };
-      reader.readAsDataURL(file);
-    });
-  }
-
-  /* Collects a plain <form> into a field object, grouping repeated
-     names (checkboxes) into arrays. */
-  function fieldsOf(form) {
-    var out = {};
-    new FormData(form).forEach(function (v, k) {
-      if (v instanceof File) return;
-      if (out.hasOwnProperty(k)) out[k] = [].concat(out[k], v);
-      else out[k] = v;
-    });
-    return out;
-  }
-
-  window.IGForms = { post: post, fieldsOf: fieldsOf, configured: function () {
-    return !PLACEHOLDER.test(ENDPOINT) && !PLACEHOLDER.test(TOKEN);
-  } };
-})();
-
 /* Legal Ibogaine — shared behaviors */
 (function () {
   "use strict";
@@ -139,29 +73,47 @@
     document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("visible"); });
   }
 
-  /* Contact / guidance form — posts to the submissions spreadsheet. */
+  /* Contact / guidance form — Formspree-ready.
+     Replace YOUR_FORM_ID in the form's action attribute to go live. */
   document.querySelectorAll("form[data-guide-form]").forEach(function (form) {
     form.addEventListener("submit", function (e) {
-      e.preventDefault();
+      var action = form.getAttribute("action") || "";
       var status = form.querySelector(".form-status");
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      var btn = form.querySelector('button[type="submit"], button:not([type])');
-      if (btn) btn.disabled = true;
-      window.IGForms.post("consultation", window.IGForms.fieldsOf(form), null, function (outcome) {
-        if (btn) btn.disabled = false;
-        if (!status) return;
-        if (outcome === "placeholder") {
-          status.textContent = "The form isn't connected yet. Site owner: set the endpoint and token in js/main.js.";
-          status.className = "form-status warn show";
-        } else if (outcome === "ok") {
-          form.reset();
-          status.textContent = "Thank you — your message has been sent. We'll reply within one business day.";
-          status.className = "form-status ok show";
-        } else {
-          status.textContent = "Something went wrong sending your message. Please try again in a moment.";
+      if (action.indexOf("YOUR_FORM_ID") !== -1) {
+        e.preventDefault();
+        if (status) {
+          status.textContent =
+            "The form isn't connected yet. Site owner: create a free form at formspree.io and replace YOUR_FORM_ID in this form's action attribute.";
           status.className = "form-status warn show";
         }
-      });
+        return;
+      }
+      /* Live Formspree submission via fetch for a no-redirect experience */
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      var data = new FormData(form);
+      fetch(action, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" }
+      })
+        .then(function (res) {
+          if (res.ok) {
+            form.reset();
+            if (status) {
+              status.textContent = "Thank you — your message has been sent. We'll reply within one business day.";
+              status.className = "form-status ok show";
+            }
+          } else {
+            throw new Error("Request failed");
+          }
+        })
+        .catch(function () {
+          if (status) {
+            status.textContent = "Something went wrong sending your message. Please try again in a moment.";
+            status.className = "form-status warn show";
+          }
+        });
     });
   });
 })();
@@ -253,24 +205,30 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var status = form.querySelector(".form-status");
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      var btn = form.querySelector('button[type="submit"], button:not([type])');
-      if (btn) btn.disabled = true;
-      window.IGForms.post("resource-gate", window.IGForms.fieldsOf(form), null, function (outcome) {
-        if (btn) btn.disabled = false;
-        if (!status) return;
-        if (outcome === "placeholder") {
-          status.textContent = "Downloads aren't connected yet. Site owner: set the endpoint and token in js/main.js.";
-          status.className = "form-status warn show";
-        } else if (outcome === "ok") {
-          form.reset();
-          status.textContent = "Done — check your inbox. The download link is on its way.";
-          status.className = "form-status ok show";
-        } else {
-          status.textContent = "Something went wrong. Please try again in a moment.";
+      var action = form.getAttribute("action") || "";
+      if (action.indexOf("YOUR_FORM_ID") !== -1) {
+        if (status) {
+          status.textContent = "Downloads aren't connected yet. Site owner: connect Formspree (replace YOUR_FORM_ID) and set up the auto-reply with the download link.";
           status.className = "form-status warn show";
         }
-      });
+        return;
+      }
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      fetch(action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
+        .then(function (res) {
+          if (!res.ok) throw new Error("failed");
+          form.reset();
+          if (status) {
+            status.textContent = "Done — check your inbox. The download link is on its way.";
+            status.className = "form-status ok show";
+          }
+        })
+        .catch(function () {
+          if (status) {
+            status.textContent = "Something went wrong. Please try again in a moment.";
+            status.className = "form-status warn show";
+          }
+        });
     });
   });
 })();

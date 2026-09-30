@@ -1021,7 +1021,7 @@ Submitting commits you to nothing. This is not a medical assessment — final su
 ## Contact
 Questions, corrections, or your own situation — reach us any of these ways. We respond within 24 hours.
 *Fig. — We respond within 24 hours*
-- Emailhello@ibogainereview.org
+- Emailhello@legal-ibogaine.com
 - Phone / text+1 (000) 000-0000
 - ConsultationRequest a free 15-minute call
 - Response timeWithin 24 hours, every day
@@ -1140,7 +1140,7 @@ If you are experiencing a medical emergency, contact your local emergency servic
 
 ## Privacy policy
 What we collect, why, and what we will never do with it. Written for humans.
-Last updated: September 2026. This policy covers ibogainereview.org (the "site").
+Last updated: September 2026. This policy covers legal-ibogaine.com (the "site").
 ### What we collect
 - Information you submit through forms — name, email, phone (if provided), country, and anything you write about your situation, including health-related information you choose to share.
 - Basic technical data — standard server logs (IP address, browser type, pages viewed) if analytics are enabled.
@@ -1164,7 +1164,7 @@ Privacy questions: contact us.
 
 ## Terms of use
 The short, fair version of the rules for using this site.
-Last updated: September 2026. By using ibogainereview.org, you agree to these terms.
+Last updated: September 2026. By using legal-ibogaine.com, you agree to these terms.
 ### Informational use only
 The site provides general information about ibogaine and related topics. It is not medical, legal, or professional advice, and you use it at your own risk. Our full Medical Disclaimer is part of these terms.
 ### No unlawful use
