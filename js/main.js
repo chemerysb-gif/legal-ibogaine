@@ -9,8 +9,8 @@
 (function () {
   "use strict";
 
-  var ENDPOINT = "http://127.0.0.1:8799/exec";
-  var TOKEN = "test-token-abc123";
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbwVCJ-G-HDLU8YQbbAq7M1fsD7JNengbdj54Uf79DKu0QHEzq9TAJ4h5T52E6AczSip/exec";
+  var TOKEN = "RN3JLwGhJi07rtdsYvXp3wGzDBMfT4bh5PErhxcZ";
   var PLACEHOLDER = /PASTE_YOUR|REPLACE_WITH/;
 
   /* done(outcome) — "placeholder" | "ok" | "fail" */

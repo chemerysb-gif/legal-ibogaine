@@ -1,0 +1,14 @@
+# Pins what gets published.
+#
+# Without this file the CLI falls back to the current working directory, which
+# can resolve to somewhere outside this project (a stray ~/.netlify folder makes
+# it pick the home directory). Deploying that would publish private files.
+#
+# Note: .netlify/netlify.toml is Netlify's internal cache, NOT config. This file,
+# at the project root, is the one the CLI reads.
+
+[build]
+  publish = "."
+
+# The site is pre-built by _generator/build_site.py and committed as static
+# files, so there is no build command to run here.

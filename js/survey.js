@@ -522,19 +522,11 @@
         s2.flags = computeFlags();
         s2.submitted_at = new Date().toISOString();
         store("ig_match_record", s2);
-        var status = $("#sv2-status");
+        submitBtn.disabled = true;
+        renderResult2();
         postRecord(Object.assign({ form: "provider-match" }, s2), uploads, function (outcome) {
-          if (outcome === "placeholder") {
-            status.textContent = "Submission isn't connected yet. Site owner: set the form endpoint in js/survey.js.";
-            status.className = "form-status warn show";
-          } else if (outcome === "fail") {
-            status.textContent = "We couldn't send your profile just now. Please try again in a moment.";
-            status.className = "form-status warn show";
-            return;
-          }
-          renderResult2();
+          if (outcome === "fail" || outcome === "placeholder") addSendFailNote();
         });
-        if (!window.IGForms || !window.IGForms.configured()) renderResult2();
       });
     }
 
@@ -580,6 +572,16 @@
           "<p>Speak to your prescriber this week and you keep your timeline intact.</p>" });
       }
       return blocks;
+    }
+
+    function addSendFailNote() {
+      var res = $("#sv-result-2");
+      if ($(".send-fail-note", res)) return;
+      var note = document.createElement("div");
+      note.className = "flag-block send-fail-note";
+      note.innerHTML = "<p><strong>One technical note:</strong> your profile saved on this device, but we could not transmit it to our team automatically just now. Please email us at <a href=\"mailto:hello@legal-ibogaine.com\">hello@legal-ibogaine.com</a> and we will pick it up from there. Everything below still stands.</p>";
+      var verdict = $(".verdict", res);
+      verdict.parentNode.insertBefore(note, verdict.nextSibling);
     }
 
     function renderResult2() {
