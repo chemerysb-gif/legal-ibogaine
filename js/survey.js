@@ -538,7 +538,7 @@
       if (s2.cardiac_history === "yes") {
         blocks.push({ id: "cardiac", html:
           "<p>You told us a doctor has diagnosed you with a heart condition. We flagged this at the top of your profile, in bold, because it is the most serious signal in ibogaine screening. Ibogaine affects the heart's electrical rhythm, and the published review of deaths linked to ibogaine found existing heart disease to be the leading contributing factor.</p>" +
-          "<p>We are not qualified to rule you out and we have not tried to. What we can tell you is what to expect. Some of these providers will decline. The ones who continue will want a current ECG with your QTc measurement, and most will want your own cardiologist's written opinion before they go further.</p>" +
+          "<p>We are not qualified to rule you out and we have not tried to. What we can tell you is what to expect. Some of the providers we approach will decline. The ones who continue will want a current ECG with your QTc measurement, and most will want your own cardiologist's written opinion before they go further.</p>" +
           "<p>Start that now rather than waiting for them to ask.</p>" +
           '<a class="btn btn-ink" href="resources.html">Download the cardiac screening sheet</a><p style="margin-top:10px;">It names the specific measurements a cardiologist should report, written for a clinician to read.</p>' });
       }
@@ -549,8 +549,8 @@
       }
       if (c.indexOf("pregnancy") !== -1) {
         blocks.push({ id: "pregnancy", html:
-          "<p>You told us you are pregnant or nursing. We flagged this at the top of your profile. Every provider we work with declines treatment during pregnancy and nursing, so expect that answer from all three.</p>" +
-          "<p>We sent your profile anyway, so you can hear it from them directly and ask about timing afterwards. When you are ready to revisit this, reopen your profile and we will run the match again.</p>" });
+          "<p>You told us you are pregnant or nursing. We flagged this at the top of your profile. Every provider we work with declines treatment during pregnancy and nursing, so expect that answer wherever we ask.</p>" +
+          "<p>Your profile stays with our team anyway, so you can ask about timing directly. When you are ready to revisit this, reopen your profile and we will run the match again.</p>" });
       }
       if ((dep && dep !== "neither") || c.indexOf("seizures") !== -1) {
         var what = c.indexOf("seizures") !== -1 ? "have a seizure history" :

@@ -23,11 +23,11 @@
     var io = new IntersectionObserver(function (entries) {
       var batch = entries.filter(function (e) { return e.isIntersecting; });
       batch.forEach(function (e, i) {
-        e.target.style.transitionDelay = Math.min(i * 70, 420) + "ms";
+        e.target.style.transitionDelay = Math.min(i * 50, 250) + "ms";
         e.target.classList.add("rv-in");
         io.unobserve(e.target);
       });
-    }, { rootMargin: "0px 0px -6% 0px" });
+    }, { rootMargin: "0px 0px 10% 0px" });
     els.forEach(function (el) {
       el.setAttribute("data-rv", "");
       io.observe(el);
@@ -62,21 +62,6 @@
       });
     });
 
-    gsap.utils.toArray(".fact strong").forEach(function (el) {
-      var m = el.textContent.trim().match(/^([^0-9]*)([\d,]+)(.*)$/);
-      if (!m) return;
-      var target = parseInt(m[2].replace(/,/g, ""), 10);
-      if (!target || target < 2) return;
-      var obj = { v: 0 };
-      gsap.to(obj, {
-        v: target, duration: 1.5, ease: "power2.out",
-        scrollTrigger: { trigger: el, start: "top 92%", once: true },
-        onUpdate: function () {
-          var n = Math.round(obj.v);
-          el.textContent = m[1] + (target > 999 ? n.toLocaleString("en-US") : n) + m[3];
-        }
-      });
-    });
   }
   window.addEventListener("load", gsapLayer);
 })();
