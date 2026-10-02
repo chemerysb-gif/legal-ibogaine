@@ -64,6 +64,76 @@ ORG_LD = """  <script type="application/ld+json">
   </script>
 """ % (SITE, SITE)
 
+# Pages carrying clinical information get MedicalWebPage; logistics, legal and
+# contact pages stay plain WebPage. Typing a cost table as medical content is
+# the kind of over-claiming that YMYL review penalises.
+MEDICAL_PAGES = {
+    "what-is-ibogaine", "how-it-works", "research", "eligibility",
+    "safety-protocols", "what-to-expect", "aftercare", "alternatives",
+    "is-ibogaine-right-for-me",
+}
+
+def page_ld(pg, canon):
+    """Per-page JSON-LD: the page itself plus a Home > Page breadcrumb."""
+    url = f"{SITE}/{canon}"
+    node = {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage" if pg["slug"] in MEDICAL_PAGES else "WebPage",
+        "name": pg["htitle"],
+        "description": pg.get("mdesc", pg["desc"]),
+        "url": url,
+        "isPartOf": {"@type": "WebSite", "name": "Legal Ibogaine", "url": f"{SITE}/"},
+        "publisher": {"@type": "Organization", "name": "Legal Ibogaine", "url": f"{SITE}/"},
+    }
+    if node["@type"] == "MedicalWebPage":
+        node["audience"] = {"@type": "MedicalAudience", "audienceType": "Patient"}
+    crumbs = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
+            {"@type": "ListItem", "position": 2, "name": pg["htitle"], "item": url},
+        ],
+    }
+    out = ""
+    for n in (node, crumbs):
+        out += '  <script type="application/ld+json">\n  ' + json.dumps(n) + "\n  </script>\n"
+    return out
+
+def ld_block(*nodes):
+    return "".join(
+        '  <script type="application/ld+json">\n  ' + json.dumps(n) + "\n  </script>\n"
+        for n in nodes
+    )
+
+HOME_LD = ORG_LD + ld_block({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Legal Ibogaine",
+    "url": f"{SITE}/",
+    "description": "Independent ibogaine treatment information.",
+    "publisher": {"@type": "Organization", "name": "Legal Ibogaine", "url": f"{SITE}/"},
+})
+
+LIBRARY_LD = ORG_LD + ld_block(
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Article library",
+        "url": f"{SITE}/library/index.html",
+        "isPartOf": {"@type": "WebSite", "name": "Legal Ibogaine", "url": f"{SITE}/"},
+        "publisher": {"@type": "Organization", "name": "Legal Ibogaine", "url": f"{SITE}/"},
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
+            {"@type": "ListItem", "position": 2, "name": "Articles", "item": f"{SITE}/library/index.html"},
+        ],
+    },
+)
+
 def header(P):
     return f'''  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
@@ -216,9 +286,10 @@ def render_root_page(pg):
                .replace("@@URL@@", f"{SITE}/{canon}").replace("@@P@@", P).replace("@@OGIMG@@", ogimg)
     if pg.get("noindex"):
         html = html.replace('<meta name="viewport"', '<meta name="robots" content="noindex,follow">\n  <meta name="viewport"')
-    html = html.replace("@@JSONLD@@", ORG_LD)
+    blocks = ORG_LD + page_ld(pg, canon)
     if faq_ld:
-        html = html.replace(ORG_LD, ORG_LD + faq_ld)
+        blocks += faq_ld
+    html = html.replace("@@JSONLD@@", blocks)
     if pg.get("body_attr"):
         html = html.replace("<body>", f'<body {pg["body_attr"]}>')
     html += header(P)
@@ -384,7 +455,7 @@ def render_library_index():
     P = "../"
     rows = "\n".join(post_html(a) for a in ARTICLES)
     html = HEAD.replace("@@HTITLE@@", "Articles").replace("@@DESC@@", "Every Legal Ibogaine article: evidence summaries, pharmacology, history, and research analysis. Filter by topic.") \
-               .replace("@@URL@@", f"{SITE}/library/index.html").replace("@@P@@", P).replace("@@OGIMG@@", SITE + "/assets/img/iboga-leaves.jpg").replace("@@JSONLD@@", ORG_LD)
+               .replace("@@URL@@", f"{SITE}/library/index.html").replace("@@P@@", P).replace("@@OGIMG@@", SITE + "/assets/img/iboga-leaves.jpg").replace("@@JSONLD@@", LIBRARY_LD)
     html += header(P)
     html += f'''
   <main id="main">
@@ -471,7 +542,7 @@ def render_home():
     body = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "home_body.html")).read()
     html = HEAD.replace("@@HTITLE@@", "Independent Ibogaine Treatment Information") \
                .replace("@@MDESC@@", "Independent, evidence-based guide to ibogaine treatment: eligibility, safety, cost, and vetted providers. Written for people weighing a serious decision.") \
-               .replace("@@URL@@", SITE + "/").replace("@@P@@", P).replace("@@OGIMG@@", SITE + "/assets/img/hero-forest.jpg").replace("@@JSONLD@@", ORG_LD)
+               .replace("@@URL@@", SITE + "/").replace("@@P@@", P).replace("@@OGIMG@@", SITE + "/assets/img/hero-forest.jpg").replace("@@JSONLD@@", HOME_LD)
     html = html.replace("<title>Independent Ibogaine Treatment Information — Legal Ibogaine</title>",
                         "<title>Legal Ibogaine — Independent Ibogaine Treatment Information</title>")
     html = html.replace("</head>", '  <link rel="preload" as="image" href="assets/img/hero-forest.webp">\n</head>')
