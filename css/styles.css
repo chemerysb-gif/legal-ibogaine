@@ -1300,3 +1300,35 @@ html.js-anim [data-rv].rv-in { opacity: 1; transform: none; }
 .cols-3 { grid-template-columns: repeat(3, 1fr) !important; }
 @media (max-width: 900px) { .cols-3 { grid-template-columns: repeat(2, 1fr) !important; } }
 @media (max-width: 620px) { .cols-2, .cols-3 { grid-template-columns: 1fr !important; } }
+
+/* ---- analytics consent bar ---- */
+.consent-bar{
+  position:fixed; left:0; right:0; bottom:0; z-index:200;
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
+  gap:16px 24px; padding:18px clamp(16px,4vw,40px);
+  background:var(--pine); color:var(--on-dark);
+  border-top:1px solid rgba(255,255,255,.12);
+  box-shadow:0 -8px 32px rgba(14,26,33,.18);
+  transform:translateY(100%); transition:transform .25s ease;
+}
+.consent-bar.show{ transform:translateY(0); }
+.consent-bar p{
+  margin:0; max-width:72ch; font-size:.92rem; line-height:1.55; color:var(--on-dark);
+}
+.consent-bar a{ color:var(--on-dark-strong); text-decoration:underline; text-underline-offset:2px; }
+.consent-actions{ display:flex; gap:10px; flex-shrink:0; }
+.consent-bar .btn{ padding:10px 20px; font-size:.9rem; }
+/* Decline must read as an equal choice, not a dead end. */
+.consent-bar .btn-ghost{
+  background:transparent; color:var(--on-dark-strong);
+  border:1px solid rgba(255,255,255,.38);
+}
+.consent-bar .btn-ghost:hover{ background:rgba(255,255,255,.1); }
+@media (max-width:620px){
+  .consent-bar{ flex-direction:column; align-items:stretch; }
+  .consent-actions{ justify-content:stretch; }
+  .consent-actions .btn{ flex:1; text-align:center; }
+}
+@media (prefers-reduced-motion:reduce){
+  .consent-bar{ transition:none; }
+}

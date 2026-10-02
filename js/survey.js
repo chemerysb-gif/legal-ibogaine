@@ -261,6 +261,7 @@
           } else if (outcome === "ok") {
             status.textContent = "Saved. We will email it to you once, when it is ready.";
             status.className = "form-status ok show";
+            window.IGTrack("generate_lead", { form: "screening-quiz" });
             emailForm.querySelector("button").disabled = true;
           } else {
             status.textContent = "We couldn't save that just now. Your result stays on this page either way.";
@@ -526,6 +527,7 @@
         renderResult2();
         postRecord(Object.assign({ form: "provider-match" }, s2), uploads, function (outcome) {
           if (outcome === "fail" || outcome === "placeholder") addSendFailNote();
+          else window.IGTrack("generate_lead", { form: "provider-match" });
         });
       });
     }
