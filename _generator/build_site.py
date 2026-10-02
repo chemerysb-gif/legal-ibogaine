@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Legal Ibogaine site generator v3 — full IA: root pages, library, sitemap."""
-import os, sys, datetime, re
+import os, sys, datetime, re, json, hashlib
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from review_data_1 import ARTICLES as A1
@@ -413,16 +413,57 @@ def render_library_index():
         f.write(html)
     print("wrote library/index.html")
 
+LASTMOD_DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lastmod.json")
+
+def _file_for(url):
+    """The generated file a sitemap URL points at."""
+    rel = url[len(SITE):].lstrip("/") or "index.html"
+    return os.path.join(OUT, rel)
+
+def _lastmods(urls):
+    """Date each URL by content, not by build time.
+
+    A page keeps its stored date until its bytes actually change, so rebuilding
+    does not tell Google that all 32 pages were revised today. Dates live in
+    _generator/lastmod.json and are committed with the site."""
+    try:
+        with open(LASTMOD_DB) as f:
+            db = json.load(f)
+    except (OSError, ValueError):
+        db = {}
+    today = datetime.date.today().isoformat()
+    dates, changed = {}, 0
+    for u in urls:
+        try:
+            with open(_file_for(u), "rb") as f:
+                digest = hashlib.sha256(f.read()).hexdigest()
+        except OSError:
+            dates[u] = db.get(u, {}).get("date", today)
+            continue
+        rec = db.get(u)
+        if rec and rec.get("hash") == digest:
+            dates[u] = rec["date"]
+        else:
+            dates[u] = today
+            changed += 1
+        db[u] = {"hash": digest, "date": dates[u]}
+    db = {u: db[u] for u in urls if u in db}          # drop retired URLs
+    with open(LASTMOD_DB, "w") as f:
+        json.dump(db, f, indent=1, sort_keys=True)
+        f.write("\n")
+    return dates, changed
+
 def render_sitemap():
     urls = [f"{SITE}/"]
     urls += [f"{SITE}/{p['slug']}.html" for p in ROOT_PAGES if p['slug'] not in ("quiz", "consultation", "resources") and not p.get("noindex")]
     urls += [f"{SITE}/library/index.html"] + [f"{SITE}/library/{a['slug']}.html" for a in ARTICLES]
-    items = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
+    dates, changed = _lastmods(urls)
+    items = "\n".join(f"  <url><loc>{u}</loc><lastmod>{dates[u]}</lastmod></url>" for u in urls)
     with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
         f.write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>\n')
     with open(os.path.join(OUT, "robots.txt"), "w") as f:
         f.write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
-    print("sitemap:", len(urls), "urls (+robots)")
+    print("sitemap:", len(urls), "urls (+robots),", changed, "with a new lastmod")
 
 
 def render_home():
@@ -533,6 +574,6 @@ if __name__ == "__main__":
     render_library_index()
     render_home()
     render_404()
-    render_sitemap()
     inject_img_dims()
+    render_sitemap()
     print("done:", len(ROOT_PAGES), "root pages +", len(ARTICLES), "articles")
