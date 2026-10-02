@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Netlify leftovers — this site deploys via GitHub Pages, not Netlify
+.netlify/
+netlify.toml
+
+# Holds the live Apps Script token and notification addresses.
+# This repo is public. Edit the real values in the Apps Script editor;
+# keep Code.gs.example in sync when the structure changes.
+_generator/apps-script/Code.gs

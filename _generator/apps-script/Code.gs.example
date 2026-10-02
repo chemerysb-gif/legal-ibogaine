@@ -1,0 +1,195 @@
+/* Legal Ibogaine — form receiver.
+   Bound to the submissions spreadsheet; deployed as a web app.
+   Accepts JSON posted as text/plain (avoids a CORS preflight the
+   browser cannot complete against script.google.com), routes each
+   record to a tab named for its form, and files any uploads in Drive.
+
+   Setup lives in SETUP.md. Edit CONFIG below, nothing else. */
+
+var CONFIG = {
+  /* Must match IG_FORM_TOKEN in js/main.js. Change both together. */
+  TOKEN: "REPLACE_WITH_A_LONG_RANDOM_STRING",
+
+  /* Drive folder for ECG / bloodwork uploads. Created on first upload. */
+  UPLOAD_FOLDER: "Legal Ibogaine — submissions",
+
+  /* Email on every submission. Leave "" to switch notifications off.
+     Several recipients: separate with commas, no spaces —
+     "you@legal-ibogaine.com,partner@example.com". Each address counts
+     separately against the daily send quota. */
+  NOTIFY_EMAIL: "you@example.com,someone@example.com",
+
+  /* Tabs that may be written to. A record naming anything else is dropped. */
+  FORMS: ["screening-quiz", "provider-match", "consultation", "resource-gate"]
+};
+
+/* Columns pinned to the left of every sheet, in this order. Any other
+   field becomes a new column the first time it appears. */
+var LEAD_COLUMNS = ["received_at", "form", "first_name", "last_name", "email", "phone", "country"];
+
+function doPost(e) {
+  try {
+    if (!e || !e.postData || !e.postData.contents) return reply(400, "empty request");
+
+    var body;
+    try { body = JSON.parse(e.postData.contents); }
+    catch (err) { return reply(400, "malformed JSON"); }
+
+    if (body.token !== CONFIG.TOKEN) return reply(403, "bad token");
+
+    var form = String(body.form || "");
+    if (CONFIG.FORMS.indexOf(form) === -1) return reply(400, "unknown form");
+
+    var fields = body.fields && typeof body.fields === "object" ? body.fields : {};
+    var files = Array.isArray(body.files) ? body.files : [];
+
+    /* Header edits and appends must not interleave across submissions. */
+    var lock = LockService.getScriptLock();
+    lock.waitLock(30000);
+    try {
+      var row = flatten(fields);
+      row.received_at = new Date();
+      row.form = form;
+      if (files.length) row.uploads = saveFiles(files, form, fields).join("\n");
+      appendRecord(form, row);
+    } finally {
+      lock.releaseLock();
+    }
+
+    notify(form, fields, files.length);
+    return reply(200, "ok");
+  } catch (err) {
+    logFailure(err, e);
+    return reply(500, String(err));
+  }
+}
+
+/* Visiting the deployed URL in a browser confirms it is live. */
+function doGet() {
+  return reply(200, "Legal Ibogaine form receiver is running. POST submissions here.");
+}
+
+/* ---- record shaping ---- */
+
+/* Arrays (checkbox groups, risk flags) become semicolon-joined text;
+   booleans become yes/no; everything else becomes a string. */
+function flatten(fields) {
+  var out = {};
+  Object.keys(fields).forEach(function (k) {
+    if (k === "token") return;
+    var v = fields[k];
+    if (Array.isArray(v)) out[k] = v.join("; ");
+    else if (typeof v === "boolean") out[k] = v ? "yes" : "no";
+    else if (v && typeof v === "object") out[k] = JSON.stringify(v);
+    else out[k] = v == null ? "" : String(v);
+  });
+  return out;
+}
+
+function appendRecord(form, row) {
+  var sheet = getSheet(form);
+  var header = readHeader(sheet);
+
+  /* A field the sheet has not seen before gets its own column rather
+     than being dropped, so editing the survey never loses answers. */
+  var added = Object.keys(row).filter(function (k) { return header.indexOf(k) === -1; });
+  if (added.length) {
+    header = header.concat(added);
+    sheet.getRange(1, 1, 1, header.length).setValues([header]);
+    sheet.getRange(1, 1, 1, header.length).setFontWeight("bold");
+    sheet.setFrozenRows(1);
+  }
+
+  sheet.appendRow(header.map(function (k) { return row.hasOwnProperty(k) ? row[k] : ""; }));
+}
+
+function getSheet(name) {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName(name);
+  if (!sheet) {
+    sheet = ss.insertSheet(name);
+    sheet.getRange(1, 1, 1, LEAD_COLUMNS.length).setValues([LEAD_COLUMNS]);
+    sheet.getRange(1, 1, 1, LEAD_COLUMNS.length).setFontWeight("bold");
+    sheet.setFrozenRows(1);
+  }
+  return sheet;
+}
+
+function readHeader(sheet) {
+  if (sheet.getLastColumn() === 0) return LEAD_COLUMNS.slice();
+  return sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+    .map(String)
+    .filter(function (h) { return h !== ""; });
+}
+
+/* ---- uploads ---- */
+
+/* Files arrive base64-encoded. Each is written to a per-submission
+   subfolder and the row records the links, not the bytes. */
+function saveFiles(files, form, fields) {
+  var root = folderNamed(CONFIG.UPLOAD_FOLDER, DriveApp.getRootFolder());
+  var who = (fields.email || fields.first_name || "anonymous") + " — " +
+            Utilities.formatDate(new Date(), Session.getScriptTimeZone(), "yyyy-MM-dd HH:mm");
+  var folder = root.createFolder(form + " — " + who);
+
+  return files.map(function (f) {
+    try {
+      var bytes = Utilities.base64Decode(f.data);
+      var blob = Utilities.newBlob(bytes, f.type || "application/octet-stream", f.name || "upload");
+      return folder.createFile(blob).getUrl();
+    } catch (err) {
+      return "FAILED: " + (f.name || "upload") + " (" + err + ")";
+    }
+  });
+}
+
+function folderNamed(name, parent) {
+  var it = parent.getFoldersByName(name);
+  return it.hasNext() ? it.next() : parent.createFolder(name);
+}
+
+/* ---- notification ---- */
+
+function notify(form, fields, fileCount) {
+  if (!CONFIG.NOTIFY_EMAIL) return;
+  try {
+    var lines = Object.keys(fields).map(function (k) {
+      var v = fields[k];
+      return k + ": " + (Array.isArray(v) ? v.join("; ") : v);
+    });
+    if (fileCount) lines.push("uploads: " + fileCount + " file(s) — see the Drive folder");
+    lines.push("", SpreadsheetApp.getActiveSpreadsheet().getUrl());
+    MailApp.sendEmail({
+      to: CONFIG.NOTIFY_EMAIL,
+      subject: "New " + form + " submission — " + (fields.email || fields.first_name || "no contact given"),
+      body: lines.join("\n")
+    });
+  } catch (err) {
+    /* A failed notification must never cost us the row. */
+    logFailure(err, null);
+  }
+}
+
+/* ---- diagnostics ---- */
+
+/* Errors go to a tab rather than only the execution log, so a failure
+   that happens at 3am is still visible next to the data. */
+function logFailure(err, e) {
+  try {
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var sheet = ss.getSheetByName("_errors");
+    if (!sheet) {
+      sheet = ss.insertSheet("_errors");
+      sheet.appendRow(["at", "error", "payload"]);
+      sheet.setFrozenRows(1);
+    }
+    var raw = e && e.postData ? String(e.postData.contents).slice(0, 2000) : "";
+    sheet.appendRow([new Date(), String(err), raw]);
+  } catch (ignored) {}
+}
+
+function reply(status, message) {
+  return ContentService
+    .createTextOutput(JSON.stringify({ status: status === 200 ? "ok" : "error", message: message }))
+    .setMimeType(ContentService.MimeType.JSON);
+}
