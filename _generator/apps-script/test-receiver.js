@@ -1,7 +1,7 @@
 /* Runs Code.gs against stubbed Google services to check routing,
    header sync and value flattening without deploying. */
 const fs = require("fs");
-const src = fs.readFileSync("/Users/bogdan/Desktop/Claude/ibogaine-sanctuary/_generator/apps-script/Code.gs", "utf8");
+const src = fs.readFileSync(require("path").join(__dirname, "Code.gs"), "utf8");
 
 class Sheet {
   constructor(name){ this.name=name; this.rows=[]; }
