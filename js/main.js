@@ -9,7 +9,7 @@
 (function () {
   "use strict";
 
-  var ENDPOINT = "https://script.google.com/macros/s/AKfycbwVCJ-G-HDLU8YQbbAq7M1fsD7JNengbdj54Uf79DKu0QHEzq9TAJ4h5T52E6AczSip/exec";
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbxfrahyiGh2c4JO_2s6Jy4dh6cF1alo9vsUxrA57JA2V8uadrDz6nMstaRYJsFLOyYd/exec";
   var TOKEN = "RN3JLwGhJi07rtdsYvXp3wGzDBMfT4bh5PErhxcZ";
   var PLACEHOLDER = /PASTE_YOUR|REPLACE_WITH/;
 
