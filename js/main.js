@@ -155,7 +155,7 @@
           status.className = "form-status warn show";
         } else if (outcome === "ok") {
           form.reset();
-          status.textContent = "Thank you — your message has been sent. We'll reply within one business day.";
+          status.textContent = "Thank you. Your message reached us, and a person will reply by email within 24 hours.";
           status.className = "form-status ok show";
         } else {
           status.textContent = "Something went wrong sending your message. Please try again in a moment.";
@@ -264,7 +264,7 @@
           status.className = "form-status warn show";
         } else if (outcome === "ok") {
           form.reset();
-          status.textContent = "Done — check your inbox. The download link is on its way.";
+          status.textContent = "Saved. We will email it to you once, when it is ready.";
           status.className = "form-status ok show";
         } else {
           status.textContent = "Something went wrong. Please try again in a moment.";

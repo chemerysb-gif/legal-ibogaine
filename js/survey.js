@@ -176,15 +176,15 @@
       A: { h: "Ibogaine is worth exploring for your case.",
            p1: "Nothing you told us stands in the way. Your next step is a cardiac screen and blood work, which a provider arranges once you choose one.",
            p2: "That is as far as six questions can take you. A physician makes the real decision, and they will want an ECG before they say yes.",
-           email: { h: "Send me my result and the Screening Checklist", p: "The checklist holds the 22 questions we use to vet providers, including the four that most clinics fail. Use it on us. Use it on anyone." } },
+           email: { h: "Get the Screening Checklist when it is ready", p: "We are finishing a printable version of the twelve questions we put to every provider. Leave your email and we will send it once, when it is ready. Nothing else unless you ask. Use it on us. Use it on anyone." } },
       B: { h: "Ibogaine is worth a serious look, but will require some time and effort.",
            p1: "Your answers point to a supervised taper before treatment. This is common and it is solvable. It usually adds four to eight weeks.",
            p2: "A provider who offers to take you tomorrow without raising this is telling you something about how they operate.",
-           email: { h: "Send me my result and the Screening Checklist", p: "The result email names which medication needs what, so you can walk into your prescriber's office with something concrete. The checklist holds the 22 questions we use to vet providers." } },
+           email: { h: "Get the Screening Checklist when it is ready", p: "We are finishing a printable version of the twelve questions we put to every provider. Leave your email and we will send it once, when it is ready. Nothing else unless you ask." } },
       C: { h: "Your answers raise a flag that requires further review.",
            p1: "You told us a doctor has diagnosed you with a heart condition. Ibogaine affects the heart's electrical rhythm, and the published review of deaths linked to ibogaine found existing heart disease to be the leading contributing factor.",
            p2: "We are not the ones who decide whether you can be treated. A cardiologist and a provider's physician make that call. What we can tell you is that this flag follows you into every conversation, and that any provider who waves it away is the wrong provider.",
-           email: { h: "Send me the cardiac screening sheet", p: "It names the specific measurements a cardiologist should report, written in language you can hand to a clinician. We will send your written result alongside it." } }
+           email: { h: "Get the cardiac screening sheet when it is ready", p: "We are finishing a one-page sheet that names the measurements a cardiologist should report, written for a clinician to read. Leave your email and we will send it once, when it is ready. Until then, ask for a 12-lead ECG with your QTc measurement." } }
     };
 
     function renderResult() {
@@ -259,11 +259,11 @@
             status.textContent = "Email delivery isn't connected yet. Site owner: connect the form endpoint in js/survey.js.";
             status.className = "form-status warn show";
           } else if (outcome === "ok") {
-            status.textContent = "Done. Your result and the checklist are on their way.";
+            status.textContent = "Saved. We will email it to you once, when it is ready.";
             status.className = "form-status ok show";
             emailForm.querySelector("button").disabled = true;
           } else {
-            status.textContent = "We couldn't send that just now. Your result stays on this page either way.";
+            status.textContent = "We couldn't save that just now. Your result stays on this page either way.";
             status.className = "form-status warn show";
           }
         });
@@ -539,8 +539,7 @@
         blocks.push({ id: "cardiac", html:
           "<p>You told us a doctor has diagnosed you with a heart condition. We flagged this at the top of your profile, in bold, because it is the most serious signal in ibogaine screening. Ibogaine affects the heart's electrical rhythm, and the published review of deaths linked to ibogaine found existing heart disease to be the leading contributing factor.</p>" +
           "<p>We are not qualified to rule you out and we have not tried to. What we can tell you is what to expect. Some of the providers we approach will decline. The ones who continue will want a current ECG with your QTc measurement, and most will want your own cardiologist's written opinion before they go further.</p>" +
-          "<p>Start that now rather than waiting for them to ask.</p>" +
-          '<a class="btn btn-ink" href="resources.html">Download the cardiac screening sheet</a><p style="margin-top:10px;">It names the specific measurements a cardiologist should report, written for a clinician to read.</p>' });
+          "<p>Start that now rather than waiting for them to ask.</p>" });
       }
       if (c.indexOf("psychiatric") !== -1) {
         blocks.push({ id: "psychiatric", html:
@@ -559,8 +558,7 @@
         blocks.push({ id: "withdrawal", html:
           "<p>You told us you " + what + ". We flagged this at the top of your profile. Withdrawal from alcohol or benzodiazepines can cause seizures, and withdrawal seizures appear in the ibogaine fatality reviews.</p>" +
           "<p>This does not stop anyone treating you. It changes the sequence. Expect providers to ask for either a supervised taper with your own prescriber before you travel, or a stabilisation period on site before treatment. The second option costs more and takes longer.</p>" +
-          "<p>Book time with your prescriber this week and ask about a taper. You will be ahead of the question.</p>" +
-          '<a class="btn btn-ink" href="resources.html">Download the taper discussion sheet</a><p style="margin-top:10px;">Written for a clinician, explaining what you are planning and what the provider will need.</p>' });
+          "<p>Book time with your prescriber this week and ask about a taper. You will be ahead of the question.</p>" });
       }
       var higher = blocks.length > 0;
       if (!higher && (m.indexOf("antidepressants") !== -1 || m.indexOf("stabilisers") !== -1 || m.indexOf("maintenance") !== -1)) {
@@ -579,9 +577,26 @@
       if ($(".send-fail-note", res)) return;
       var note = document.createElement("div");
       note.className = "flag-block send-fail-note";
-      note.innerHTML = "<p><strong>One technical note:</strong> your profile saved on this device, but we could not transmit it to our team automatically just now. Please email us at <a href=\"mailto:hello@legal-ibogaine.com\">hello@legal-ibogaine.com</a> and we will pick it up from there. Everything below still stands.</p>";
+      note.innerHTML = "<p><strong>Your profile did not reach our team.</strong> It is saved on this device, so nothing is lost. Check your connection and send it again.</p>" +
+        '<button type="button" class="btn btn-ink send-retry">Send my profile again</button>' +
+        '<p class="send-retry-status" role="status" style="margin-top:10px;"></p>' +
+        '<p>If it still does not go through, send us a note through our <a href="contact.html">contact page</a> with your name and email, and we will pick it up from there. Everything below still stands.</p>';
       var verdict = $(".verdict", res);
       verdict.parentNode.insertBefore(note, verdict.nextSibling);
+      var retry = $(".send-retry", note);
+      var retryStatus = $(".send-retry-status", note);
+      retry.addEventListener("click", function () {
+        retry.disabled = true;
+        retryStatus.textContent = "Sending…";
+        postRecord(Object.assign({ form: "provider-match" }, s2), uploads, function (outcome) {
+          if (outcome === "ok") {
+            note.innerHTML = "<p><strong>Sent.</strong> Your profile reached our team. Everything below still stands.</p>";
+          } else {
+            retry.disabled = false;
+            retryStatus.textContent = "Still not going through. Try again in a minute, or use the contact page.";
+          }
+        });
+      });
     }
 
     function renderResult2() {
