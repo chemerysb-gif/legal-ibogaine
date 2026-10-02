@@ -1,3 +1,83 @@
+/* Legal Ibogaine — analytics consent.
+   GA4 sets cookies, so nothing loads until the visitor accepts. Declining
+   is one click, same as accepting, and the choice can be changed later from
+   the footer — consent you cannot withdraw is not consent.
+
+   Set GA_ID to the Measurement ID from Google Analytics (G-XXXXXXXXXX).
+   While it is blank, no banner shows and nothing is loaded. */
+(function () {
+  "use strict";
+
+  var GA_ID = "";                 /* e.g. "G-ABCD1234EF" */
+  var KEY = "ig_consent";         /* "granted" | "denied" */
+
+  function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function write(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+
+  function loadGA() {
+    if (!GA_ID || GA_ID.indexOf("G-") !== 0 || window.__gaLoaded) return;
+    window.__gaLoaded = true;
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?" + "id=" + GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", GA_ID, { anonymize_ip: true });
+  }
+
+  /* Events are dropped silently without consent, so callers never need to check. */
+  window.IGTrack = function (name, params) {
+    if (read() !== "granted" || typeof window.gtag !== "function") return;
+    window.gtag("event", name, params || {});
+  };
+
+  function dismiss(el) {
+    el.classList.remove("show");
+    setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 250);
+  }
+
+  function banner() {
+    var el = document.createElement("div");
+    el.className = "consent-bar";
+    el.setAttribute("role", "dialog");
+    el.setAttribute("aria-label", "Analytics consent");
+    el.innerHTML =
+      '<p>We\'d like to measure which pages people find useful. That uses cookies. ' +
+      'Nothing is loaded unless you agree, and we never link it to anything you submit. ' +
+      '<a href="' + (document.body.getAttribute("data-root") || "") + 'privacy.html">How we handle data</a></p>' +
+      '<div class="consent-actions">' +
+      '<button type="button" class="btn btn-ghost" data-consent="denied">Decline</button>' +
+      '<button type="button" class="btn btn-ink" data-consent="granted">Accept</button>' +
+      "</div>";
+    document.body.appendChild(el);
+    requestAnimationFrame(function () { el.classList.add("show"); });
+
+    el.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-consent]");
+      if (!btn) return;
+      var choice = btn.getAttribute("data-consent");
+      write(choice);
+      if (choice === "granted") loadGA();
+      dismiss(el);
+    });
+  }
+
+  /* Footer link so a decision can be revisited. */
+  window.IGConsent = {
+    reopen: function () {
+      try { localStorage.removeItem(KEY); } catch (e) {}
+      if (!document.querySelector(".consent-bar")) banner();
+    },
+    state: read
+  };
+
+  var choice = read();
+  if (choice === "granted") loadGA();
+  else if (choice !== "denied" && GA_ID) banner();
+})();
+
 /* Legal Ibogaine — submission transport.
    Every form on the site posts through here to the Apps Script receiver
    bound to the submissions spreadsheet (see _generator/apps-script/).
@@ -156,6 +236,7 @@
         } else if (outcome === "ok") {
           form.reset();
           status.textContent = "Thank you. Your message reached us, and a person will reply by email within 24 hours.";
+          window.IGTrack("generate_lead", { form: "consultation" });
           status.className = "form-status ok show";
         } else {
           status.textContent = "Something went wrong sending your message. Please try again in a moment.";
@@ -265,6 +346,7 @@
         } else if (outcome === "ok") {
           form.reset();
           status.textContent = "Saved. We will email it to you once, when it is ready.";
+          window.IGTrack("generate_lead", { form: "resource-gate" });
           status.className = "form-status ok show";
         } else {
           status.textContent = "Something went wrong. Please try again in a moment.";
