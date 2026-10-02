@@ -75,7 +75,7 @@
     <div class="container">
       <div class="article-hero page-hero">
         <div>
-          <div class="kicker"><span class="t">Contact</span><span>Updated October 1, 2026</span></div>
+          <div class="kicker"><span class="t">Contact</span><span>Updated October 2, 2026</span></div>
           <h1>Contact</h1>
           <p class="lead">Questions, corrections, or your own situation — reach us any of these ways. We respond within 24 hours.</p>
         </div>
@@ -85,13 +85,21 @@
         </figure>
       </div>
 
-<ul class="info-list">
-  <li><span class="k">Email</span><span><a href="mailto:hello@legal-ibogaine.com">hello@legal-ibogaine.com</a></span></li>
+<form class="form-card" id="contact-form" data-guide-form method="POST" novalidate style="max-width: 640px;">
+  <input type="hidden" name="topic" value="Contact page message">
+  <div class="field"><label for="c-name">Your name (optional)</label><input id="c-name" name="first_name" type="text" autocomplete="name"></div>
+  <div class="field"><label for="c-email">Email address</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+  <div class="field"><label for="c-message">Your message</label><textarea id="c-message" name="message" required></textarea></div>
+  <button class="btn btn-ink" type="submit">Send message</button>
+  <div class="form-status" role="status" aria-live="polite"></div>
+  <p class="quiz-note" style="margin-top: 18px;">A person reads every message and replies by email, within 24 hours. Your message is stored privately and never shared with a provider.</p>
+</form>
+<ul class="info-list" style="margin-top: 40px;">
   <li><span class="k">Provider match</span><span><a href="find-a-provider.html">Start a provider match profile</a></span></li>
   <li><span class="k">Response time</span><span>Within 24 hours, every day</span></li>
 </ul>
 <div class="prose" style="margin-top: 40px;">
-<p>If your question is about whether ibogaine fits your situation, the fastest route is the <a href="is-ibogaine-right-for-me.html">two-minute screening quiz</a> — it exists precisely for that question. For corrections to any article, email us with the entry name and the source; we take accuracy seriously and fix errors fast.</p>
+<p>If your question is about whether ibogaine fits your situation, the fastest route is the <a href="is-ibogaine-right-for-me.html">two-minute screening quiz</a> — it exists precisely for that question. For corrections to any article, send us the entry name and the source using the form above; we take accuracy seriously and fix errors fast.</p>
 </div>
 
     </div>
