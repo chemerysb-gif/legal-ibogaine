@@ -8,7 +8,7 @@
 (function () {
   "use strict";
 
-  var GA_ID = "";                 /* e.g. "G-ABCD1234EF" */
+  var GA_ID = "G-JDGY9VNNPV";                 /* e.g. "G-ABCD1234EF" */
   var KEY = "ig_consent";         /* "granted" | "denied" */
 
   function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
