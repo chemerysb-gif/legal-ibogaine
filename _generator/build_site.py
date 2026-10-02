@@ -20,7 +20,8 @@ QUIZ_CTA = '''<div class="dark consult-band" style="margin-top: 34px; display:fl
   <a class="btn btn-ink" href="is-ibogaine-right-for-me.html">Start the quiz</a>
 </div>'''
 SITE = "https://legal-ibogaine.com"
-OUT = "/Users/bogdan/Desktop/Claude/ibogaine-sanctuary"
+# Repo root: the folder containing _generator/. Keeps the build portable.
+OUT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 CHEV = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>'
