@@ -256,6 +256,9 @@ HEAD = '''<!DOCTYPE html>
   <link rel="stylesheet" href="@@P@@css/styles.css">
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Ahrefs Web Analytics. Cookieless, so it sits outside the consent gate
+       that GA4 needs; the data-key is public by design. -->
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="7hwJ/iCWNcvDtrJ++eWUXQ" async></script>
 @@JSONLD@@</head>
 <body>
 '''

@@ -208,10 +208,11 @@ RESCARDS
 </ul>
 <h2>Cookies</h2>
 <p>The site sets no cookies unless you accept analytics. Declining leaves the site fully functional — nothing is withheld. If you accept and later change your mind, use <em>Cookie settings</em> in the footer.</p>
+<p>We also run Ahrefs Web Analytics, which counts visits without cookies and without identifying you. Because it stores nothing on your device, it is not part of the choice above and runs on every visit.</p>
 <h2>Your rights</h2>
 <p>Email us at any time to ask what we hold about you, correct it, or have it deleted. Deletion requests are honored within 30 days.</p>
 <h2>Third parties</h2>
-<p>Form submissions are received and stored by Google (Sheets and Drive) under Google's privacy policy. If you accept analytics, we use Google Analytics, which sets cookies on your device — you can decline it, and you can change your mind at any time using the <em>Cookie settings</em> link at the bottom of any page. We run no advertising, no remarketing, and no third-party marketing platform.</p>
+<p>Form submissions are received and stored by Google (Sheets and Drive) under Google's privacy policy. If you accept analytics, we use Google Analytics, which sets cookies on your device — you can decline it, and you can change your mind at any time using the <em>Cookie settings</em> link at the bottom of any page. Page views are also counted by Ahrefs Web Analytics, which is cookieless and records no personal data. We run no advertising, no remarketing, and no third-party marketing platform.</p>
 <h2>Contact</h2>
 <p>Privacy questions: <a href="contact.html">contact us</a>.</p>
 </div>
