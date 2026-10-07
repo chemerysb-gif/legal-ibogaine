@@ -487,6 +487,7 @@ def render_library_index():
         f.write(html)
     print("wrote library/index.html")
 
+_UPDATED_RE = re.compile(rb"Updated [A-Z][a-z]+ \d{1,2}, \d{4}")
 LASTMOD_DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lastmod.json")
 
 def _file_for(url):
@@ -510,7 +511,10 @@ def _lastmods(urls):
     for u in urls:
         try:
             with open(_file_for(u), "rb") as f:
-                digest = hashlib.sha256(f.read()).hexdigest()
+                # The "Updated <date>" kicker is stamped at build time, so it is
+                # masked out of the hash; otherwise every build re-dates every
+                # root page. It is rewritten to the content date below.
+                digest = hashlib.sha256(_UPDATED_RE.sub(b"Updated @", f.read())).hexdigest()
         except OSError:
             dates[u] = db.get(u, {}).get("date", today)
             continue
@@ -522,6 +526,17 @@ def _lastmods(urls):
             changed += 1
         db[u] = {"hash": digest, "date": dates[u]}
     db = {u: db[u] for u in urls if u in db}          # drop retired URLs
+    for u in urls:                                     # stamp the content date
+        try:
+            with open(_file_for(u), "rb") as f:
+                raw = f.read()
+        except OSError:
+            continue
+        shown = datetime.date.fromisoformat(dates[u]).strftime("%B %-d, %Y").encode()
+        fixed = _UPDATED_RE.sub(b"Updated " + shown, raw)
+        if fixed != raw:
+            with open(_file_for(u), "wb") as f:
+                f.write(fixed)
     with open(LASTMOD_DB, "w") as f:
         json.dump(db, f, indent=1, sort_keys=True)
         f.write("\n")
