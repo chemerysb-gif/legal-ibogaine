@@ -612,9 +612,46 @@ def render_404():
 
 _DIM_CACHE = {}
 
+def _header_dims(path):
+    """Intrinsic pixel size read from the file header (WebP, PNG, JPEG), so the
+    build gives identical output on Linux, where sips does not exist."""
+    import struct
+    with open(path, "rb") as f:
+        d = f.read(1 << 16)
+    if d[:4] == b"RIFF" and d[8:12] == b"WEBP":
+        c = d[12:16]
+        if c == b"VP8X":
+            return 1 + int.from_bytes(d[24:27], "little"), 1 + int.from_bytes(d[27:30], "little")
+        if c == b"VP8L":
+            b = int.from_bytes(d[21:25], "little")
+            return 1 + (b & 0x3FFF), 1 + ((b >> 14) & 0x3FFF)
+        if c == b"VP8 ":
+            return struct.unpack("<H", d[26:28])[0] & 0x3FFF, struct.unpack("<H", d[28:30])[0] & 0x3FFF
+    if d[:8] == b"\x89PNG\r\n\x1a\n":
+        return struct.unpack(">II", d[16:24])
+    if d[:2] == b"\xff\xd8":
+        i = 2
+        while i + 9 < len(d):
+            if d[i] != 0xFF:
+                i += 1
+                continue
+            m = d[i + 1]
+            if m in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
+                h, w = struct.unpack(">HH", d[i + 5:i + 9])
+                return w, h
+            i += 2 + struct.unpack(">H", d[i + 2:i + 4])[0]
+    return None, None
+
 def img_dims(path):
-    """Intrinsic pixel size via sips, cached per file."""
+    """Intrinsic pixel size, cached per file: header parse first, sips fallback."""
     if path not in _DIM_CACHE:
+        try:
+            w, h = _header_dims(path)
+        except OSError:
+            w, h = None, None
+        if w:
+            _DIM_CACHE[path] = (w, h)
+            return _DIM_CACHE[path]
         import subprocess
         try:
             out = subprocess.run(["sips", "-g", "pixelWidth", "-g", "pixelHeight", path],
