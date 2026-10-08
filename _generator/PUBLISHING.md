@@ -89,3 +89,35 @@ not on authorship signals, so a post that restates what the existing pages
 already say is worse than no post — it splits the topic across two URLs and
 leaves both weaker. Check `library/index.html` and the root pages first, and
 when a topic is already covered, extend that page instead of adding one.
+
+## Rewriting a live article: the publish queue
+
+Rewrites of pages that are already live never append a new dict and are never
+date-gated: a future `date` would drop the live page from `library/`, the index
+and the sitemap until that day. Instead:
+
+1. A rewrite is converted (from the nomena-blog drafts, by
+   `tools/to-article-dict.py`) into `_generator/publish_queue/<slug>.json`,
+   holding the replacement `title, htitle, mdesc, desc, toc, refs, body,
+   readtime`. Image, caption and topic stay as they are in the live dict.
+2. `_generator/publish-queue.json` lists each slug with a `publish_on` date.
+3. `python3 _generator/promote_next.py` swaps the oldest due rewrite into its
+   existing dict in `review_data_1.py` / `review_data_2.py`, sets `date` to
+   today, rebuilds, and checks the result (contents links, safety footer, one
+   `@@CTA@@` at most). It rolls back on any failure. It does not commit.
+4. One promoted article per commit: `Publish rewrite: <title>`.
+
+A daily scheduled Claude routine runs step 3 and pushes. `--dry-run` shows what
+would happen; `--today YYYY-MM-DD` simulates a date.
+
+Logged exemptions to the house content rules (nomena-blog `CLAUDE.md`) for this
+site: rule 26, organisation authorship rather than a named byline; rule 27,
+one `@@CTA@@` per rewrite, placed after the section that earns it. Both were
+decided by the site owner on 2026-10-07.
+
+### Sitemap dates
+
+`lastmod.json` hashes each page with the build-time "Updated <date>" stamp
+and the related-article cards masked out, so a rebuild, or a change to another
+article's card, does not re-date a page. The stamp is then rewritten to the
+page's content date.
