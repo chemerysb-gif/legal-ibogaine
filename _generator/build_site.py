@@ -487,6 +487,9 @@ def render_library_index():
         f.write(html)
     print("wrote library/index.html")
 
+# Related-article cards repeat other articles' titles and summaries; a change
+# there is not a change to this page, so they are left out of the hash too.
+_RELATED_RE = re.compile(rb'<section class="related"[^>]*>.*?</section>', re.S)
 _UPDATED_RE = re.compile(rb"Updated [A-Z][a-z]+ \d{1,2}, \d{4}")
 LASTMOD_DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lastmod.json")
 
@@ -514,7 +517,7 @@ def _lastmods(urls):
                 # The "Updated <date>" kicker is stamped at build time, so it is
                 # masked out of the hash; otherwise every build re-dates every
                 # root page. It is rewritten to the content date below.
-                digest = hashlib.sha256(_UPDATED_RE.sub(b"Updated @", f.read())).hexdigest()
+                digest = hashlib.sha256(_RELATED_RE.sub(b"", _UPDATED_RE.sub(b"Updated @", f.read()))).hexdigest()
         except OSError:
             dates[u] = db.get(u, {}).get("date", today)
             continue
