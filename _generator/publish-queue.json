@@ -8,7 +8,8 @@
  {
   "slug": "clinical-studies-summarized",
   "publish_on": "2026-10-09",
-  "done": false
+  "done": true,
+  "promoted_on": "2026-10-09"
  },
  {
   "slug": "ibogaine-evidence-overview",
