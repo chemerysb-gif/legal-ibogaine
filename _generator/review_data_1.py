@@ -5,55 +5,189 @@ ARTICLES = [
 # ============================================================ 1
 {
 "slug": "ibogaine-evidence-overview",
-"mdesc": "Every major ibogaine study in one place: what the evidence shows for opioid withdrawal, craving, and mood, and where it is still thin.",
-"title": "Ibogaine: What the Evidence Shows in 2026",
+"mdesc": "What human studies of ibogaine have found for opioid withdrawal, craving, PTSD and depression, how strong each finding is, and the heart risk it carries.",
+"title": "What does the evidence on ibogaine show in 2026?",
 "topic": "Evidence",
-"desc": "One entry that compresses the field: what ibogaine is, what has actually been observed in humans, how strong that evidence is, and where the honest uncertainties lie.",
-"date": "2026-01-15",
-"readtime": 9,
+"desc": "Human studies of ibogaine show a fast drop in opioid withdrawal and large improvements in veterans with brain injuries. This entry sets out each finding, the group it comes from, and the cardiac risk that shapes how treatment is given.",
+"date": "2026-10-10",
+"readtime": 10,
 "img": "iboga-leaves.jpg",
 "imgalt": "Tabernanthe iboga branches with orange fruits",
 "figcap": "Fig. 01 — Tabernanthe iboga, fruiting branch",
 "toc": [
-    ("compound", "The compound in one paragraph"),
-    ("observed", "What has been observed in humans"),
-    ("strength", "How strong is this evidence?"),
-    ("uncertain", "What remains genuinely uncertain"),
-    ("verdict", "A defensible summary"),
+    ("ibogaine", "What is ibogaine?"),
+    ("ibogaine-work-brain", "How does ibogaine work in the brain?"),
+    ("has-ibogaine-done-people", "What has ibogaine done for people in studies?"),
+    ("ibogaine-brain-animal-studies", "What does ibogaine do to the brain in animal studies?"),
+    ("long-ibogaine-stay-body", "How long does ibogaine stay in the body?"),
+    ("ibogaine-treatment-like", "What is ibogaine treatment like?"),
+    ("where-research-goes-next", "Where the research goes next"),
+    ("frequently-asked-questions", "Frequently asked questions"),
 ],
 "refs": [
-    'Alper, K.R. (2001). "Ibogaine: a review." <em>The Alkaloids: Chemistry and Biology</em>, 56, 1–38.',
-    'Noller, G.E., Frampton, C.M., &amp; Yazar-Klosinski, B. (2018). Twelve-month follow-up of ibogaine treatment for opioid dependence. <em>Am J Drug Alcohol Abuse</em>, 44(1), 37–46.',
-    'Mash, D.C., et al. (2018). Ibogaine detoxification transitions opioid and cocaine abusers between dependence and abstinence. <em>Frontiers in Pharmacology</em>, 9, 529.',
-    'Cherian, K.N., et al. (2024). Magnesium–ibogaine therapy in veterans with traumatic brain injuries. <em>Nature Medicine</em>, 30, 373–381.',
+    '<span id="ref-1"></span>Cherian KN, Keynan JN, Anker L, et al. 2024, Nat Med 30(2):373-381. doi:10.1038/s41591-023-02705-w. PMID 38182784. PMC10878970. ClinicalTrials.gov NCT04313712. <a href="https://europepmc.org/article/PMC/PMC10878970" rel="noopener">europepmc.org/article/PMC/PMC10878970</a>',
+    '<span id="ref-2"></span>Mash DC, Duque L, Page B, Allen-Ferdinand K. 2018, Front Pharmacol 9:529. <a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2018.00529/full" rel="noopener">frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2018.00529/full</a>',
+    '<span id="ref-3"></span>Brown TK, Alper K. 2018, Am J Drug Alcohol Abuse 44(1):24-36. PMID 28541119. <a href="https://doi.org/10.1080/00952990.2017.1320802" rel="noopener">doi.org/10.1080/00952990.2017.1320802</a>',
+    '<span id="ref-4"></span>Noller GE, Frampton CM, Yazar-Klosinski B. 2018, Am J Drug Alcohol Abuse 44(1):37-46. <a href="https://doi.org/10.1080/00952990.2017.1310218" rel="noopener">doi.org/10.1080/00952990.2017.1310218</a>',
+    '<span id="ref-5"></span>Knuijver T, Schellekens A, Belgers M, et al. 2022, Addiction 117(1). doi:10.1111/add.15448. PMC9292417. <a href="https://europepmc.org/article/PMC/PMC9292417" rel="noopener">europepmc.org/article/PMC/PMC9292417</a>',
+    '<span id="ref-6"></span>Haller A, Heckel E. 1901, Comptes rendus hebdomadaires des séances de l\'Académie des sciences (Paris) 133:850-853. "Sur l\'ibogine, principe actif d\'une plante du genre Tabernaemontana, originaire du Congo.". <a href="https://www.samorini.it/doc1/alt_aut/ek/haller-heckel-sur-l-ibogine-principe-actif-d-une-plante-du-genre-tabernaemontana-originaire-du-congo.pdf" rel="noopener">samorini.it/doc1/alt_aut/ek/haller-heckel-sur-l-ibogine-principe-actif-d-une-plante-du-genre-tabernaemontana-originaire-du-congo.pdf</a>',
+    '<span id="ref-7"></span>Marton et al. 2019, Front Pharmacol 10:193. <a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2019.00193/full" rel="noopener">frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2019.00193/full</a>',
+    '<span id="ref-8"></span>Glue P et al. 2016, Clin Pharmacol Drug Dev 5(6):460-468. doi:10.1002/cpdd.254. PMID 27870477. <a href="https://doi.org/10.1002/cpdd.254" rel="noopener">doi.org/10.1002/cpdd.254</a>',
+    '<span id="ref-9"></span>Schenberg EE, de Castro Comis MA, Chaves BR, da Silveira DX. 2014, J Psychopharmacol 28(11):993-1000. doi:10.1177/0269881114552713. PMID 25271214. <a href="https://europepmc.org/article/MED/25271214" rel="noopener">europepmc.org/article/MED/25271214</a>',
+    '<span id="ref-10"></span>Rocha JM, Maekawa RM, Reis JAS, Guerra LTL, Rossi GN, Rodrigues LS, Villanova B, et al. 2026, Trends Psychiatry Psychother. doi:10.47626/2237-6089-2026-1437. PMID 42520175. <a href="https://europepmc.org/article/MED/42520175" rel="noopener">europepmc.org/article/MED/42520175</a>',
+    '<span id="ref-11"></span>Shen MR, Owusu-Boaitey K, Murphy ZD, Rains AN, Wang PR, Zhou DW, Suzuki J. 2026, Front Psychiatry 17:1909149. doi:10.3389/fpsyt.2026.1909149. PMID 42755825. PMC13581858. <a href="https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1909149/full" rel="noopener">frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1909149/full</a>',
+    '<span id="ref-12"></span>Davis AK, Barsuglia JP, Windham-Herman AM, Lynch M, Polanco M. 2017, J Psychedelic Stud 1(2):65-73. doi:10.1556/2054.01.2017.009. PMID 30272050. PMC6157925. <a href="https://europepmc.org/article/PMC/PMC6157925" rel="noopener">europepmc.org/article/PMC/PMC6157925</a>',
+    '<span id="ref-13"></span>Alper KR, Lotsof HS, Frenken GMN, Luciano DJ, Bastiaans J. 1999, Am J Addict 8:234-242. <a href="https://bibliography.maps.org/resources/download/17631" rel="noopener">bibliography.maps.org/resources/download/17631</a>',
+    '<span id="ref-14"></span>Kervadec E, Bezo A, Serreau R, Strika-Bruneau L, Fauvel B, Amirouche A, et al. 2026, J Clin Psychopharmacol. doi:10.1097/jcp.0000000000002197. PMID 42228481. <a href="https://europepmc.org/article/MED/42228481" rel="noopener">europepmc.org/article/MED/42228481</a>',
 ],
-"body": """<h2 id="compound">The compound in one paragraph</h2>
-<p>Ibogaine is an indole alkaloid concentrated in the root bark of <em>Tabernanthe iboga</em>, a Central African shrub with a long ceremonial history in Gabonese Bwiti practice. Chemically isolated in 1901, it drew modern attention for a single anomalous property reported by opioid-dependent users in the 1960s: after one large dose, withdrawal did not arrive. It is metabolized in the liver to noribogaine, a long-lived active compound, giving ibogaine an unusual two-molecule pharmacology — an intense 24-hour experience followed by weeks of residual receptor activity.</p>
+"body": """<p>Ibogaine is a plant drug studied mainly for addiction <a href="#ref-1">[1]</a>. In studies of people treated with medical care, opioid withdrawal fell sharply within about three days <a href="#ref-2">[2]</a><a href="#ref-3">[3]</a><a href="#ref-4">[4]</a>. One of those studies also found less cocaine craving <a href="#ref-2">[2]</a>. In veterans with brain injuries, PTSD scores fell by a wide margin <a href="#ref-1">[1]</a>. The drug carries a serious risk to the heart's rhythm <a href="#ref-5">[5]</a>.</p>
 
-<h2 id="observed">What has been observed in humans</h2>
-<p>Setting aside anecdote and marketing, the human literature reduces to four consistent observations:</p>
-<ul>
-<li><strong>Acute withdrawal suppression.</strong> Structured case series from St. Kitts, Mexico, Brazil, and New Zealand report clinically meaningful reductions in objective opioid-withdrawal scores within hours of dosing — replicated across independent teams that had no contact with one another.</li>
-<li><strong>Extended craving reduction.</strong> Follow-up interviews and standardized craving scales show reductions persisting weeks to months, an effect window that outlasts ibogaine itself and roughly tracks noribogaine's slow clearance.</li>
-<li><strong>Variable long-term abstinence.</strong> At twelve months, outcomes diverge sharply. A minority sustain abstinence; many relapse partially or fully. Post-treatment structure — therapy, environment, support — is the variable most consistently associated with better trajectories.</li>
-<li><strong>Effects beyond addiction.</strong> The 2024 Stanford MISTIC study documented large improvements in PTSD, depression, and disability ratings in 30 veterans with traumatic brain injury — the first ibogaine result published in a top-tier medical journal.</li>
-</ul>
+<h2 id="ibogaine">What is ibogaine?</h2>
+
+<p>Ibogaine comes from the root of <em>Tabernanthe iboga</em>, a shrub that grows in Central Africa <a href="#ref-5">[5]</a>. It is the main alkaloid, a type of plant compound, in the root bark <a href="#ref-5">[5]</a>. In Gabon and nearby countries, members of the Bwiti religion take large doses of the root as part of a coming-of-age rite <a href="#ref-2">[2]</a>.</p>
+
+<p>Scientists in France first isolated ibogaine from the root as crystals in 1901 <a href="#ref-6">[6]</a>. It has been sold as a medicine before. In the 20th century, a root extract with a small amount of ibogaine was sold in France as a stimulant, under the name Lambarene <a href="#ref-2">[2]</a>.</p>
+
+<p><strong>The addiction story began in the 1960s.</strong> People dependent on heroin tried ibogaine on their own. They found that it stopped the signs of opioid withdrawal <a href="#ref-2">[2]</a>. Since then, most ibogaine research has looked at drug and alcohol problems <a href="#ref-1">[1]</a>. Newer work has added veterans with brain injuries and PTSD <a href="#ref-1">[1]</a>.</p>
+
+<p>People looking into ibogaine usually want to know how much of what they have heard holds up. This guide sets out what studies have found in people, one condition at a time, and how strong each finding is. The <a href="clinical-studies-summarized.html">full study list</a> has every major trial in one place. The <a href="history-of-ibogaine-science.html">history of ibogaine science</a> covers the longer timeline.</p>
+
+<h2 id="ibogaine-work-brain">How does ibogaine work in the brain?</h2>
+
+<p>Ibogaine attaches to many brain targets at once <a href="#ref-7">[7]</a>. They include opioid receptors, NMDA receptors and nicotinic receptors <a href="#ref-7">[7]</a>. It also binds to two kinds of serotonin receptor, and to the pumps that recycle serotonin and dopamine <a href="#ref-7">[7]</a>.</p>
+
+<p>Most drugs tune in to one radio station. Ibogaine picks up several at once, each at low volume. Its grip on each target is moderate to weak <a href="#ref-1">[1]</a>. The body breaks it down into noribogaine, which binds a similar set of targets <a href="#ref-1">[1]</a>.</p>
+
+<p>Researchers are still mapping how these contacts lead to less drug-seeking <a href="#ref-7">[7]</a>. In rodent studies, the receptor contacts alone do not seem to explain why the effects last so long <a href="#ref-7">[7]</a>. The same team looked next at <strong>slower changes in brain growth factors</strong>, covered further down <a href="#ref-7">[7]</a>.</p>
+
+<p>Research also tracks how the body handles ibogaine, and how its effects play out over hours and days <a href="#ref-2">[2]</a><a href="#ref-8">[8]</a>. The <a href="pharmacology-of-ibogaine.html">pharmacology guide</a> goes into those details. The main ideas about withdrawal are compared in <a href="withdrawal-interruption-mechanisms.html">how ibogaine interrupts withdrawal</a>.</p>
+
+<h2 id="has-ibogaine-done-people">What has ibogaine done for people in studies?</h2>
+
+<p>In human studies, the clearest result is fast relief from opioid withdrawal. Teams in St Kitts, Mexico and New Zealand each saw withdrawal ease within about three days of treatment <a href="#ref-2">[2]</a><a href="#ref-3">[3]</a><a href="#ref-4">[4]</a>. Smaller sets of studies cover cocaine, alcohol and other drugs, and PTSD in veterans with brain injuries <a href="#ref-1">[1]</a><a href="#ref-2">[2]</a><a href="#ref-9">[9]</a><a href="#ref-10">[10]</a>.</p>
+
+<h3>Opioid dependence</h3>
+
+<p>The opioid studies below largely predate the fentanyl era <a href="#ref-11">[11]</a>. In St Kitts, doctors scored the outward signs of opioid withdrawal much lower 36 hours after one dose <a href="#ref-2">[2]</a>. <strong>Opioid craving also fell</strong> on all five parts of a standard craving test by the end of the stay <a href="#ref-2">[2]</a>.</p>
+
+<p>In Mexico, people rated their own withdrawal at 31 points before treatment and 14 about three days after <a href="#ref-3">[3]</a>. At one month, half the group said they had used no opioids in the past 30 days <a href="#ref-3">[3]</a>. Drug-use scores stayed better than at the start at every check for a year <a href="#ref-3">[3]</a>.</p>
+
+<p>In New Zealand, self-rated withdrawal fell from about 25 points to about 14 within a day <a href="#ref-4">[4]</a>. A year later, drug-use scores were far below where they started <a href="#ref-4">[4]</a>.</p>
+
+<p>Over the longer term, <strong>some people stopped opioids entirely and many cut down</strong> <a href="#ref-4">[4]</a><a href="#ref-12">[12]</a>. In New Zealand, 45 percent reported some opioid use in the month before the twelve-month interview <a href="#ref-4">[4]</a>. In a survey of people treated for heroin or prescription opioid use in Mexico, three in ten said they never used opioids again <a href="#ref-12">[12]</a>. About half went back to opioids but used less than before <a href="#ref-12">[12]</a>.</p>
+
+<p>One person enrolled in the New Zealand study died during treatment <a href="#ref-4">[4]</a>. The coroner found the death very likely linked to ibogaine. The most likely cause was a heart rhythm problem <a href="#ref-4">[4]</a>.</p>
+
+<h3>Cocaine, alcohol and other drugs</h3>
+
+<p>In St Kitts, people dependent on cocaine said their craving for it dropped sharply by the end of the stay <a href="#ref-2">[2]</a>. In those reached a month later, craving was still lower than before treatment <a href="#ref-2">[2]</a>.</p>
+
+<p>A Brazilian team looked back at past patients who had used alcohol, cannabis, cocaine or crack <a href="#ref-9">[9]</a>. They had taken ibogaine along with talk therapy <a href="#ref-9">[9]</a>. When the team gathered the data, 61 percent had stopped using <a href="#ref-9">[9]</a>. People treated more than once reported longer drug-free stretches than people treated once <a href="#ref-9">[9]</a>.</p>
+
+<p>In a 2026 pilot study in people with alcohol use disorder, most said they drank less after ibogaine <a href="#ref-10">[10]</a>.</p>
+
+<h3>PTSD and brain injury in veterans</h3>
+
+<p>A Stanford-led team studied US special forces veterans with mostly mild brain injuries <a href="#ref-1">[1]</a>. The veterans took ibogaine with magnesium <a href="#ref-1">[1]</a>. One month later, average disability scores had dropped from about 30 to about 5. On that scale, 5 counts as no disability <a href="#ref-1">[1]</a>. <strong>PTSD scores fell from about 32 to about 5</strong> on a scale rated by clinicians <a href="#ref-1">[1]</a>. Depression and anxiety scores fell by similarly large margins <a href="#ref-1">[1]</a>. A <a href="mistic-study-close-read.html">close read of the Stanford study</a> covers it in depth.</p>
+
+<h3>How strong is each finding?</h3>
+
+<p>Relief from opioid withdrawal has the most support. Three teams in three countries found the same pattern <a href="#ref-2">[2]</a><a href="#ref-3">[3]</a><a href="#ref-4">[4]</a>. The scorecard below gives the strength of each finding. In St Kitts and the veterans study, <strong>the dose was one part of a larger process</strong>. Medical checks came before it, and trained staff watched over people during it <a href="#ref-1">[1]</a><a href="#ref-2">[2]</a>.</p>
+
+<table>
+<tr><th>Claim</th><th>Evidence type</th><th>Species</th><th>Strength</th></tr>
+<tr><td>Opioid withdrawal eases within about three days of treatment</td><td>Three observational studies, no control groups: withdrawal scored in a subset of 22 of the 102 opioid-dependent people in St Kitts, 30 in Mexico, 14 in New Zealand <a href="#ref-2">[2]</a><a href="#ref-3">[3]</a><a href="#ref-4">[4]</a></td><td>Human</td><td>ESTABLISHED</td></tr>
+<tr><td>Opioid craving lower at discharge and at one month</td><td>One inpatient series, one-month follow-up incomplete <a href="#ref-2">[2]</a></td><td>Human</td><td>PLAUSIBLE</td></tr>
+<tr><td>Opioid drug-use scores still lower at twelve months</td><td>Two observational studies; 8 people completed every New Zealand interview <a href="#ref-3">[3]</a><a href="#ref-4">[4]</a></td><td>Human</td><td>PLAUSIBLE</td></tr>
+<tr><td>Cocaine craving lower at discharge and at one month</td><td>One inpatient series, 89 cocaine-dependent people, follow-up incomplete <a href="#ref-2">[2]</a></td><td>Human</td><td>PLAUSIBLE</td></tr>
+<tr><td>Longer abstinence from alcohol, cannabis, cocaine or crack, with psychotherapy</td><td>One retrospective review, 75 people, no control group <a href="#ref-9">[9]</a></td><td>Human</td><td>PLAUSIBLE</td></tr>
+<tr><td>Less drinking in alcohol use disorder</td><td>One open-label pilot, 9 people, 5 completed <a href="#ref-10">[10]</a></td><td>Human</td><td>PLAUSIBLE</td></tr>
+<tr><td>Lower disability, PTSD, depression and anxiety scores one month after treatment, in veterans with brain injuries</td><td>One open-label study, 30 veterans, magnesium co-dosed; effect sizes d = 2.54 (PTSD), 2.80 (depression), 2.13 (anxiety) <a href="#ref-1">[1]</a></td><td>Human</td><td>PLAUSIBLE</td></tr>
+<tr><td>Ibogaine binds many brain targets</td><td>Laboratory binding studies <a href="#ref-7">[7]</a></td><td>In vitro</td><td>ESTABLISHED</td></tr>
+<tr><td>GDNF rises in the reward area a day after a high dose</td><td>One rat study, 6 animals per group <a href="#ref-7">[7]</a></td><td>Rat</td><td>PLAUSIBLE</td></tr>
+<tr><td>Ibogaine and noribogaine lengthen the heart's QT interval</td><td>Hospital study with continuous monitoring <a href="#ref-5">[5]</a>; noribogaine trial <a href="#ref-8">[8]</a></td><td>Human</td><td>ESTABLISHED</td></tr>
+</table>
+
+<h2 id="ibogaine-brain-animal-studies">What does ibogaine do to the brain in animal studies?</h2>
+
+<p>In rodent studies, ibogaine cuts how much morphine, heroin, cocaine and alcohol the animals choose to take <a href="#ref-7">[7]</a>. It also eases the withdrawal signs set off by drugs that block opioid receptors <a href="#ref-7">[7]</a>. These results match the direction of the human opioid findings <a href="#ref-2">[2]</a><a href="#ref-7">[7]</a>.</p>
+
+<p>One line of rat research looks at growth factors. These are proteins that act like fertilizer for nerve cells. They help cells grow and hold on to their links with each other.</p>
+
+<p><strong>In rats, a high dose of ibogaine raised a growth factor called GDNF</strong> in the brain's reward area a day later <a href="#ref-7">[7]</a>. A lower dose left GDNF unchanged in every region tested <a href="#ref-7">[7]</a>. One idea under study is that GDNF keeps itself going in a loop after the drug has cleared <a href="#ref-7">[7]</a>.</p>
+
+<p>In the same rat study, the genetic message for a second growth factor, BDNF, rose steeply <a href="#ref-7">[7]</a>. The finished BDNF protein did not rise by a significant amount <a href="#ref-7">[7]</a>.</p>
+
+<p>In rat nerve cells grown in a dish, noribogaine helps the cells sprout new branches <a href="#ref-7">[7]</a>. Branching of this kind is one way nerve cells form new links <a href="#ref-7">[7]</a>.</p>
+
+<h2 id="long-ibogaine-stay-body">How long does ibogaine stay in the body?</h2>
+
+<p>Ibogaine itself leaves the blood within hours. Its half-life, the time the body takes to clear half a dose, is about 1.6 to 6 hours <a href="#ref-2">[2]</a>.</p>
+
+<p>The body turns it into noribogaine, which stays far longer <a href="#ref-2">[2]</a>. Given on its own to people on methadone, noribogaine had a half-life of 24 to 30 hours <a href="#ref-8">[8]</a>.</p>
+
+<p>Picture a match lighting a slow-burning log. Ibogaine is the match. It flares and is gone within hours. <strong>Noribogaine is the log</strong>, still giving off heat for days <a href="#ref-2">[2]</a><a href="#ref-8">[8]</a>. The <a href="noribogaine-pharmacokinetics.html">noribogaine guide</a> follows that long tail in detail.</p>
+
+<p>A liver enzyme called CYP2D6 does the conversion <a href="#ref-2">[2]</a>. People do not all run it at the same speed. Between 5 and 10 percent of people of European descent lack the gene for it <a href="#ref-4">[4]</a>. In these slow processors, combined drug levels are expected to run about twice as high <a href="#ref-4">[4]</a>.</p>
+
+<p>Both compounds affect the heart. They lengthen the QT interval, the heart's electrical reset between beats <a href="#ref-5">[5]</a><a href="#ref-8">[8]</a>.</p>
+
+<p>In a Dutch hospital study of people with opioid use disorder, the QT interval grew by about 95 milliseconds at its peak after one dose <a href="#ref-5">[5]</a>. <strong>Half the patients passed 500 milliseconds</strong> <a href="#ref-5">[5]</a>. In close to half, the lengthening lasted beyond a full day <a href="#ref-5">[5]</a>.</p>
+
+<p>In the same methadone patients, noribogaine given alone also lengthened the QT interval, and the effect grew with the dose <a href="#ref-8">[8]</a>. A long QT interval after ibogaine has been linked to sudden deaths <a href="#ref-7">[7]</a>.</p>
+
+<h2 id="ibogaine-treatment-like">What is ibogaine treatment like?</h2>
+
+<p>Ibogaine treatment moves through stages over one to three days <a href="#ref-1">[1]</a><a href="#ref-13">[13]</a>. A dreamlike stage begins between about half an hour and three hours after the dose <a href="#ref-2">[2]</a><a href="#ref-13">[13]</a>. It lasts about four to eight hours <a href="#ref-1">[1]</a><a href="#ref-13">[13]</a>. Most people keep their eyes closed for it <a href="#ref-1">[1]</a>.</p>
+
+<p>In this first stage, many people see a stream of images drawn from their own past <a href="#ref-13">[13]</a>. Among people treated for opioid or cocaine dependence in St Kitts, about four in ten saw scenes from childhood <a href="#ref-2">[2]</a>. <strong>More than half felt linked to a higher power</strong> <a href="#ref-2">[2]</a>. About six in ten saw images or changes in how things looked <a href="#ref-2">[2]</a>.</p>
+
+<p>A quieter stage follows. It lasts roughly 8 to 20 hours <a href="#ref-1">[1]</a><a href="#ref-13">[13]</a>. The images fade, and attention turns to what came up. The mood is mostly calm and thoughtful <a href="#ref-13">[13]</a>. Over the next one to three days, any leftover effects wear off <a href="#ref-1">[1]</a>.</p>
+
+<p>The body goes through its own changes. In a Dutch hospital study of opioid treatment, every patient had a spell of severe, short-lived unsteadiness and needed help to walk <a href="#ref-5">[5]</a>. In the veterans study, everyone had mild unsteadiness or a tremor that cleared within a day <a href="#ref-1">[1]</a>.</p>
+
+<p>In the veterans study, four in ten were treated for a headache <a href="#ref-1">[1]</a>. Nausea and vomiting were common in St Kitts <a href="#ref-2">[2]</a>. Sleep can be hard for up to three days, and sleep medicine helps <a href="#ref-13">[13]</a>.</p>
+
+<p>Looking back, most people in St Kitts rated the experience well. <strong>Nine in ten said it helped with their drug problem</strong> <a href="#ref-2">[2]</a>. A similar share said it gave them insight <a href="#ref-2">[2]</a>. Half felt cleansed or reborn <a href="#ref-2">[2]</a>.</p>
+
 @@CTA@@
-<h2 id="strength">How strong is this evidence?</h2>
-<p>Formally: moderate-quality observational evidence, zero completed randomized controlled trials. That distinction matters more here than in most fields, because the population currently reaching ibogaine is exceptional by construction — motivated enough to travel abroad, pay thousands of dollars, and undergo an arduous experience. Selection bias and expectancy effects are not hypothetical concerns; they are the default explanation a rigorous reader must first rule out, and current studies cannot rule them out.</p>
-<p>What the observational data <em>can</em> establish is consistency and effect size. When every structured series, in every country, reports the same direction of effect on withdrawal — an outcome that is objectively scoreable — the signal is unlikely to be pure artifact. The 2018 New Zealand series, conducted under a legal prescribing framework with independent follow-up, is probably the single cleanest data point.</p>
 
-<h2 id="uncertain">What remains genuinely uncertain</h2>
-<ul>
-<li>Effect size under randomization — the gap between observed and true efficacy is unknown.</li>
-<li>Durability — how much of the twelve-month outcome is attributable to the drug versus the aftercare that surrounds it.</li>
-<li>Mechanism — which of ibogaine's many receptor targets actually drives the clinical effect (see <a href="pharmacology-of-ibogaine.html">the pharmacology entry</a>).</li>
-<li>Generalizability to fentanyl-era opioid physiology, which most published cohorts predate.</li>
-</ul>
+<h2 id="where-research-goes-next">Where the research goes next</h2>
 
-<h2 id="verdict">A defensible summary</h2>
-<blockquote>Ibogaine shows one of the most consistent observational signals in addiction medicine, attached to one of its least complete evidence bases. Dismissal and promotion are both premature; the correct posture is the trial pipeline now being funded.</blockquote>
-<p>For the study-by-study detail behind this summary, continue to <a href="clinical-studies-summarized.html">Every Major Ibogaine Study, Summarized</a>.</p>"""
+<p>Four directions stand out. The first is controlled trials, where people are assigned at random to ibogaine or a comparison. A 2026 review of thirty years of human research brings together the open-label results that such trials would put to the test <a href="#ref-14">[14]</a>.</p>
+
+<p>The veterans team and the alcohol pilot team both name controlled trials as the next step <a href="#ref-1">[1]</a><a href="#ref-10">[10]</a>. Such trials would show how much of the benefit comes from ibogaine itself.</p>
+
+<p>The second is protecting the heart. The veterans study gave magnesium before and after the dose, and heart monitors there picked up no QT lengthening large enough to see on screen <a href="#ref-1">[1]</a>. In the alcohol pilot, the QT interval changed in five of nine people, and the authors call for strict heart checks and constant monitoring <a href="#ref-10">[10]</a>. A trial that compares ibogaine with and without magnesium could test whether magnesium protects the heart.</p>
+
+<p>The third is separating the drug from the care around it. The veterans also received other treatments during their stay in Mexico <a href="#ref-1">[1]</a>. The Brazilian patients had talk therapy alongside ibogaine <a href="#ref-9">[9]</a>. Future studies can measure what each part adds.</p>
+
+<p>The fourth is reach beyond opioids. Cocaine, alcohol and PTSD each have early human signals <a href="#ref-1">[1]</a><a href="#ref-2">[2]</a><a href="#ref-9">[9]</a><a href="#ref-10">[10]</a>. Each condition needs its own trials, because a result in one does not transfer to another. The <a href="open-questions.html">open questions guide</a> sets out what those trials must answer.</p>
+
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+
+<h3>What is ibogaine made from?</h3>
+
+<p>Ibogaine comes from the root bark of <em>Tabernanthe iboga</em>, a Central African shrub <a href="#ref-5">[5]</a>. It is the main alkaloid in the root bark <a href="#ref-5">[5]</a>. The Bwiti religion uses the root in a coming-of-age rite <a href="#ref-2">[2]</a>.</p>
+
+<h3>Is ibogaine a psychedelic?</h3>
+
+<p>Researchers class ibogaine as an atypical psychedelic <a href="#ref-1">[1]</a>. Its effects feel like a waking dream, so some call it an oneirogen, a drug that brings on dream states <a href="#ref-1">[1]</a>. It acts on many brain targets at once <a href="#ref-7">[7]</a>.</p>
+
+<h3>Does ibogaine work for alcohol addiction?</h3>
+
+<p>In a 2026 pilot study of alcohol use disorder, most people said they drank less after ibogaine <a href="#ref-10">[10]</a>. In Brazil, people who used alcohol or other drugs took ibogaine with talk therapy, and many stayed off drugs for months <a href="#ref-9">[9]</a>. Both groups were treated under medical care <a href="#ref-9">[9]</a><a href="#ref-10">[10]</a>.</p>
+
+<h3>What does ibogaine do for PTSD?</h3>
+
+<p>In a Stanford-led study of special forces veterans with brain injuries, PTSD scores fell from about 32 to about 5 a month after treatment <a href="#ref-1">[1]</a>. Scores for low mood and anxiety fell by similarly large margins <a href="#ref-1">[1]</a>. The veterans took ibogaine with magnesium, with medical staff on hand the whole time <a href="#ref-1">[1]</a>.</p>
+
+<h3>Is ibogaine safe?</h3>
+
+<p>Ibogaine lengthens the heart's QT interval, which has been linked to sudden deaths <a href="#ref-7">[7]</a>. In a hospital study of opioid treatment, half the patients passed a QT of 500 milliseconds after a single dose <a href="#ref-5">[5]</a>. Treatment needs heart checks first and constant heart monitoring during treatment. These lower the risk without removing it <a href="#ref-2">[2]</a><a href="#ref-5">[5]</a>.</p>
+
+<div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>""",
+"htitle": "Ibogaine Evidence in 2026: What Studies Show"
 },
 
 # ============================================================ 2
