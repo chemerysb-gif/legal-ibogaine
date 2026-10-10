@@ -9,3 +9,7 @@ netlify.toml
 # This repo is public. Edit the real values in the Apps Script editor;
 # keep Code.gs.example in sync when the structure changes.
 _generator/apps-script/Code.gs
+
+# Python bytecode from running the generator (CI runs it too)
+__pycache__/
+*.pyc

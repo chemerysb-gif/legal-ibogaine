@@ -503,7 +503,12 @@ def _lastmods(urls):
 
     A page keeps its stored date until its bytes actually change, so rebuilding
     does not tell Google that all 32 pages were revised today. Dates live in
-    _generator/lastmod.json and are committed with the site."""
+    _generator/lastmod.json and are committed with the site.
+
+    Pass every generated page here, not just the ones in the sitemap. A page
+    left out keeps the build-time kicker from UPDATED and so changes its bytes
+    on every single build -- which showed up as a spurious quiz.html diff in
+    each daily publish commit."""
     try:
         with open(LASTMOD_DB) as f:
             db = json.load(f)
@@ -545,17 +550,26 @@ def _lastmods(urls):
         f.write("\n")
     return dates, changed
 
+# Generated but deliberately kept out of the sitemap: a noindexed redirect
+# stub and two retired pages. They still need a content date, or their
+# "Updated" kicker is restamped on every build.
+UNLISTED = ("quiz", "consultation", "resources")
+
 def render_sitemap():
-    urls = [f"{SITE}/"]
-    urls += [f"{SITE}/{p['slug']}.html" for p in ROOT_PAGES if p['slug'] not in ("quiz", "consultation", "resources") and not p.get("noindex")]
-    urls += [f"{SITE}/library/index.html"] + [f"{SITE}/library/{a['slug']}.html" for a in ARTICLES]
-    dates, changed = _lastmods(urls)
-    items = "\n".join(f"  <url><loc>{u}</loc><lastmod>{dates[u]}</lastmod></url>" for u in urls)
+    listed = [f"{SITE}/"]
+    listed += [f"{SITE}/{p['slug']}.html" for p in ROOT_PAGES
+               if p['slug'] not in UNLISTED and not p.get("noindex")]
+    listed += [f"{SITE}/library/index.html"] + [f"{SITE}/library/{a['slug']}.html" for a in ARTICLES]
+    # Date every generated page; list only the ones the sitemap should carry.
+    unlisted = [f"{SITE}/{p['slug']}.html" for p in ROOT_PAGES
+                if f"{SITE}/{p['slug']}.html" not in listed]
+    dates, changed = _lastmods(listed + unlisted)
+    items = "\n".join(f"  <url><loc>{u}</loc><lastmod>{dates[u]}</lastmod></url>" for u in listed)
     with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
         f.write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>\n')
     with open(os.path.join(OUT, "robots.txt"), "w") as f:
         f.write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
-    print("sitemap:", len(urls), "urls (+robots),", changed, "with a new lastmod")
+    print("sitemap:", len(listed), "urls (+robots),", changed, "with a new lastmod")
 
 
 def render_home():
