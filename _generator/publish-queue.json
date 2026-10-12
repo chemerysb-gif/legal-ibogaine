@@ -26,7 +26,8 @@
  {
   "slug": "mistic-study-close-read",
   "publish_on": "2026-10-12",
-  "done": false
+  "done": true,
+  "promoted_on": "2026-10-12"
  },
  {
   "slug": "pharmacology-of-ibogaine",
