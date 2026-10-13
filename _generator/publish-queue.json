@@ -32,7 +32,8 @@
  {
   "slug": "pharmacology-of-ibogaine",
   "publish_on": "2026-10-13",
-  "done": false
+  "done": true,
+  "promoted_on": "2026-10-13"
  },
  {
   "slug": "withdrawal-interruption-mechanisms",
