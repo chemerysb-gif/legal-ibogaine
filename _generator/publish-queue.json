@@ -38,7 +38,8 @@
  {
   "slug": "withdrawal-interruption-mechanisms",
   "publish_on": "2026-10-14",
-  "done": false
+  "done": true,
+  "promoted_on": "2026-10-14"
  },
  {
   "slug": "noribogaine-pharmacokinetics",
