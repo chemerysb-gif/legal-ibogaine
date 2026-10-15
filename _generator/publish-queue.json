@@ -44,7 +44,8 @@
  {
   "slug": "noribogaine-pharmacokinetics",
   "publish_on": "2026-10-15",
-  "done": false
+  "done": true,
+  "promoted_on": "2026-10-15"
  },
  {
   "slug": "history-of-ibogaine-science",
