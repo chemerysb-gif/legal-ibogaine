@@ -50,7 +50,8 @@
  {
   "slug": "history-of-ibogaine-science",
   "publish_on": "2026-10-16",
-  "done": false
+  "done": true,
+  "promoted_on": "2026-10-16"
  },
  {
   "slug": "open-questions",
