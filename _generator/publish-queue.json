@@ -56,7 +56,8 @@
  {
   "slug": "open-questions",
   "publish_on": "2026-10-17",
-  "done": false
+  "done": true,
+  "promoted_on": "2026-10-17"
  },
  {
   "slug": "ibogaine-analogs",
