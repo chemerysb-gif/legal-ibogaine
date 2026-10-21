@@ -84,6 +84,10 @@ def page_ld(pg, canon):
         "url": url,
         "isPartOf": {"@type": "WebSite", "name": "Legal Ibogaine", "url": f"{SITE}/"},
         "publisher": {"@type": "Organization", "name": "Legal Ibogaine", "url": f"{SITE}/"},
+        # Seeded with today and restamped to the page's content date by
+        # _lastmods, the same way the visible "Updated" kicker is. These pages
+        # carried no dateModified at all, so a reviewer saw no revision date.
+        "dateModified": datetime.date.today().isoformat(),
     }
     if node["@type"] == "MedicalWebPage":
         node["audience"] = {"@type": "MedicalAudience", "audienceType": "Patient"}
@@ -123,6 +127,10 @@ LIBRARY_LD = ORG_LD + ld_block(
         "url": f"{SITE}/library/index.html",
         "isPartOf": {"@type": "WebSite", "name": "Legal Ibogaine", "url": f"{SITE}/"},
         "publisher": {"@type": "Organization", "name": "Legal Ibogaine", "url": f"{SITE}/"},
+        # Seeded with today and restamped to the page's content date by
+        # _lastmods, the same way the visible "Updated" kicker is. These pages
+        # carried no dateModified at all, so a reviewer saw no revision date.
+        "dateModified": datetime.date.today().isoformat(),
     },
     {
         "@context": "https://schema.org",
@@ -343,6 +351,7 @@ ART_PAGE = HEAD.replace('content="website"', 'content="article"') + '''@@HEADER@
           <span class="t">@@TOPIC@@</span>
           <span>No. @@NO@@</span>
           <span>@@DATE_H@@</span>
+          <span>Updated @@UPDATED_H@@</span>
           <span>@@READTIME@@ min read</span>
         </div>
         <h1>@@TITLE@@</h1>
@@ -361,7 +370,7 @@ ART_PAGE = HEAD.replace('content="website"', 'content="article"') + '''@@HEADER@
         </aside>
         <div class="article-body">
 @@BODY@@
-          <div class="article-note"><strong>Disclaimer:</strong> This entry is educational and not medical advice. Ibogaine is a potent, unapproved psychoactive compound. Always consult a qualified physician before making treatment decisions.</div>
+          <div class="article-note"><strong>Disclaimer:</strong> This entry is general information, not medical advice.</div>
           <div class="article-refs">
             <h2>References</h2>
             <ol>
@@ -442,6 +451,9 @@ def render_article(a, no):
         .replace("@@TOPIC@@", a['topic'])
         .replace("@@NO@@", f"{no:02d}")
         .replace("@@DATE_H@@", human_date(a['date']))
+        # Seeded with today; _lastmods rewrites it to the article's content
+        # date via _UPDATED_RE, so it tracks real revisions, not build runs.
+        .replace("@@UPDATED_H@@", UPDATED)
         .replace("@@READTIME@@", str(a['readtime']))
         .replace("@@IMGW@@", webp(a['img']))
         .replace("@@IMGALT@@", a['imgalt'])
@@ -458,6 +470,7 @@ def render_library_index():
     P = "../"
     rows = "\n".join(post_html(a) for a in ARTICLES)
     html = HEAD.replace("@@HTITLE@@", "Articles").replace("@@DESC@@", "Every Legal Ibogaine article: evidence summaries, pharmacology, history, and research analysis. Filter by topic.") \
+               .replace("@@MDESC@@", "Every Legal Ibogaine article in one place: cardiac risk and safety, legal status, the evidence by condition, and pharmacology. Filter by topic.") \
                .replace("@@URL@@", f"{SITE}/library/index.html").replace("@@P@@", P).replace("@@OGIMG@@", SITE + "/assets/img/iboga-leaves.jpg").replace("@@JSONLD@@", LIBRARY_LD)
     html += header(P)
     html += f'''
@@ -490,6 +503,9 @@ def render_library_index():
 # Related-article cards repeat other articles' titles and summaries; a change
 # there is not a change to this page, so they are left out of the hash too.
 _RELATED_RE = re.compile(rb'<section class="related"[^>]*>.*?</section>', re.S)
+# json.dumps writes '"dateModified": "..."' and the article template writes
+# '"dateModified":"..."', so the separator is captured and preserved.
+_DATEMOD_RE = re.compile(rb'("dateModified":\s?)"\d{4}-\d{2}-\d{2}"')
 _UPDATED_RE = re.compile(rb"Updated [A-Z][a-z]+ \d{1,2}, \d{4}")
 LASTMOD_DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lastmod.json")
 
@@ -522,7 +538,8 @@ def _lastmods(urls):
                 # The "Updated <date>" kicker is stamped at build time, so it is
                 # masked out of the hash; otherwise every build re-dates every
                 # root page. It is rewritten to the content date below.
-                digest = hashlib.sha256(_RELATED_RE.sub(b"", _UPDATED_RE.sub(b"Updated @", f.read()))).hexdigest()
+                masked = _DATEMOD_RE.sub(rb'\1"@"', f.read())
+                digest = hashlib.sha256(_RELATED_RE.sub(b"", _UPDATED_RE.sub(b"Updated @", masked))).hexdigest()
         except OSError:
             dates[u] = db.get(u, {}).get("date", today)
             continue
@@ -542,6 +559,7 @@ def _lastmods(urls):
             continue
         shown = datetime.date.fromisoformat(dates[u]).strftime("%B %-d, %Y").encode()
         fixed = _UPDATED_RE.sub(b"Updated " + shown, raw)
+        fixed = _DATEMOD_RE.sub(rb'\1"' + dates[u].encode() + rb'"', fixed)
         if fixed != raw:
             with open(_file_for(u), "wb") as f:
                 f.write(fixed)
@@ -599,6 +617,7 @@ def render_home():
 def render_404():
     P = ""
     html = HEAD.replace("@@HTITLE@@", "Page Not Found").replace("@@DESC@@", "That page doesn't exist. Start from the guide's main routes.") \
+               .replace("@@MDESC@@", "That page does not exist. Start from the main routes: safety, legal status, the evidence by condition, or the full article library.") \
                .replace("@@URL@@", SITE + "/404.html").replace("@@P@@", P).replace("@@OGIMG@@", SITE + "/assets/img/hero-forest.jpg").replace("@@JSONLD@@", ORG_LD)
     html = html.replace('<link rel="canonical" href="' + SITE + '/404.html">', '<meta name="robots" content="noindex">')
     html += header(P)
@@ -707,6 +726,30 @@ def inject_img_dims():
             open(f, "w").write(new)
     print("img dims injected:", n)
 
+def verify_no_placeholders():
+    """Refuse to finish a build that left a template variable in a page.
+
+    @@MDESC@@ reached the live meta description of library/index.html and
+    404.html because those two renderers substituted @@DESC@@ and not
+    @@MDESC@@. Nothing caught it: precheck.py only reads library articles, and
+    the pages looked right to a human eye. This closes the class, not the two
+    instances -- any renderer that forgets a replace now fails the build."""
+    bad = []
+    for root, dirs, files in os.walk(OUT):
+        dirs[:] = [d for d in dirs if d not in ("_generator", ".git", "assets")]
+        for fn in files:
+            if not fn.endswith(".html"):
+                continue
+            path = os.path.join(root, fn)
+            left = sorted(set(re.findall(r"@@[A-Z_]+@@", open(path, encoding="utf-8").read())))
+            if left:
+                bad.append("%s: %s" % (os.path.relpath(path, OUT), ", ".join(left)))
+    if bad:
+        raise SystemExit("BUILD FAILED, unsubstituted template variables:\n  "
+                         + "\n  ".join(bad))
+    print("placeholder check: clean")
+
+
 if __name__ == "__main__":
     for pg in ROOT_PAGES:
         if pg["slug"] == "resources":  # hidden until the PDFs exist
@@ -719,4 +762,5 @@ if __name__ == "__main__":
     render_404()
     inject_img_dims()
     render_sitemap()
+    verify_no_placeholders()
     print("done:", len(ROOT_PAGES), "root pages +", len(ARTICLES), "articles")

@@ -74,6 +74,29 @@ def find_dict(slug):
     return None
 
 
+def _restore(path, src, lastmod=None):
+    """Put the tree back as it was, so a failed promotion leaves no trace.
+
+    Restoring the data file is not enough once build_site.py has run: the
+    built HTML, the sitemap and lastmod.json still hold the rejected article,
+    and the next commit from any source would ship it. So rebuild from the
+    restored data and leave the working tree as it was found.
+    """
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(src)
+    # Put the date database back first. Without it the rebuild sees a hash it
+    # has no record of and stamps today, so a failed promotion would tell
+    # Google these pages changed when they did not.
+    if lastmod is not None:
+        with open(os.path.join(GEN, 'lastmod.json'), 'w', encoding='utf-8') as f:
+            f.write(lastmod)
+    r = subprocess.run([sys.executable, os.path.join(GEN, 'build_site.py')], cwd=ROOT,
+                       capture_output=True, text=True)
+    if r.returncode:
+        print('WARNING: rebuild after rollback failed; the working tree still holds the\n'
+              '         rejected article. Run: git checkout -- . && git clean -fd library')
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--today', default=datetime.date.today().isoformat())
@@ -94,6 +117,10 @@ def main():
         print('FAIL: no ARTICLES entry with slug %s (rewrites replace, never append)' % slug)
         return 1
     path, src, start, end, cur = hit
+    try:
+        lastmod_before = open(os.path.join(GEN, 'lastmod.json'), encoding='utf-8').read()
+    except OSError:
+        lastmod_before = None
 
     new = dict(cur)
     for k in FIELDS:
@@ -145,6 +172,18 @@ def main():
         problems.append('footer missing on built page')
     if problems:
         print('FAIL after build:\n  ' + '\n  '.join(problems))
+        _restore(path, src, lastmod_before)
+        return 1
+
+    # Rule 67: re-check the artifact that actually ships, not the draft that
+    # cleared the rules days ago. The queue payload, the article dict and the
+    # generator templates all sit between the two.
+    pc = subprocess.run([sys.executable, os.path.join(GEN, 'precheck.py'), slug],
+                        cwd=ROOT, capture_output=True, text=True)
+    print(pc.stdout.strip())
+    if pc.returncode:
+        print('FAIL: rule 67 pre-publish check failed; nothing committed')
+        _restore(path, src, lastmod_before)
         return 1
 
     entry['done'] = True
