@@ -117,6 +117,10 @@ HOME_LD = ORG_LD + ld_block({
     "url": f"{SITE}/",
     "description": "Independent ibogaine treatment information.",
     "publisher": {"@type": "Organization", "name": "Legal Ibogaine", "url": f"{SITE}/"},
+    # The home page builds its own LD rather than going through page_ld, so it
+    # was the one page left without a revision date. WebSite is a CreativeWork,
+    # so dateModified is valid here. Restamped by _lastmods like the rest.
+    "dateModified": datetime.date.today().isoformat(),
 })
 
 LIBRARY_LD = ORG_LD + ld_block(
