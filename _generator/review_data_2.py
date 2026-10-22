@@ -54,7 +54,7 @@ ARTICLES = [
 
 <p>A drug aimed at one target works like a key cut for a single lock. Ibogaine is more like a loose master key. It fits many locks, none of them tightly <a href="#ref-1">[1]</a><a href="#ref-3">[3]</a>. It attaches to opioid receptors, to NMDA receptors involved in learning, and to nicotinic receptors <a href="#ref-3">[3]</a>. It also binds the pumps that recycle serotonin and dopamine <a href="#ref-3">[3]</a>.</p>
 
-<p>The MISTIC authors describe ibogaine as an <strong>oneirogen</strong>, a drug that brings on dream-like states <a href="#ref-1">[1]</a>. In their account, that dream-like phase opens into a longer stretch of self-reflection <a href="#ref-1">[1]</a>.</p>
+<p>The MISTIC authors describe ibogaine as an <strong>oneirogen</strong>, a drug that brings on <a href="what-an-ibogaine-session-is-like.html">dream-like</a> states <a href="#ref-1">[1]</a>. In their account, that dream-like phase opens into a longer stretch of self-reflection <a href="#ref-1">[1]</a>.</p>
 
 <p>The targets, and how the body handles the drug, have their own article, <a href="pharmacology-of-ibogaine.html">The Pharmacology of Ibogaine: Targets, Kinetics, Metabolism</a>.</p>
 
@@ -111,7 +111,7 @@ ARTICLES = [
 
 <h2 id="was-magnesium-given-with">Why was magnesium given with ibogaine, and what did the heart show?</h2>
 
-<p>MISTIC added magnesium to protect the heart. Ibogaine lengthens the QT interval <a href="#ref-1">[1]</a>. That is the time the heart takes to reset its charge between beats. A long QT has been linked to sudden deaths after ibogaine <a href="#ref-3">[3]</a>. Magnesium can shorten the QT. It can also guard against the QT stretch that some other drugs cause <a href="#ref-1">[1]</a>.</p>
+<p>MISTIC added magnesium to protect the heart. Ibogaine lengthens the <a href="ibogaine-cardiac-risk.html">QT interval</a> <a href="#ref-1">[1]</a>. That is the time the heart takes to reset its charge between beats. A long QT has been linked to sudden deaths after ibogaine <a href="#ref-3">[3]</a>. Magnesium can shorten the QT. It can also guard against the QT stretch that some other drugs cause <a href="#ref-1">[1]</a>.</p>
 
 <p>Each veteran got 1 gram of magnesium through a drip, one to two hours before ibogaine <a href="#ref-1">[1]</a>. Ibogaine came by mouth, starting with a small test dose <a href="#ref-1">[1]</a>. Staff added more within two hours, to a total under 14 mg per kg of body weight <a href="#ref-1">[1]</a>. The average total was about 12 mg per kg <a href="#ref-1">[1]</a>. A second magnesium drip came about 12 hours later <a href="#ref-1">[1]</a>.</p>
 
@@ -179,7 +179,7 @@ ARTICLES = [
 
 <h3>Is ibogaine safe?</h3>
 
-<p>Ibogaine stretches the heart's QT interval, and a long QT has been linked to sudden deaths <a href="#ref-3">[3]</a>. In one hospital study of people dependent on opioids, half passed a QT of 500 milliseconds after a single dose <a href="#ref-2">[2]</a>. Treatment needs screening and nonstop heart monitoring. These lower the risk without removing it <a href="#ref-1">[1]</a><a href="#ref-2">[2]</a>.</p>
+<p>Ibogaine stretches the heart's QT interval, and a long QT has been linked to <a href="ibogaine-deaths-what-is-known.html">sudden death</a>s <a href="#ref-3">[3]</a>. In one hospital study of people dependent on opioids, half passed a QT of 500 milliseconds after a single dose <a href="#ref-2">[2]</a>. Treatment needs screening and nonstop heart monitoring. These lower the risk without removing it <a href="#ref-1">[1]</a><a href="#ref-2">[2]</a>.</p>
 
 <div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>""",
 "htitle": "The Stanford MISTIC Study, Closely Read"
@@ -276,7 +276,7 @@ ARTICLES = [
 
 <p>NIDA then chose not to fund more human studies <a href="#ref-5">[5]</a>. A NIDA official, cited in the 1999 paper, said the 1993 death was a significant factor <a href="#ref-4">[4]</a>. A 2015 review adds that drug industry advisers weighed in <a href="#ref-5">[5]</a>.</p>
 
-<p>In 1995, a team led by Deborah Mash found that the body turns ibogaine into a second active compound, noribogaine <a href="#ref-12">[12]</a>. It stays in the blood far longer than ibogaine itself <a href="#ref-12">[12]</a><a href="#ref-13">[13]</a>. Its story is told in <a href="noribogaine-pharmacokinetics.html">Noribogaine: Pharmacokinetics of the Long Tail</a>.</p>
+<p>In 1995, a team led by Deborah Mash found that the body turns ibogaine into a second active compound, <a href="noribogaine-pharmacokinetics.html">noribogaine</a> <a href="#ref-12">[12]</a>. It stays in the blood far longer than ibogaine itself <a href="#ref-12">[12]</a><a href="#ref-13">[13]</a>. Its story is told in <a href="noribogaine-pharmacokinetics.html">Noribogaine: Pharmacokinetics of the Long Tail</a>.</p>
 
 <h2 id="did-ibogaine-research-move">Why did ibogaine research move outside the United States?</h2>
 
@@ -288,11 +288,11 @@ ARTICLES = [
 
 <p>New Zealand took a different path. In 2009, its drug regulator, Medsafe, listed ibogaine as a non-approved medicine <a href="#ref-3">[3]</a>. As a result, it can be prescribed legally there <a href="#ref-3">[3]</a>. A 2018 study chose New Zealand so that patients could speak freely, with no fear of legal trouble <a href="#ref-3">[3]</a>.</p>
 
-<p>Lab work on how ibogaine acts went on as well. In a 2005 rat study, ibogaine cut alcohol drinking and raised GDNF in the midbrain <a href="#ref-15">[15]</a>. GDNF is a protein that helps some brain cells survive <a href="#ref-15">[15]</a>. Blocking it in a reward area of the rats' brains weakened the drop in drinking <a href="#ref-15">[15]</a>.</p>
+<p>Lab work on how ibogaine acts went on as well. In a 2005 rat study, ibogaine cut alcohol drinking and raised <a href="ibogaine-and-dopamine.html">GDNF</a> in the midbrain <a href="#ref-15">[15]</a>. GDNF is a protein that helps some brain cells survive <a href="#ref-15">[15]</a>. Blocking it in a reward area of the rats' brains weakened the drop in drinking <a href="#ref-15">[15]</a>.</p>
 
 <p>Scientists also began to test noribogaine on its own. In 2015 and 2016, one team gave it to healthy men, and then to people coming off methadone <a href="#ref-13">[13]</a><a href="#ref-16">[16]</a>. In the second group, <strong>noribogaine lengthened the heart's QT interval</strong>, and more so at higher doses <a href="#ref-13">[13]</a>. The QT interval is the time the heart takes to reset its electrical charge between beats.</p>
 
-<p>Over the same years, reports of heart rhythm problems and sudden deaths after ibogaine use kept growing <a href="#ref-5">[5]</a>. The longer QT interval has been linked to these sudden deaths <a href="#ref-7">[7]</a>.</p>
+<p>Over the same years, reports of heart rhythm problems and <a href="ibogaine-deaths-what-is-known.html">sudden death</a>s after ibogaine use kept growing <a href="#ref-5">[5]</a>. The longer QT interval has been linked to these sudden deaths <a href="#ref-7">[7]</a>.</p>
 
 <h2 id="has-ibogaine-research-found">What has ibogaine research found since 2018?</h2>
 
@@ -306,7 +306,7 @@ ARTICLES = [
 
 <p>In 2024, a Stanford team published a study of ibogaine in Nature Medicine <a href="#ref-6">[6]</a>. The men were special forces veterans with brain injuries who took ibogaine with magnesium at a clinic in Mexico <a href="#ref-6">[6]</a>. A month later their scores for PTSD, depression, anxiety and disability had all dropped sharply <a href="#ref-6">[6]</a>. The study has its own close read in <a href="mistic-study-close-read.html">The Stanford MISTIC Study: A Close Read</a>.</p>
 
-<p>In 2026, a Brazilian pilot study in alcohol use disorder found most people said they drank less <a href="#ref-18">[18]</a>. The QT interval changed in more than half of those treated <a href="#ref-18">[18]</a>. Each study from these years is summed up in <a href="clinical-studies-summarized.html">Every Major Ibogaine Study, Summarized</a>.</p>
+<p>In 2026, a Brazilian pilot study in <a href="ibogaine-and-alcohol.html">alcohol use disorder</a> found most people said they drank less <a href="#ref-18">[18]</a>. The QT interval changed in more than half of those treated <a href="#ref-18">[18]</a>. Each study from these years is summed up in <a href="clinical-studies-summarized.html">Every Major Ibogaine Study, Summarized</a>.</p>
 
 <table>
 <tr><th>Claim</th><th>Evidence type</th><th>Species</th><th>Strength</th></tr>
@@ -445,7 +445,7 @@ ARTICLES = [
 
 <p>Chemists redesign ibogaine because of what it does to the heart and how long it lasts <a href="#ref-1">[1]</a>. In a Dutch hospital study of people with opioid dependence, the heart's QT interval passed 500 milliseconds in half the patients after one dose <a href="#ref-10">[10]</a>. That interval is the heart's electrical reset between beats. In more than four in ten, it was still long a day later <a href="#ref-10">[10]</a>. <strong>Every patient also lost their balance for a while and could not walk unaided</strong> <a href="#ref-10">[10]</a>.</p>
 
-<p>In the same patients, noribogaine levels stayed far lower than in trials that gave it directly <a href="#ref-11">[11]</a>. The QT rise and the unsteadiness tracked ibogaine levels instead <a href="#ref-11">[11]</a>. By the team's estimate, a dose more than ten times smaller would be needed to cut the QT risk in a meaningful way <a href="#ref-11">[11]</a>.</p>
+<p>In the same patients, <a href="noribogaine-pharmacokinetics.html">noribogaine</a> levels stayed far lower than in trials that gave it directly <a href="#ref-11">[11]</a>. The QT rise and the unsteadiness tracked ibogaine levels instead <a href="#ref-11">[11]</a>. By the team's estimate, a dose more than ten times smaller would be needed to cut the QT risk in a meaningful way <a href="#ref-11">[11]</a>.</p>
 
 <p>The visionary state is long too. A St Kitts treatment team reported that people who process ibogaine slowly had a very strong experience lasting up to 24 hours <a href="#ref-5">[5]</a>. Two people who cleared it very fast had ibogaine levels too low to measure. They reported no dream-like state at all <a href="#ref-5">[5]</a>.</p>
 
@@ -457,7 +457,7 @@ ARTICLES = [
 
 <h2 id="ibogaine-analogs-reduce-drug">Do ibogaine analogs reduce drug use without the long experience?</h2>
 
-<p>In people, the closest relative with trial data is noribogaine, and it lengthens the heart's QT interval <a href="#ref-6">[6]</a><a href="#ref-13">[13]</a>. In rodent studies, 18-MC and TBG both reduced drug use without ibogaine's main side effects <a href="#ref-1">[1]</a><a href="#ref-2">[2]</a>.</p>
+<p>In people, the closest relative with trial data is noribogaine, and it lengthens the heart's <a href="ibogaine-cardiac-risk.html">QT interval</a> <a href="#ref-6">[6]</a><a href="#ref-13">[13]</a>. In rodent studies, 18-MC and TBG both reduced drug use without ibogaine's main side effects <a href="#ref-1">[1]</a><a href="#ref-2">[2]</a>.</p>
 
 <p>Given alone to people coming off methadone, noribogaine lengthened the QT interval more at each higher dose <a href="#ref-6">[6]</a>. At the top dose, the largest average rise was about 42 milliseconds <a href="#ref-6">[6]</a>.</p>
 
@@ -467,7 +467,7 @@ ARTICLES = [
 
 <p>In mice, TBG did not cause the head twitch that researchers use as a stand-in for hallucinations <a href="#ref-1">[1]</a>. In cell tests, it blocked the hERG channel about a hundred times more weakly than ibogaine <a href="#ref-1">[1]</a>. In mice that binge on alcohol, one dose cut drinking and left their taste for sugar water intact <a href="#ref-1">[1]</a>.</p>
 
-<p>In rats, oxa-iboga compounds reduced morphine, heroin and fentanyl intake <a href="#ref-9">[9]</a>. In human heart cells grown in the lab, they did not show ibogaine's rhythm-disturbing effects <a href="#ref-9">[9]</a>.</p>
+<p>In rats, oxa-iboga compounds reduced morphine, heroin and <a href="ibogaine-and-fentanyl.html">fentanyl</a> intake <a href="#ref-9">[9]</a>. In human heart cells grown in the lab, they did not show ibogaine's rhythm-disturbing effects <a href="#ref-9">[9]</a>.</p>
 
 <table>
 <tr><th>Claim</th><th>Evidence type</th><th>Species</th><th>Strength</th></tr>
@@ -487,7 +487,7 @@ ARTICLES = [
 
 <p>Lab and animal studies show each analog keeping a different part of ibogaine's action. Ibogaine binds many brain targets at once <a href="#ref-16">[16]</a>. Picture it as a master key that turns many locks. Each analog is cut to fit one or two of them.</p>
 
-<p><strong>In lab studies, 18-MC's strongest action is blocking one nicotinic receptor</strong>, called alpha3beta4 <a href="#ref-17">[17]</a>.</p>
+<p><strong>In lab studies, 18-MC's strongest action is blocking one <a href="ibogaine-and-smoking.html">nicotinic receptor</a></strong>, called alpha3beta4 <a href="#ref-17">[17]</a>.</p>
 
 <p><strong>In cell and mouse studies, TBG works through a serotonin receptor</strong>, 5-HT2A, the one classic psychedelics use <a href="#ref-1">[1]</a>. In living mice, it added new dendritic spines, the small contact points between neurons <a href="#ref-1">[1]</a>.</p>
 
@@ -631,7 +631,7 @@ ARTICLES = [
 
 <p>An ibogaine trial program needs to answer five questions. Each one has a template in studies already published, and each has a clear passing answer <a href="#ref-1">[1]</a><a href="#ref-3">[3]</a><a href="#ref-4">[4]</a><a href="#ref-5">[5]</a>:</p>
 
-<p>- Does ibogaine beat a comparison group under random assignment? - Do the gains hold for a full year? - How well does a set protocol protect the heart? - Do the results carry over to people using fentanyl? - Which part of treatment does the work: ibogaine, noribogaine, the experience, or the care around the dose?</p>
+<p>- Does ibogaine beat a comparison group under random assignment? - Do the gains hold for a full year? - How well does a set protocol protect the heart? - Do the results carry over to people using fentanyl? - Which part of treatment does the work: ibogaine, <a href="noribogaine-pharmacokinetics.html">noribogaine</a>, the experience, or the care around the dose?</p>
 
 <p>The human data so far come mostly from open-label and observational studies <a href="#ref-6">[6]</a>. Several of them show opioid withdrawal falling within days of one treatment <a href="#ref-3">[3]</a><a href="#ref-7">[7]</a><a href="#ref-8">[8]</a>. <strong>Controlled trials are the step that turns that signal into a measured effect</strong> <a href="#ref-6">[6]</a><a href="#ref-9">[9]</a>.</p>
 
@@ -711,13 +711,13 @@ ARTICLES = [
 
 <p>A passing protocol checks the heart before dosing, fits the dose to how fast each person clears ibogaine, and watches the heart past the first day <a href="#ref-1">[1]</a><a href="#ref-4">[4]</a><a href="#ref-16">[16]</a><a href="#ref-23">[23]</a>. Follow-up then runs a full year <a href="#ref-3">[3]</a><a href="#ref-8">[8]</a>.</p>
 
-<p><strong>Ibogaine lengthens the QT interval</strong>, the heart's reset time between beats <a href="#ref-4">[4]</a>. In a Dutch hospital study, the QT rose by about 95 milliseconds at its peak. Half the patients passed 500 milliseconds <a href="#ref-4">[4]</a>. A long QT has been linked to sudden deaths after ibogaine <a href="#ref-13">[13]</a>.</p>
+<p><strong>Ibogaine lengthens the <a href="ibogaine-cardiac-risk.html">QT interval</a></strong>, the heart's reset time between beats <a href="#ref-4">[4]</a>. In a Dutch hospital study, the QT rose by about 95 milliseconds at its peak. Half the patients passed 500 milliseconds <a href="#ref-4">[4]</a>. A long QT has been linked to sudden deaths after ibogaine <a href="#ref-13">[13]</a>.</p>
 
 <p>One person enrolled in a New Zealand study died during treatment <a href="#ref-3">[3]</a>. The coroner found the death very likely linked to ibogaine. The most probable cause was a heart rhythm problem <a href="#ref-3">[3]</a>.</p>
 
 <p>The Dutch protocol offers a working template, with entry limits on the QT, a day or more of monitoring, and magnesium ready if the QT ran long <a href="#ref-4">[4]</a>. MISTIC gave magnesium by drip before and after the dose <a href="#ref-9">[9]</a>.</p>
 
-<p>The dose has to fit the person. CYP2D6 genotype drove a more than tenfold spread in how fast patients cleared ibogaine <a href="#ref-16">[16]</a>, and blocking CYP2D6 in healthy volunteers roughly doubled exposure to ibogaine plus noribogaine <a href="#ref-18">[18]</a>. Those authors suggest at least halving the dose for people who process it slowly <a href="#ref-18">[18]</a>. The UK trial excluded very fast and very slow CYP2D6 processors <a href="#ref-10">[10]</a>.</p>
+<p>The dose has to fit the person. <a href="cyp2d6-and-ibogaine-dosing.html">CYP2D6 genotype</a> drove a more than tenfold spread in how fast patients cleared ibogaine <a href="#ref-16">[16]</a>, and blocking CYP2D6 in healthy volunteers roughly doubled exposure to ibogaine plus noribogaine <a href="#ref-18">[18]</a>. Those authors suggest at least halving the dose for people who process it slowly <a href="#ref-18">[18]</a>. The UK trial excluded very fast and very slow CYP2D6 processors <a href="#ref-10">[10]</a>.</p>
 
 <p>The Dutch team estimate that cutting the QT effect substantially would take a dose more than ten times smaller <a href="#ref-16">[16]</a>. A dose-ranging trial can test whether such a dose still eases withdrawal.</p>
 
@@ -785,7 +785,7 @@ ARTICLES = [
 
 <h3>Why is ibogaine dangerous?</h3>
 
-<p>Ibogaine lengthens the heart's QT interval, and a long QT has been linked to sudden deaths <a href="#ref-13">[13]</a>. Heart checks before the dose and nonstop monitoring lower the risk without removing it <a href="#ref-1">[1]</a><a href="#ref-4">[4]</a><a href="#ref-23">[23]</a>. In one hospital study, half the patients passed a QT of 500 milliseconds after a single dose <a href="#ref-4">[4]</a>.</p>
+<p>Ibogaine lengthens the heart's QT interval, and a long QT has been linked to <a href="ibogaine-deaths-what-is-known.html">sudden death</a>s <a href="#ref-13">[13]</a>. Heart checks before the dose and nonstop monitoring lower the risk without removing it <a href="#ref-1">[1]</a><a href="#ref-4">[4]</a><a href="#ref-23">[23]</a>. In one hospital study, half the patients passed a QT of 500 milliseconds after a single dose <a href="#ref-4">[4]</a>.</p>
 
 <div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>""",
 "mdesc": "The five questions a credible ibogaine trial program must answer, from controlled comparisons to year-long follow-up, and the studies that offer a template."
@@ -874,7 +874,7 @@ ARTICLES.append({
 
 <p>Ibogaine works on a different plan. It binds to many brain targets at once, including opioid receptors and the pumps that recycle serotonin and dopamine <a href="#ref-8">[8]</a>. A 2019 research paper describes the way ibogaine reduces drug-seeking as unresolved <a href="#ref-8">[8]</a>.</p>
 
-<p><strong>The body turns ibogaine into a second compound, noribogaine</strong> <a href="#ref-12">[12]</a>. In lab tests on rat brain tissue, both blocked the mu-opioid receptor <a href="#ref-18">[18]</a>. Most ibogaine leaves the blood within a day <a href="#ref-5">[5]</a>. In opioid-dependent patients given noribogaine directly, its half-life was 24 to 30 hours <a href="#ref-19">[19]</a>. Half-life is the time the body takes to clear half of a dose. A separate article covers <a href="pharmacology-of-ibogaine.html">the pharmacology of ibogaine</a>.</p>
+<p><strong>The body turns ibogaine into a second compound, <a href="noribogaine-pharmacokinetics.html">noribogaine</a></strong> <a href="#ref-12">[12]</a>. In lab tests on rat brain tissue, both blocked the mu-opioid receptor <a href="#ref-18">[18]</a>. Most ibogaine leaves the blood within a day <a href="#ref-5">[5]</a>. In opioid-dependent patients given noribogaine directly, its half-life was 24 to 30 hours <a href="#ref-19">[19]</a>. Half-life is the time the body takes to clear half of a dose. A separate article covers <a href="pharmacology-of-ibogaine.html">the pharmacology of ibogaine</a>.</p>
 
 <h2 id="research-show-each-approach">What does the research show for each approach?</h2>
 
@@ -884,7 +884,7 @@ ARTICLES.append({
 
 <p><strong>Death rates are far lower during maintenance treatment.</strong> In a 2021 review of cohort studies, deaths from any cause ran at about half the rate seen outside treatment <a href="#ref-4">[4]</a>. Deaths from suicide, drug-related causes and heart disease were all lower during treatment <a href="#ref-4">[4]</a>. A 2017 review found people on methadone died at about a third of the rate they did out of treatment <a href="#ref-3">[3]</a>. On buprenorphine, the rate was under half <a href="#ref-3">[3]</a>. The lower death rate held across age, sex and region, and for people who inject drugs <a href="#ref-4">[4]</a>.</p>
 
-<p>Ibogaine's human evidence is observational. <strong>In three studies, opioid withdrawal eased within about three days</strong> of treatment <a href="#ref-5">[5]</a><a href="#ref-6">[6]</a><a href="#ref-7">[7]</a>. In Mexico, self-rated withdrawal fell from 31 points to 14 <a href="#ref-6">[6]</a>. In New Zealand, it fell from about 25 to about 14, in a group mostly coming off methadone <a href="#ref-7">[7]</a>. Higher scores mean worse withdrawal.</p>
+<p>Ibogaine's human evidence is observational. <strong>In three studies, <a href="ibogaine-opioid-withdrawal.html">opioid withdrawal</a> eased within about three days</strong> of treatment <a href="#ref-5">[5]</a><a href="#ref-6">[6]</a><a href="#ref-7">[7]</a>. In Mexico, self-rated withdrawal fell from 31 points to 14 <a href="#ref-6">[6]</a>. In New Zealand, it fell from about 25 to about 14, in a group mostly coming off methadone <a href="#ref-7">[7]</a>. Higher scores mean worse withdrawal.</p>
 
 <p>Changes in drug use followed. At one month, half the people treated in Mexico reported no opioid use in the past 30 days <a href="#ref-6">[6]</a>. In New Zealand, scores on a standard drug-use measure fell by more than 80 percent over twelve months <a href="#ref-7">[7]</a>.</p>
 
@@ -907,7 +907,7 @@ ARTICLES.append({
 
 <p>The two drugs share a pathway in the liver. <strong>Methadone inhibits CYP2D6</strong>, the enzyme that turns ibogaine into noribogaine <a href="#ref-12">[12]</a>. A 2015 review judges methadone likely to slow ibogaine's breakdown as a result <a href="#ref-12">[12]</a>.</p>
 
-<p>Think of CYP2D6 as a drain. On that picture, methadone would narrow the drain, so ibogaine would stay in the blood for longer. In a Dutch study, differences in CYP2D6 genes drove a more than tenfold spread in how fast patients cleared ibogaine <a href="#ref-20">[20]</a>. In healthy volunteers, blocking the enzyme about doubled the total amount of ibogaine and noribogaine in the blood <a href="#ref-21">[21]</a>.</p>
+<p>Think of CYP2D6 as a drain. On that picture, methadone would narrow the drain, so ibogaine would stay in the blood for longer. In a Dutch study, differences in CYP2D6 genes drove a <a href="cyp2d6-and-ibogaine-dosing.html">more than tenfold spread</a> in how fast patients cleared ibogaine <a href="#ref-20">[20]</a>. In healthy volunteers, blocking the enzyme about doubled the total amount of ibogaine and noribogaine in the blood <a href="#ref-21">[21]</a>.</p>
 
 <p>Methadone also lasts a long time in the body, so its withdrawal drags on <a href="#ref-7">[7]</a>. <strong>Timing of the dose follows withdrawal.</strong> In St Kitts, staff scored withdrawal about 12 hours after the last morphine, just before the dose <a href="#ref-5">[5]</a>. In New Zealand, the last opioid came 12 to 33 hours before treatment <a href="#ref-7">[7]</a>. A separate article covers <a href="withdrawal-interruption-mechanisms.html">how ibogaine interrupts opioid withdrawal</a>.</p>
 
@@ -987,7 +987,7 @@ ARTICLES.append({
 
 <h3>Is ibogaine dangerous?</h3>
 
-<p>Ibogaine prolongs the heart's QT interval, which has been linked to sudden deaths <a href="#ref-8">[8]</a>. In one hospital study, half the patients passed a QT of 500 milliseconds after a single dose <a href="#ref-11">[11]</a>. Case reports describe heart problems several days, and sometimes weeks, after a dose <a href="#ref-12">[12]</a>.</p>
+<p>Ibogaine <a href="ibogaine-cardiac-risk.html">prolongs the heart's QT interval</a>, which has been linked to sudden deaths <a href="#ref-8">[8]</a>. In one hospital study, half the patients passed a QT of 500 milliseconds after a single dose <a href="#ref-11">[11]</a>. Case reports describe heart problems several days, and sometimes weeks, after a dose <a href="#ref-12">[12]</a>.</p>
 
 <div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>"""
 })
@@ -1041,7 +1041,7 @@ ARTICLES.append({
 
 <p>Most medicines act like one key cut for one lock. Ibogaine behaves more like a ring of keys. A 2019 research paper lists the locks it fits and describes the route to its effect on drug-seeking as unresolved <a href="#ref-5">[5]</a>. The research brief on <a href="withdrawal-interruption-mechanisms.html">withdrawal interruption mechanisms</a> goes deeper into the candidate pathways. How the body handles ibogaine is much clearer.</p>
 
-<p><strong>The body turns ibogaine into a second compound, noribogaine.</strong> An enzyme in the gut wall and liver, called CYP2D6, does the conversion <a href="#ref-1">[1]</a>. Ibogaine itself leaves the blood quickly. Its half-life, the time the body takes to clear half of a dose, runs from about 1.6 to 6 hours <a href="#ref-1">[1]</a>.</p>
+<p><strong>The body turns ibogaine into a second compound, <a href="noribogaine-pharmacokinetics.html">noribogaine</a>.</strong> An enzyme in the gut wall and liver, called CYP2D6, does the conversion <a href="#ref-1">[1]</a>. Ibogaine itself leaves the blood quickly. Its half-life, the time the body takes to clear half of a dose, runs from about 1.6 to 6 hours <a href="#ref-1">[1]</a>.</p>
 
 <p>Not everyone processes it at the same speed. Between 5 and 10 percent of people of European descent lack the gene for CYP2D6 <a href="#ref-3">[3]</a>. In these slow processors, combined levels of ibogaine and noribogaine are projected to run about twice as high <a href="#ref-3">[3]</a>.</p>
 
@@ -1102,7 +1102,7 @@ ARTICLES.append({
 
 <h2 id="ibogaine-treatment-like">What is ibogaine treatment like?</h2>
 
-<p>Ibogaine treatment usually moves through two stages. A vivid, dream-like stage comes first, then a calm, thoughtful one <a href="#ref-1">[1]</a><a href="#ref-7">[7]</a>. The first begins between about half an hour and three hours after the dose <a href="#ref-1">[1]</a><a href="#ref-7">[7]</a>. It lasts about 4 to 8 hours <a href="#ref-1">[1]</a><a href="#ref-7">[7]</a>. The second lasts roughly 8 to 20 hours <a href="#ref-7">[7]</a>.</p>
+<p>Ibogaine treatment usually moves through two stages. A vivid, <a href="what-an-ibogaine-session-is-like.html">dream-like</a> stage comes first, then a calm, thoughtful one <a href="#ref-1">[1]</a><a href="#ref-7">[7]</a>. The first begins between about half an hour and three hours after the dose <a href="#ref-1">[1]</a><a href="#ref-7">[7]</a>. It lasts about 4 to 8 hours <a href="#ref-1">[1]</a><a href="#ref-7">[7]</a>. The second lasts roughly 8 to 20 hours <a href="#ref-7">[7]</a>.</p>
 
 <p>In the first stage, people see a stream of images. Many of them are memories of past events <a href="#ref-7">[7]</a>. In St Kitts, people treated for opioid or cocaine dependence often said it felt like a waking dream, or like watching a film <a href="#ref-1">[1]</a>. <strong>Childhood memories came up</strong> for about four in ten <a href="#ref-1">[1]</a>. More than half felt linked to a higher power, or to something larger than themselves <a href="#ref-1">[1]</a>.</p>
 
@@ -1150,7 +1150,7 @@ ARTICLES.append({
 
 <h3>Is ibogaine safe?</h3>
 
-<p>Ibogaine prolongs the heart's QT interval, which has been linked to sudden deaths <a href="#ref-5">[5]</a>. In one hospital study, half the patients passed a QT of 500 milliseconds after a single dose <a href="#ref-4">[4]</a>. Treatment requires screening and continuous heart monitoring, which lower the risk without removing it <a href="#ref-1">[1]</a><a href="#ref-4">[4]</a>; the <a href="../safety-protocols.html">safety protocols</a> page describes what screening involves.</p>
+<p>Ibogaine <a href="ibogaine-cardiac-risk.html">prolongs the heart's QT interval</a>, which has been linked to sudden deaths <a href="#ref-5">[5]</a>. In one hospital study, half the patients passed a QT of 500 milliseconds after a single dose <a href="#ref-4">[4]</a>. Treatment requires screening and continuous heart monitoring, which lower the risk without removing it <a href="#ref-1">[1]</a><a href="#ref-4">[4]</a>; the <a href="../safety-protocols.html">safety protocols</a> page describes what screening involves.</p>
 
 <div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>"""
 })
@@ -1200,7 +1200,7 @@ ARTICLES.append({
 
 <h2 id="ibogaine-binds-brain">What does ibogaine bind to in the brain?</h2>
 
-<p>Ibogaine attaches to an unusually wide range of targets. A 2019 review lists nicotinic acetylcholine receptors, NMDA receptors, kappa and mu opioid receptors, two serotonin receptor types, and the transporters that recycle dopamine and serotonin <a href="#ref-1">[1]</a>. It binds to all of them at micromolar concentrations <a href="#ref-1">[1]</a>.</p>
+<p>Ibogaine attaches to an unusually wide range of targets. A 2019 review lists <a href="ibogaine-receptors.html">nicotinic acetylcholine</a> receptors, NMDA receptors, kappa and mu opioid receptors, two serotonin receptor types, and the transporters that recycle dopamine and serotonin <a href="#ref-1">[1]</a>. It binds to all of them at micromolar concentrations <a href="#ref-1">[1]</a>.</p>
 
 <p>That breadth is part of why the compound has drawn attention for so long. A drug that touches many systems at once is a plausible candidate for an effect that spans several of them.</p>
 
@@ -1234,7 +1234,7 @@ ARTICLES.append({
 
 <h2 id="rat-study-behind-claim">The rat study behind the reset claim</h2>
 
-<p>Most reset marketing traces back to work on a growth factor called GDNF. The experiment is worth describing in full, because its scale rarely survives the retelling.</p>
+<p>Most reset marketing traces back to work on a growth factor called <a href="ibogaine-and-dopamine.html">GDNF</a>. The experiment is worth describing in full, because its scale rarely survives the retelling.</p>
 
 <p>Thirty-six male rats were divided into groups of six <a href="#ref-1">[1]</a>. Each received a single injection of ibogaine at one of two doses, or an inactive control. Tissue was examined three hours and twenty-four hours later <a href="#ref-1">[1]</a>.</p>
 
@@ -1262,7 +1262,7 @@ ARTICLES.append({
 
 <p>The newest material is also the most often misread. In the Stanford study of thirty veterans with traumatic brain injuries, participants received ibogaine with magnesium, and their disability, PTSD, depression and anxiety scores fell sharply within a month <a href="#ref-2">[2]</a>.</p>
 
-<p>A companion imaging analysis scanned the same group. One month after treatment, cortical thickness had increased in eleven brain regions, and a software estimate of brain age had fallen by roughly 1.3 years compared with baseline <a href="#ref-3">[3]</a>.</p>
+<p>A companion imaging analysis scanned the same group. One month after treatment, <a href="ibogaine-and-neuroplasticity.html">cortical thickness</a> had increased in eleven brain regions, and a software estimate of brain age had fallen by roughly 1.3 years compared with baseline <a href="#ref-3">[3]</a>.</p>
 
 <p>Read quickly, that sounds like a measured reset. Several things complicate it.</p>
 
@@ -1310,7 +1310,7 @@ ARTICLES.append({
 
 <h3>Is ibogaine safe?</h3>
 
-<p>Ibogaine prolongs the heart's QT interval. In one hospital study, the QT interval rose by an average of 95 milliseconds and half the patients passed 500 milliseconds after a single dose <a href="#ref-4">[4]</a>. Screening and continuous cardiac monitoring lower that risk without removing it; the <a href="../safety-protocols.html">safety protocols</a> page describes what they involve.</p>
+<p>Ibogaine <a href="ibogaine-cardiac-risk.html">prolongs the heart's QT interval</a>. In one hospital study, the QT interval rose by an average of 95 milliseconds and half the patients passed 500 milliseconds after a single dose <a href="#ref-4">[4]</a>. Screening and continuous cardiac monitoring lower that risk without removing it; the <a href="../safety-protocols.html">safety protocols</a> page describes what they involve.</p>
 
 <div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>"""
 })
@@ -1373,7 +1373,7 @@ ARTICLES.append({
 
 <p>The distinction matters for reading any provider's safety record. An absence of events in a monitored group is partly a measure of the monitoring. The same fourteen people, with the same intervals, unsupervised and without magnesium on hand, would not have faced the same odds.</p>
 
-<p>The same study recorded something else that is easy to overlook. All fourteen developed severe transient ataxia and were unable to walk unaided <a href="#ref-1">[1]</a>. Whatever else ibogaine is doing, a person under its effects cannot reliably stand, which shapes what supervision has to cover.</p>
+<p>The same study recorded something else that is easy to overlook. All fourteen developed <a href="ibogaine-side-effects.html">severe transient ataxia</a> and were unable to walk unaided <a href="#ref-1">[1]</a>. Whatever else ibogaine is doing, a person under its effects cannot reliably stand, which shapes what supervision has to cover.</p>
 
 <h2 id="why-heart">Why ibogaine affects the heart</h2>
 
@@ -1383,7 +1383,7 @@ ARTICLES.append({
 
 <p>That figure is close to what has been measured in people. In the Dutch cohort, peak ibogaine concentrations had a median of about 4.8 micromolar <a href="#ref-5">[5]</a>. The laboratory concentration that blocks the channel and the concentration a treatment dose produces are the same order of magnitude.</p>
 
-<p>The link between the lengthened interval and harm is not theoretical. QT prolongation after ibogaine has been associated with sudden deaths <a href="#ref-6">[6]</a>, and a review of case reports places ibogaine-ascribed deaths between about one and a half and seventy-six hours after intake in older cases, and twelve to twenty-four hours in more recent ones <a href="#ref-2">[2]</a>.</p>
+<p>The link between the lengthened interval and harm is not theoretical. QT prolongation after ibogaine has been associated with <a href="ibogaine-deaths-what-is-known.html">sudden death</a>s <a href="#ref-6">[6]</a>, and a review of case reports places ibogaine-ascribed deaths between about one and a half and seventy-six hours after intake in older cases, and twelve to twenty-four hours in more recent ones <a href="#ref-2">[2]</a>.</p>
 
 <h2 id="how-long-lasts">How long the effect lasts</h2>
 
@@ -1397,7 +1397,7 @@ ARTICLES.append({
 
 <h2 id="noribogaine-too">Noribogaine raises it too</h2>
 
-<p>The body converts ibogaine into noribogaine, and that compound carries its own cardiac effect.</p>
+<p>The body converts ibogaine into <a href="noribogaine-pharmacokinetics.html">noribogaine</a>, and that compound carries its own cardiac effect.</p>
 
 <p>Noribogaine was tested on its own in twenty-seven patients switched from methadone to morphine, in a randomised, double-blind, placebo-controlled study of three single doses <a href="#ref-4">[4]</a>. The QTc rise tracked the concentration, with mean effects of roughly 16, 28 and 42 milliseconds at 60, 120 and 180 milligrams <a href="#ref-4">[4]</a>.</p>
 
@@ -1435,7 +1435,7 @@ ARTICLES.append({
 
 <p>People were excluded for a baseline QTc above 450 milliseconds in men or 470 in women, for potassium outside the 3.5 to 5.0 range, for severe liver or kidney dysfunction, and for taking drugs that prolong the QT interval or affect CYP2D6 <a href="#ref-1">[1]</a>. During treatment, magnesium was given if the interval passed 500 milliseconds <a href="#ref-1">[1]</a>.</p>
 
-<p>Each of those has a reason behind it. A baseline already near the threshold leaves no room. Low potassium lengthens the interval by itself. Impaired liver or kidney function changes clearance. A second QT-prolonging drug adds to the same effect.</p>
+<p>Each of those has a reason behind it. A baseline already near the threshold leaves no room. Low potassium lengthens the interval by itself. Impaired liver or kidney function changes clearance. A second <a href="ibogaine-drug-interactions.html">QT-prolonging</a> drug adds to the same effect.</p>
 
 <p><strong>Screening lowers the risk. It does not remove it.</strong> Half the patients in that carefully screened, hospital-monitored cohort still passed 500 milliseconds <a href="#ref-1">[1]</a>. Screening selects people whose hearts start from a safer place; it does not stop ibogaine from blocking the channel.</p>
 
@@ -1529,7 +1529,7 @@ ARTICLES.append({
 
 <p>The heart is the first filter, because ibogaine's best-documented effect is cardiac.</p>
 
-<p>The Dutch team excluded anyone whose baseline corrected QT interval was above 450 milliseconds in men or 470 milliseconds in women <a href="#ref-1">[1]</a>. Those thresholds exist because ibogaine adds to whatever the interval already is.</p>
+<p>The Dutch team excluded anyone whose baseline corrected <a href="ibogaine-cardiac-risk.html">QT interval</a> was above 450 milliseconds in men or 470 milliseconds in women <a href="#ref-1">[1]</a>. Those thresholds exist because ibogaine adds to whatever the interval already is.</p>
 
 <p>The arithmetic is unforgiving. In that cohort, the maximum prolongation averaged 95 milliseconds <a href="#ref-1">[1]</a>. Someone starting at 450 and gaining an average increase lands near 545, well past the point where the risk of a dangerous rhythm climbs. Someone starting at 400 lands near 495.</p>
 
@@ -1565,7 +1565,7 @@ ARTICLES.append({
 
 <p>Severe liver or kidney dysfunction was an exclusion in the Dutch study <a href="#ref-1">[1]</a>, for a reason that follows from the metabolism.</p>
 
-<p>The liver converts ibogaine to noribogaine and the kidneys handle elimination. Impairment at either step means the drug and its metabolite stay longer at higher levels, which extends the cardiac exposure rather than changing its nature.</p>
+<p>The liver converts ibogaine to <a href="noribogaine-pharmacokinetics.html">noribogaine</a> and the kidneys handle elimination. Impairment at either step means the drug and its metabolite stay longer at higher levels, which extends the cardiac exposure rather than changing its nature.</p>
 
 <p>Hepatitis C is common in people with a history of injecting drug use, and liver function in that group cannot be assumed from appearance or age. It is a bloodwork question rather than an interview question.</p>
 
@@ -1613,7 +1613,7 @@ ARTICLES.append({
 
 <p>Several questions have no clean answer, and a provider who gives one is overstating what is known.</p>
 
-<p>CYP2D6 genotype is the clearest example. Clearance varied more than tenfold across genotype groups in one cohort <a href="#ref-3">[3]</a>, and the enzyme is non-functional in roughly five to ten per cent of people of European descent <a href="#ref-2">[2]</a>. Whether a poor metaboliser should be excluded outright, dosed differently, or monitored for longer has not been settled.</p>
+<p><a href="cyp2d6-and-ibogaine-dosing.html">CYP2D6 genotype</a> is the clearest example. Clearance varied more than tenfold across genotype groups in one cohort <a href="#ref-3">[3]</a>, and the enzyme is non-functional in roughly five to ten per cent of people of European descent <a href="#ref-2">[2]</a>. Whether a poor metaboliser should be excluded outright, dosed differently, or monitored for longer has not been settled.</p>
 
 <p>Weight-based dosing is a second. Both main cohorts used milligrams per kilogram <a href="#ref-1">[1]</a><a href="#ref-4">[4]</a>, but body weight does not predict clearance nearly as well as genotype does <a href="#ref-3">[3]</a>.</p>
 
@@ -1700,7 +1700,7 @@ ARTICLES.append({
 
 <p>Thirty male US Special Operations Forces veterans were assessed, with a mean age of about 45 <a href="#ref-1">[1]</a>. All had a history of traumatic brain injury, with a mean of 38.6 lifetime head injuries recorded, and a history of repeated blast and combat exposure across an average of 5.5 deployments <a href="#ref-1">[1]</a>.</p>
 
-<p>At baseline, 23 met criteria for PTSD, 15 for major depression, 14 for an anxiety disorder and 15 for alcohol use disorder <a href="#ref-1">[1]</a>. Nineteen had experienced suicidal thinking and seven had made an attempt <a href="#ref-1">[1]</a>.</p>
+<p>At baseline, 23 met criteria for PTSD, 15 for major depression, 14 for an anxiety disorder and 15 for <a href="ibogaine-and-alcohol.html">alcohol use disorder</a> <a href="#ref-1">[1]</a>. Nineteen had experienced suicidal thinking and seven had made an attempt <a href="#ref-1">[1]</a>.</p>
 
 <p><strong>This is a specific and severely affected group.</strong> A result in combat veterans with dozens of head injuries does not automatically describe what would happen in someone whose PTSD came from a car accident, an assault or childhood trauma. The population is part of the finding.</p>
 
@@ -1728,7 +1728,7 @@ ARTICLES.append({
 
 <p><strong>The result belongs to that whole package, not to a molecule.</strong> Several of those components have their own evidence in trauma care, and the study was not designed to separate them. Anyone comparing a clinic that offers the drug alone with this study is comparing two different things.</p>
 
-<p>Screening was also extensive, and included stopping CYP2D6 inhibitors, serotonergic drugs, calcium channel blockers, beta blockers, benzodiazepines, stimulants, corticosteroids and all psychiatric medications before treatment <a href="#ref-1">[1]</a>. Coming off psychiatric medication is itself a change with effects of its own.</p>
+<p>Screening was also extensive, and included stopping <a href="ibogaine-drug-interactions.html">CYP2D6 inhibitor</a>s, serotonergic drugs, calcium channel blockers, beta blockers, benzodiazepines, stimulants, corticosteroids and all psychiatric medications before treatment <a href="#ref-1">[1]</a>. Coming off psychiatric medication is itself a change with effects of its own.</p>
 
 @@CTA@@
 
@@ -1738,7 +1738,7 @@ ARTICLES.append({
 
 <p>Four themes emerged. Re-encountering and re-appraising traumatic memories, often accompanied by love, forgiveness and acceptance. An observer-like or dissolved sense of self, described in terms of mystical connection. Emotional resolution arriving in surges. And bodily sensations that participants interpreted as the brain healing <a href="#ref-2">[2]</a>.</p>
 
-<p>Participants described dream-like states and a sense of being in dialogue with the experience as a guide or teacher <a href="#ref-2">[2]</a>. The sessions were self-guided, with participants lying on mats wearing eye shades <a href="#ref-2">[2]</a>.</p>
+<p>Participants described <a href="what-an-ibogaine-session-is-like.html">dream-like</a> states and a sense of being in dialogue with the experience as a guide or teacher <a href="#ref-2">[2]</a>. The sessions were self-guided, with participants lying on mats wearing eye shades <a href="#ref-2">[2]</a>.</p>
 
 <p>A third analysis connects the experience to the outcome. Participants who reported a more intense mystical experience showed larger reductions in PTSD symptoms, both immediately and at one month <a href="#ref-3">[3]</a>. That is an association in an observational study rather than a demonstrated cause <a href="#ref-3">[3]</a>.</p>
 
@@ -1810,7 +1810,7 @@ ARTICLES.append({
 
 <h3>Is ibogaine safe for someone with PTSD?</h3>
 
-<p>The cardiac risk is unchanged by the reason for seeking treatment. Ibogaine prolongs the QT interval, and half the patients in one hospital cohort passed 500 milliseconds after a single dose <a href="#ref-5">[5]</a>. The Stanford participants were screened for cardiovascular, liver, kidney, psychotic and neurological history before treatment <a href="#ref-1">[1]</a>.</p>
+<p>The cardiac risk is unchanged by the reason for seeking treatment. Ibogaine prolongs the <a href="ibogaine-cardiac-risk.html">QT interval</a>, and half the patients in one hospital cohort passed 500 milliseconds after a single dose <a href="#ref-5">[5]</a>. The Stanford participants were screened for cardiovascular, liver, kidney, psychotic and neurological history before treatment <a href="#ref-1">[1]</a>.</p>
 
 <div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>"""
 })
@@ -1857,7 +1857,7 @@ ARTICLES.append({
 
 <p>Assessments took place two to three days before treatment, four to five days after, and one month after <a href="#ref-1">[1]</a>. Of the thirty participants, fifteen met criteria for major depression at baseline <a href="#ref-1">[1]</a>.</p>
 
-<p>The participants were male US Special Operations Forces veterans with a history of repeated traumatic brain injury, averaging 38.6 lifetime head injuries <a href="#ref-1">[1]</a>. Depression in that group frequently accompanies the head injuries and the PTSD rather than standing alone.</p>
+<p>The participants were male US Special Operations Forces veterans with a history of repeated <a href="ibogaine-and-brain-injury.html">traumatic brain injury</a>, averaging 38.6 lifetime head injuries <a href="#ref-1">[1]</a>. Depression in that group frequently accompanies the head injuries and the PTSD rather than standing alone.</p>
 
 <h2 id="size-of-change">The size of the change</h2>
 
@@ -1931,7 +1931,7 @@ ARTICLES.append({
 
 <p>The first is blinding. Ibogaine produces effects impossible to mistake for an inactive pill, including ataxia severe enough that patients cannot walk unaided <a href="#ref-4">[4]</a>. Both participant and assessor know what was given, which is why an active comparator is usually proposed.</p>
 
-<p>The second is cardiac risk. A trial must justify exposing participants to a drug that lengthens the QT interval by an average of 95 milliseconds, with half passing 500 milliseconds in one cohort <a href="#ref-4">[4]</a>. For depression, where effective treatments already exist, that justification is harder than for a condition with none.</p>
+<p>The second is cardiac risk. A trial must justify exposing participants to a drug that lengthens the <a href="ibogaine-cardiac-risk.html">QT interval</a> by an average of 95 milliseconds, with half passing 500 milliseconds in one cohort <a href="#ref-4">[4]</a>. For depression, where effective treatments already exist, that justification is harder than for a condition with none.</p>
 
 <p>The third is the package problem. In the Stanford protocol the dose came with magnesium, therapist coaching before and after, group ceremonial activities, bodywork and structured integration <a href="#ref-1">[1]</a>. A trial of ibogaine alone would test something different from what produced these results.</p>
 
@@ -2038,7 +2038,7 @@ ARTICLES.append({
 
 <p>The most direct study is a 2026 open-label pilot in nine adults with moderate to severe alcohol use disorder <a href="#ref-1">[1]</a>.</p>
 
-<p>Its primary purpose was safety rather than effect. The outcomes it was built to measure were the corrected QT interval, vital signs, laboratory results, adverse effects and psychiatric assessment, with alcohol and substance use recorded as secondary <a href="#ref-1">[1]</a>.</p>
+<p>Its primary purpose was safety rather than effect. The outcomes it was built to measure were the corrected <a href="ibogaine-cardiac-risk.html">QT interval</a>, vital signs, laboratory results, adverse effects and psychiatric assessment, with alcohol and substance use recorded as secondary <a href="#ref-1">[1]</a>.</p>
 
 <p>The design reflects that caution. The first three volunteers received ascending doses from 20 to 320 milligrams, and the following six received a single 400 milligram dose <a href="#ref-1">[1]</a>. Participants were hospitalised for 24 to 48 hours before dosing with continuous monitoring <a href="#ref-1">[1]</a>.</p>
 
@@ -2090,7 +2090,7 @@ ARTICLES.append({
 
 <p>The imbalance has a reason behind it, and it is informative.</p>
 
-<p>Ibogaine's most reliably reported human effect is the rapid reduction of opioid withdrawal, which is dramatic, happens within hours and is measurable with established scales. That makes it both easier to study and more obviously valuable, since opioid withdrawal is a specific barrier people cannot get past.</p>
+<p>Ibogaine's most reliably reported human effect is the rapid reduction of <a href="ibogaine-opioid-withdrawal.html">opioid withdrawal</a>, which is dramatic, happens within hours and is measurable with established scales. That makes it both easier to study and more obviously valuable, since opioid withdrawal is a specific barrier people cannot get past.</p>
 
 <p>Alcohol use disorder has no equivalent single barrier. Its treatment is a longer process, and the outcomes that matter are measured in months of drinking behaviour rather than in hours of symptom relief.</p>
 
@@ -2249,11 +2249,11 @@ ARTICLES.append({
 
 <p>The physical side is less often described and is the part a person is least prepared for.</p>
 
-<p>In the Dutch study, all fourteen patients developed severe transient ataxia and were unable to walk unaided <a href="#ref-2">[2]</a>. Loss of coordination is not an occasional side effect but something that happened to everyone in that cohort.</p>
+<p>In the Dutch study, all fourteen patients developed <a href="ibogaine-side-effects.html">severe transient ataxia</a> and were unable to walk unaided <a href="#ref-2">[2]</a>. Loss of coordination is not an occasional side effect but something that happened to everyone in that cohort.</p>
 
-<p>The follow-up analysis found that ataxia tracked ibogaine concentration rather than noribogaine <a href="#ref-5">[5]</a>, which means it rises and falls with the parent drug.</p>
+<p>The follow-up analysis found that ataxia tracked ibogaine concentration rather than <a href="noribogaine-pharmacokinetics.html">noribogaine</a> <a href="#ref-5">[5]</a>, which means it rises and falls with the parent drug.</p>
 
-<p>Nausea and vomiting are common, and drowsiness, nausea and anxiety were among the frequently reported effects in a separate pilot. Vomiting carries its own significance here, since it can lower potassium, and potassium outside the normal range lengthens the QT interval independently <a href="#ref-2">[2]</a>.</p>
+<p>Nausea and vomiting are common, and drowsiness, nausea and anxiety were among the frequently reported effects in a separate pilot. Vomiting carries its own significance here, since it can lower potassium, and potassium outside the normal range lengthens the <a href="ibogaine-cardiac-risk.html">QT interval</a> independently <a href="#ref-2">[2]</a>.</p>
 
 <p>Throughout, continuous cardiac monitoring is running. In the Stanford protocol this ran for twelve to sixteen hours with staff certified in advanced cardiac life support present at a ratio of at least one per two patients <a href="#ref-4">[4]</a>.</p>
 
@@ -2287,7 +2287,7 @@ ARTICLES.append({
 
 <p>Someone on opioid maintenance is usually switched to a short-acting opioid beforehand. Both the Dutch study and the 191-person St Kitts series moved participants to oral morphine before dosing <a href="#ref-2">[2]</a>, because methadone inhibits the enzyme that clears ibogaine and because its long action complicates the timing of withdrawal.</p>
 
-<p>Medications are stopped. In the Stanford protocol that list covered CYP2D6 inhibitors, serotonergic drugs, calcium channel blockers, beta blockers, benzodiazepines, stimulants, corticosteroids and all psychiatric medications <a href="#ref-4">[4]</a>. Several of those cannot be stopped abruptly without medical supervision, which is one reason preparation is not a formality.</p>
+<p>Medications are stopped. In the Stanford protocol that list covered <a href="ibogaine-drug-interactions.html">CYP2D6 inhibitor</a>s, serotonergic drugs, calcium channel blockers, beta blockers, benzodiazepines, stimulants, corticosteroids and all psychiatric medications <a href="#ref-4">[4]</a>. Several of those cannot be stopped abruptly without medical supervision, which is one reason preparation is not a formality.</p>
 
 <p>Baseline measurements are taken. An EKG establishes the starting QT interval, and bloodwork checks potassium, magnesium, liver and kidney function, because each changes what the drug will do.</p>
 
@@ -2410,13 +2410,13 @@ ARTICLES.append({
 
 <p>Noribogaine's own half-life has been measured at 28 to 49 hours in healthy volunteers and 24 to 30 hours in people dependent on opioids. So the metabolite is still circulating at a point when the parent compound has nearly gone.</p>
 
-<p>That difference is the basis of the hypothesis that noribogaine carries the longer effects <a href="#ref-1">[1]</a>. The rodent data complicates it: no appreciable noribogaine was found in brain tissue at nineteen hours, and serum levels at twenty-four hours were around five per cent of peak <a href="#ref-1">[1]</a>.</p>
+<p>That difference is the basis of the hypothesis that <a href="noribogaine-pharmacokinetics.html">noribogaine</a> carries the longer effects <a href="#ref-1">[1]</a>. The rodent data complicates it: no appreciable noribogaine was found in brain tissue at nineteen hours, and serum levels at twenty-four hours were around five per cent of peak <a href="#ref-1">[1]</a>.</p>
 
 <h2 id="heart-effect">How long the heart effect lasts</h2>
 
 <p>This is the timescale that governs medical supervision, and it outlasts the drug.</p>
 
-<p>QT prolongation after ibogaine typically lasts longer than twenty-four hours, and in some reported cases has persisted for more than a week <a href="#ref-2">[2]</a>.</p>
+<p><a href="ibogaine-cardiac-risk.html">QT prolongation</a> after ibogaine typically lasts longer than twenty-four hours, and in some reported cases has persisted for more than a week <a href="#ref-2">[2]</a>.</p>
 
 <p>The Dutch hospital data shows the same pattern in a monitored group. Six of fourteen patients still had a QT interval above 450 milliseconds beyond twenty-four hours <a href="#ref-7">[7]</a>.</p>
 
@@ -2430,7 +2430,7 @@ ARTICLES.append({
 
 <p>Insomnia often continues for about 72 hours afterwards and responds to sleep medication <a href="#ref-6">[6]</a>.</p>
 
-<p>Loss of coordination tracks the drug itself rather than the subjective experience. In the Dutch cohort, ataxia correlated with ibogaine concentration, and all fourteen patients were unable to walk unaided <a href="#ref-7">[7]</a>.</p>
+<p>Loss of coordination tracks the drug itself rather than the subjective experience. In the Dutch cohort, ataxia correlated with ibogaine concentration, and all fourteen patients were <a href="ibogaine-side-effects.html">unable to walk unaided</a> <a href="#ref-7">[7]</a>.</p>
 
 @@CTA@@
 
@@ -2500,7 +2500,7 @@ ARTICLES.append({
 
 <p>Self-report shapes them too. Abstinence in the Brazilian review was self-reported and gathered retrospectively <a href="#ref-5">[5]</a>.</p>
 
-<p>And in every one of these studies, ibogaine came with something else: psychotherapy, aftercare, or an intensive programme. A year of reduced use after a package is not evidence about a molecule.</p>
+<p>And in every one of these studies, ibogaine came with something else: psychotherapy, <a href="after-ibogaine-the-first-weeks.html">aftercare</a>, or an intensive programme. A year of reduced use after a package is not evidence about a molecule.</p>
 
 <p>Relapse is the other side of the same question, and the follow-up studies describe it less clearly than they describe improvement. The Stanford paper notes that several participants had a recurrence of notable symptoms between assessment points, which means the smooth line implied by two data points was not everyone's experience. In the New Zealand cohort, twelve of fourteen reduced or stopped use <a href="#ref-3">[3]</a>, which leaves two who did not.</p>
 
@@ -2603,7 +2603,7 @@ ARTICLES.append({
 
 <p>New Zealand is the most documented example of the second pattern, and it is more interesting than either prohibition or absence.</p>
 
-<p>Medsafe's Medicines Classification Committee considered ibogaine at its meeting in November 2009 and agreed with the recommendation that ibogaine and its metabolite noribogaine be classified as prescription medicines <a href="#ref-2">[2]</a>. Part of the reasoning was to limit self-treatment and recreational use <a href="#ref-2">[2]</a>.</p>
+<p>Medsafe's Medicines Classification Committee considered ibogaine at its meeting in November 2009 and agreed with the recommendation that ibogaine and its metabolite <a href="noribogaine-pharmacokinetics.html">noribogaine</a> be classified as prescription medicines <a href="#ref-2">[2]</a>. Part of the reasoning was to limit self-treatment and recreational use <a href="#ref-2">[2]</a>.</p>
 
 <p>Prescription classification is not approval. No ibogaine product has been approved for marketing there, so it remains an unapproved medicine that a doctor may nonetheless obtain and administer for a patient under their care, using the exemptions the Medicines Act provides <a href="#ref-3">[3]</a>.</p>
 
@@ -2667,11 +2667,11 @@ ARTICLES.append({
 
 <p>Most people considering ibogaine live where it is prohibited or where no approved product exists, so travel is usually part of the question.</p>
 
-<p>Several points follow, and they are practical rather than legal advice. Carrying ibogaine across a border is an offence in prohibited jurisdictions regardless of where it was obtained lawfully. Treatment abroad removes the aftercare question from the country where a person lives, and the published durability findings come from people who had arrangements afterwards.</p>
+<p>Several points follow, and they are practical rather than legal advice. Carrying ibogaine across a border is an offence in prohibited jurisdictions regardless of where it was obtained lawfully. Treatment abroad removes the <a href="after-ibogaine-the-first-weeks.html">aftercare</a> question from the country where a person lives, and the published durability findings come from people who had arrangements afterwards.</p>
 
 <p>Medical cover is the point most often overlooked. Travel insurance generally excludes treatment sought abroad for a condition, and may exclude complications arising from it.</p>
 
-<p>There is also the matter of the journey home. The QT interval can remain prolonged after the drug has cleared <a href="#ref-6">[6]</a>, which makes the timing of a flight a medical question rather than a booking preference.</p>
+<p>There is also the matter of the journey home. The <a href="ibogaine-cardiac-risk.html">QT interval</a> can remain prolonged after the drug has cleared <a href="#ref-6">[6]</a>, which makes the timing of a flight a medical question rather than a booking preference.</p>
 
 <h2 id="status-changes">Status changes, and this page will age</h2>
 
@@ -2796,7 +2796,7 @@ ARTICLES.append({
 
 <p>That is autobiographical review rather than novel visionary content, and the second phase is explicitly described as evaluative and neutral in tone <a href="#ref-1">[1]</a>.</p>
 
-<p>There is also the physical dimension. All fourteen patients in the Dutch study developed severe transient ataxia and could not walk unaided <a href="#ref-2">[2]</a>. Nausea and vomiting are common. The experience is physically incapacitating in a way the shorter compounds generally are not.</p>
+<p>There is also the physical dimension. All fourteen patients in the Dutch study developed <a href="ibogaine-side-effects.html">severe transient ataxia</a> and could not walk unaided <a href="#ref-2">[2]</a>. Nausea and vomiting are common. The experience is physically incapacitating in a way the shorter compounds generally are not.</p>
 
 @@CTA@@
 
@@ -2804,11 +2804,11 @@ ARTICLES.append({
 
 <p>Classic psychedelics such as psilocybin act primarily through serotonin receptor agonism, which gives them a shared pharmacological identity. Ketamine works through a different system again.</p>
 
-<p>Ibogaine does not fit either pattern. It binds at micromolar concentrations to nicotinic acetylcholine receptors, NMDA receptors, kappa and mu opioid receptors, two serotonin receptor types, and the dopamine and serotonin transporters <a href="#ref-3">[3]</a>.</p>
+<p>Ibogaine does not fit either pattern. It binds at micromolar concentrations to <a href="ibogaine-receptors.html">nicotinic acetylcholine</a> receptors, NMDA receptors, kappa and mu opioid receptors, two serotonin receptor types, and the dopamine and serotonin transporters <a href="#ref-3">[3]</a>.</p>
 
 <p>A review of its cardiac pharmacology calls it a dirty drug, meaning one that acts at many targets rather than selectively <a href="#ref-7">[7]</a>. That breadth is why its mechanism remains unresolved after decades of work <a href="#ref-3">[3]</a>.</p>
 
-<p>The body also converts it into a long-lived metabolite, noribogaine, which has its own activity and its own cardiac effect <a href="#ref-3">[3]</a>. The other compounds in the comparison do not present that two-stage pattern in the same way.</p>
+<p>The body also converts it into a long-lived metabolite, <a href="noribogaine-pharmacokinetics.html">noribogaine</a>, which has its own activity and its own cardiac effect <a href="#ref-3">[3]</a>. The other compounds in the comparison do not present that two-stage pattern in the same way.</p>
 
 <h2 id="evidence-gap">The evidence is at a different stage</h2>
 
@@ -2848,7 +2848,7 @@ ARTICLES.append({
 
 <p>For psilocybin in trial settings, supervision is largely psychological, with trained personnel present throughout a session of several hours. For esketamine, it is medical and brief: a certified setting and a two-hour observation with blood pressure checks <a href="#ref-6">[6]</a>.</p>
 
-<p>For ibogaine, it is medical, continuous and long. The protocols that have been published involve baseline EKG and bloodwork, continuous cardiac monitoring through the session, staff trained in advanced cardiac life support, and monitoring extending beyond twenty-four hours because the QT interval can remain prolonged <a href="#ref-2">[2]</a>.</p>
+<p>For ibogaine, it is medical, continuous and long. The protocols that have been published involve baseline EKG and bloodwork, continuous cardiac monitoring through the session, staff trained in advanced cardiac life support, and monitoring extending beyond twenty-four hours because the <a href="ibogaine-cardiac-risk.html">QT interval</a> can remain prolonged <a href="#ref-2">[2]</a>.</p>
 
 <p>A person comparing providers across these compounds should expect the requirements to differ, and should treat an ibogaine provider offering the lighter supervision appropriate to a shorter compound as having misunderstood the drug.</p>
 
@@ -2947,9 +2947,9 @@ ARTICLES.append({
 
 <p>Chemically, ibogaine belongs to a family called the iboga alkaloids, built on an indole core fused to an isoquinuclidine ring system. The structure matters less than one of its consequences: the molecule is lipophilic, meaning it dissolves readily in fat rather than water. Pure ibogaine is insoluble in water but dissolves in alcohol, ether and chloroform, a property noted in the original isolation report <a href="#ref-2">[2]</a>. In practice the compound is usually handled as a hydrochloride salt, which dissolves more readily and allows a dose to be given as a capsule.</p>
 
-<p>Once in the body, ibogaine is converted by liver enzymes into a second compound, noribogaine, which stays in circulation far longer than ibogaine itself. That means a single dose produces two distinct exposures: a short, intense one from ibogaine and a long, low one from its metabolite. A good deal of the argument about how ibogaine works turns on which of those two is responsible for which effect, and that question is not settled <a href="#ref-1">[1]</a>.</p>
+<p>Once in the body, ibogaine is converted by liver enzymes into a second compound, <a href="noribogaine-pharmacokinetics.html">noribogaine</a>, which stays in circulation far longer than ibogaine itself. That means a single dose produces two distinct exposures: a short, intense one from ibogaine and a long, low one from its metabolite. A good deal of the argument about how ibogaine works turns on which of those two is responsible for which effect, and that question is not settled <a href="#ref-1">[1]</a>.</p>
 
-<p>Ibogaine also binds to an unusually wide range of targets in the nervous system. A 2019 review in <em>Frontiers in Pharmacology</em> lists nicotinic acetylcholine receptors, NMDA receptors, kappa and mu opioid receptors, two serotonin receptor subtypes, and the dopamine and serotonin transporters, all at micromolar concentrations <a href="#ref-1">[1]</a>. Binding to a receptor, though, only shows that the molecule attaches to it. It does not establish that the attachment causes any particular effect, and the same review states plainly that the mechanism behind ibogaine's effect on drug-seeking behaviour remains unresolved <a href="#ref-1">[1]</a>.</p>
+<p>Ibogaine also binds to an unusually wide range of targets in the nervous system. A 2019 review in <em>Frontiers in Pharmacology</em> lists <a href="ibogaine-receptors.html">nicotinic acetylcholine</a> receptors, NMDA receptors, kappa and mu opioid receptors, two serotonin receptor subtypes, and the dopamine and serotonin transporters, all at micromolar concentrations <a href="#ref-1">[1]</a>. Binding to a receptor, though, only shows that the molecule attaches to it. It does not establish that the attachment causes any particular effect, and the same review states plainly that the mechanism behind ibogaine's effect on drug-seeking behaviour remains unresolved <a href="#ref-1">[1]</a>.</p>
 
 <h2 id="where-it-comes-from">Where ibogaine comes from</h2>
 
@@ -2969,7 +2969,7 @@ ARTICLES.append({
 
 <p>The most studied application is interruption of opioid withdrawal. In a 191-person inpatient case series conducted at a facility in St Kitts, physician-rated withdrawal scores fell significantly by 36 hours after a single oral dose of 8 to 12 milligrams per kilogram, and craving scores were lower both at discharge and at one month <a href="#ref-9">[9]</a>. That study had no control group, and its authors present it as a safety and feasibility report rather than a demonstration of efficacy.</p>
 
-<p>Beyond opioids, ibogaine has been examined in alcohol use disorder, in post-traumatic stress disorder and depression among veterans with traumatic brain injury, and in polysubstance dependence. The pattern across those areas is consistent: observational data reporting large improvements, and an absence of the controlled comparisons that would establish whether the improvement is attributable to the drug <a href="#ref-5">[5]</a>.</p>
+<p>Beyond opioids, ibogaine has been examined in alcohol use disorder, in post-traumatic stress disorder and depression among veterans with <a href="ibogaine-and-brain-injury.html">traumatic brain injury</a>, and in polysubstance dependence. The pattern across those areas is consistent: observational data reporting large improvements, and an absence of the controlled comparisons that would establish whether the improvement is attributable to the drug <a href="#ref-5">[5]</a>.</p>
 
 <p>It is worth separating two different uses that are often discussed together. One is detoxification, where the aim is to get a person through acute withdrawal. The other is a longer-term reduction in craving and substance use. The evidence for the first is stronger than for the second, because the first is measurable within days and the second requires follow-up over months with a comparison group.</p>
 
@@ -2979,7 +2979,7 @@ ARTICLES.append({
 
 <p>Subjectively, a full dose produces a long sequence rather than a single state. Case series describe visualisations beginning roughly 30 to 45 minutes after ingestion, a dream-like phase of several hours in which past events are often recalled vividly, then a quieter reflective period, followed by a day or more of insomnia and fatigue <a href="#ref-9">[9]</a>. Physical effects reported commonly include nausea, vomiting and unsteady walking, the last of which reflects a temporary effect on the cerebellum.</p>
 
-<p>The effect that dictates how treatment is run is cardiac. Ibogaine blocks a potassium channel in heart muscle known as hERG, which lengthens the QT interval on an electrocardiogram <a href="#ref-7">[7]</a>. A prolonged QT interval raises the probability of a particular form of dangerous arrhythmia. The degree of lengthening varies considerably between individuals, partly because the liver enzyme that clears ibogaine differs in activity from person to person, which means the same dose per kilogram does not produce the same blood level in everyone.</p>
+<p>The effect that dictates how treatment is run is cardiac. Ibogaine blocks a potassium channel in heart muscle known as hERG, which lengthens the <a href="ibogaine-cardiac-risk.html">QT interval</a> on an electrocardiogram <a href="#ref-7">[7]</a>. A prolonged QT interval raises the probability of a particular form of dangerous arrhythmia. The degree of lengthening varies considerably between individuals, partly because the liver enzyme that clears ibogaine differs in activity from person to person, which means the same dose per kilogram does not produce the same blood level in everyone.</p>
 
 <p>This is the reason that medical screening before dosing, an electrocardiogram, blood tests and continuous monitoring during the session are described as requirements rather than refinements. Screening reduces risk by excluding people with existing cardiac or electrolyte problems, and monitoring allows an arrhythmia to be detected and treated. Neither removes the underlying effect on the heart.</p>
 
@@ -3060,7 +3060,7 @@ ARTICLES.append({
 
 <p>The design was prospective, observational, open label and single arm, with no control group, no blinding and no power calculation <a href="#ref-1">[1]</a>. Participants arranged and self-scheduled their own treatment at a clinic in Mexico, funded by a veterans' nonprofit, between November 2021 and September 2022, and were separately referred to Stanford for assessment. Stanford played no part in the dosing. Assessments took place two to three days before treatment, four to five days after, and one month after.</p>
 
-<p>The clinic's own screening was substantial: bloodwork, an electrocardiogram, and withdrawal of a long list of medications beforehand, including CYP2D6 inhibitors, serotonergic drugs, calcium channel blockers, beta blockers, benzodiazepines, stimulants, corticosteroids and all psychiatric medication. Exclusions covered cardiovascular, liver and kidney history, psychosis and neurological disorder. Intravenous magnesium sulfate was given before dosing and again afterwards, an addition intended to reduce cardiac risk <a href="#ref-1">[1]</a>.</p>
+<p>The clinic's own screening was substantial: bloodwork, an electrocardiogram, and withdrawal of a long list of medications beforehand, including <a href="ibogaine-drug-interactions.html">CYP2D6 inhibitor</a>s, serotonergic drugs, calcium channel blockers, beta blockers, benzodiazepines, stimulants, corticosteroids and all psychiatric medication. Exclusions covered cardiovascular, liver and kidney history, psychosis and neurological disorder. Intravenous magnesium sulfate was given before dosing and again afterwards, an addition intended to reduce cardiac risk <a href="#ref-1">[1]</a>.</p>
 
 <p>Those details matter for interpretation. The participants were a selected, highly motivated group who had stopped their existing psychiatric medications, travelled internationally, and received intensive attention over several days. Any of those factors could contribute to an improvement in self-reported and clinician-rated symptoms.</p>
 
@@ -3096,7 +3096,7 @@ ARTICLES.append({
 
 <p>Running the controlled trial that would settle this is harder than it sounds. A full ibogaine dose is unmistakable to the person receiving it, which means participants in any placebo-controlled design can generally tell which arm they are in. A 2026 review of novel treatments for opioid use disorder names exactly this problem, noting that perceptible drug effects tend to unblind allocation, and argues that trials in this area need active comparators, formal blinding checks and endpoints that do not depend on the participant's own report <a href="#ref-8">[8]</a>. For an outcome like PTSD severity, which is assessed through interview, that is a substantial design obstacle rather than a technicality.</p>
 
-<p>Nor would a single trial be enough on its own. The MISTIC cohort was recruited through a veterans' nonprofit and consisted of men who had already decided to seek ibogaine abroad, which is a narrow slice of the population that might eventually be offered such a treatment. Replication in a cohort that did not select itself, with a comparison group assessed on the same schedule, is the step that would turn a striking observation into usable clinical evidence.</p>
+<p>Nor would a single trial be enough on its own. The <a href="mistic-study-close-read.html">MISTIC</a> cohort was recruited through a veterans' nonprofit and consisted of men who had already decided to seek ibogaine abroad, which is a narrow slice of the population that might eventually be offered such a treatment. Replication in a cohort that did not select itself, with a comparison group assessed on the same schedule, is the step that would turn a striking observation into usable clinical evidence.</p>
 
 <p>The broader literature says the same thing in general terms. A 2026 review of three decades of human ibogaine research concluded that most positive efficacy data come from uncontrolled, open-label or retrospective studies, many conducted in nonclinical settings and at high risk of bias <a href="#ref-6">[6]</a>, and a 2019 pharmacology review had already noted that the human effects reported for ibogaine were found mainly in uncontrolled clinical trials and observational studies <a href="#ref-7">[7]</a>.</p>
 
@@ -3104,7 +3104,7 @@ ARTICLES.append({
 
 <p>The distinction worth holding on to is this. The MISTIC cohort was defined by a history of traumatic brain injury, and what was measured was psychiatric symptoms and self-rated function in people with that history. Improvement on those measures is not the same as improvement in the injury. A person can have persistent structural damage and markedly less post-traumatic stress, and that is a worthwhile outcome described accurately. Describing it as brain repair claims something the data do not contain, and the imaging paper's own authors decline to make that claim <a href="#ref-2">[2]</a>.</p>
 
-<p>Nothing in this evidence addresses acute head injury, nor does it support ibogaine as a treatment for the cognitive consequences of injury, which were not the primary outcomes. The honest summary is that one selected cohort with a heavy injury history reported large and apparently durable psychiatric improvement after ibogaine, that structural imaging changed in a direction consistent with that, and that a controlled trial capable of attributing that improvement to the drug itself has not yet been done.</p>
+<p>Nothing in this evidence addresses acute head injury, nor does it support ibogaine as a treatment for the cognitive consequences of injury, which were not the primary outcomes. The honest summary is that one selected cohort with a heavy injury history reported large and apparently durable psychiatric improvement after ibogaine, that structural imaging changed in a direction consistent with that, and that a <a href="open-questions.html">controlled trial capable</a> of attributing that improvement to the drug itself has not yet been done.</p>
 
 <p>None of that makes the finding uninteresting. A cohort with this injury burden and these baseline diagnoses would not ordinarily be expected to show remission rates above 80 percent on any measure, and the result is striking enough that the absence of a controlled replication is now the most important open question in the field rather than a footnote to it.</p>
 
@@ -3124,7 +3124,7 @@ ARTICLES.append({
 
 <h3>Would these results apply to a civilian with one concussion?</h3>
 
-<p>There is no evidence either way. The cohort was male special operations veterans with a mean of 38.6 lifetime injuries and high rates of PTSD, depression and alcohol use disorder <a href="#ref-1">[1]</a>. A different population with a different injury history is not represented in the data.</p>
+<p>There is no evidence either way. The cohort was male special operations veterans with a mean of 38.6 lifetime injuries and high rates of PTSD, depression and <a href="ibogaine-and-alcohol.html">alcohol use disorder</a> <a href="#ref-1">[1]</a>. A different population with a different injury history is not represented in the data.</p>
 
 <div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>"""
 })
@@ -3185,7 +3185,7 @@ ARTICLES.append({
 
 <p>Each of those features matters for a single-dose intervention. Ibogaine's acute effects run over roughly a day, with its metabolite persisting longer. If fentanyl withdrawal begins later and lasts longer, the overlap between the treatment window and the withdrawal course is different from what the older studies observed, and whether a single dose covers it is an empirical question nobody has answered in published work.</p>
 
-<p>There is a second consideration. Ibogaine carries a documented cardiac risk, and the degree of QT prolongation varies between individuals. A person arriving with an uncertain recent opioid history, possible exposure to adulterants, and the physiological strain of a prolonged withdrawal is not in the same pre-treatment condition as a patient stabilised on morphine in an inpatient unit with telemetry. That difference acts on the risk side of the calculation, not only the benefit side.</p>
+<p>There is a second consideration. Ibogaine carries a documented cardiac risk, and the degree of <a href="ibogaine-cardiac-risk.html">QT prolongation</a> varies between individuals. A person arriving with an uncertain recent opioid history, possible exposure to adulterants, and the physiological strain of a prolonged withdrawal is not in the same pre-treatment condition as a patient stabilised on morphine in an inpatient unit with telemetry. That difference acts on the risk side of the calculation, not only the benefit side.</p>
 
 @@CTA@@
 
@@ -3195,9 +3195,9 @@ ARTICLES.append({
 
 <p>In the New Zealand cohort, subjective withdrawal scores fell from 25.2 to 14.2 within 12 to 24 hours, and a composite measure of drug use fell over 12 months in the eight participants who completed every interview. One participant died during treatment. The coroner found no significant cardiac pathology but judged the death very likely related to ibogaine ingestion and most probably to a cardiac arrhythmia, and the provider was found to have breached its duty of care <a href="#ref-3">[3]</a>.</p>
 
-<p>The Dutch series is the most instructive on what a single dose does physiologically, because it was closely instrumented. Maximum QT prolongation averaged 95 milliseconds, with a range from 29 to 146, and 7 of the 14 participants passed 500 milliseconds. In 6 of 14, a QT interval above 450 milliseconds persisted beyond 24 hours. No torsades de pointes occurred. Severe transient ataxia, leaving participants unable to walk unaided, affected all 14. On the withdrawal question, 11 of 14 did not return to morphine within 24 hours <a href="#ref-8">[8]</a>.</p>
+<p>The Dutch series is the most instructive on what a single dose does physiologically, because it was closely instrumented. Maximum QT prolongation averaged 95 milliseconds, with a range from 29 to 146, and 7 of the 14 participants passed 500 milliseconds. In 6 of 14, a QT interval above 450 milliseconds persisted beyond 24 hours. No torsades de pointes occurred. Severe transient ataxia, leaving participants <a href="ibogaine-side-effects.html">unable to walk unaided</a>, affected all 14. On the withdrawal question, 11 of 14 did not return to morphine within 24 hours <a href="#ref-8">[8]</a>.</p>
 
-<p>Two things follow from those numbers. The withdrawal effect was real and measurable in a monitored setting with careful exclusions, which included a pre-treatment QT ceiling, potassium within a defined range, and no QT-prolonging or CYP2D6-affecting drugs. And the cardiac effect was not marginal: half the group crossed a threshold that would prompt intervention in any hospital, and in nearly half the group the abnormality outlasted the first day, which has implications for how long monitoring needs to continue.</p>
+<p>Two things follow from those numbers. The withdrawal effect was real and measurable in a monitored setting with careful exclusions, which included a pre-treatment QT ceiling, potassium within a defined range, and no <a href="ibogaine-drug-interactions.html">QT-prolonging</a> or CYP2D6-affecting drugs. And the cardiac effect was not marginal: half the group crossed a threshold that would prompt intervention in any hospital, and in nearly half the group the abnormality outlasted the first day, which has implications for how long monitoring needs to continue.</p>
 
 <p>Both the St Kitts and New Zealand studies lacked control groups. A 2026 review covering human ibogaine research from 1990 to early 2025 concluded that most positive efficacy data come from uncontrolled, open-label or retrospective studies, many in nonclinical settings, and that no double-blind randomised trial has shown ibogaine or noribogaine effective for opioid use disorder <a href="#ref-4">[4]</a>.</p>
 
@@ -3233,7 +3233,7 @@ ARTICLES.append({
 
 <h3>Is the risk higher after ibogaine with fentanyl?</h3>
 
-<p>The risk after any detoxification is the loss of tolerance, which is documented: overdose deaths after inpatient detox clustered in those who completed it <a href="#ref-5">[5]</a>, and mortality rises about six-fold in the four weeks after agonist treatment stops <a href="#ref-6">[6]</a>. Fentanyl's potency and variability make that margin narrower.</p>
+<p>The risk after any detoxification is the <a href="relapse-risk-after-ibogaine.html">loss of tolerance</a>, which is documented: overdose deaths after inpatient detox clustered in those who completed it <a href="#ref-5">[5]</a>, and mortality rises about six-fold in the four weeks after agonist treatment stops <a href="#ref-6">[6]</a>. Fentanyl's potency and variability make that margin narrower.</p>
 
 <h3>What would settle the question?</h3>
 
@@ -3294,7 +3294,7 @@ ARTICLES.append({
 
 <p>The design was prospective, observational, open label and single arm, with no control group, no blinding and no power calculation. Participants arranged their own treatment at a clinic in Mexico, funded by a veterans' nonprofit, and were assessed separately at Stanford two to three days before treatment, four to five days after, and at one month. Stanford had no role in the dosing <a href="#ref-1">[1]</a>.</p>
 
-<p>One element of the protocol has a direct bearing on the anxiety numbers. Before treatment, participants stopped all psychiatric medications, along with benzodiazepines, stimulants, serotonergic drugs, beta blockers, calcium channel blockers, corticosteroids and CYP2D6 inhibitors <a href="#ref-1">[1]</a>. Benzodiazepines and antidepressants are both used for anxiety. Withdrawing them shortly before a baseline assessment can raise the baseline score, and a raised baseline makes any subsequent fall look larger. That is not a criticism of the study, which had good pharmacological reasons for the washout, but it is a factor in reading the magnitude of the change.</p>
+<p>One element of the protocol has a direct bearing on the anxiety numbers. Before treatment, participants stopped all psychiatric medications, along with benzodiazepines, stimulants, serotonergic drugs, beta blockers, calcium channel blockers, corticosteroids and <a href="ibogaine-drug-interactions.html">CYP2D6 inhibitor</a>s <a href="#ref-1">[1]</a>. Benzodiazepines and antidepressants are both used for anxiety. Withdrawing them shortly before a baseline assessment can raise the baseline score, and a raised baseline makes any subsequent fall look larger. That is not a criticism of the study, which had good pharmacological reasons for the washout, but it is a factor in reading the magnitude of the change.</p>
 
 <p>The cohort itself also limits what the anxiety finding can be generalised to. These were men who had already decided to seek ibogaine treatment abroad, who had the means and the support of a nonprofit to do so, and whose anxiety sat inside a dense cluster of other conditions: post-traumatic stress in 23 of 30, depression in 15, alcohol use disorder in 15, and a mean of 38.6 lifetime head injuries <a href="#ref-1">[1]</a>. Anxiety in that context is not the same clinical entity as anxiety in someone without a trauma history or an injury burden, and a change in one population says little about the other.</p>
 
@@ -3326,15 +3326,15 @@ ARTICLES.append({
 
 <h2 id="mechanism">What might account for it</h2>
 
-<p>Any mechanistic account here is provisional, because the mechanism of ibogaine's main effects is itself unresolved. The 2019 review that catalogues its receptor binding states that the mechanism behind its effect on drug-seeking behaviour remains unknown, and notes that the receptor interactions documented do not appear to account for the long-lasting effects seen in rodents <a href="#ref-5">[5]</a>.</p>
+<p>Any mechanistic account here is provisional, because the mechanism of ibogaine's main effects is itself unresolved. The 2019 review that catalogues its <a href="ibogaine-receptors.html">receptor binding</a> states that the mechanism behind its effect on drug-seeking behaviour remains unknown, and notes that the receptor interactions documented do not appear to account for the long-lasting effects seen in rodents <a href="#ref-5">[5]</a>.</p>
 
-<p>Two threads are at least relevant. In rats, both ibogaine and noribogaine raised extracellular serotonin in the nucleus accumbens and inhibited serotonin uptake, with noribogaine roughly ten times more potent than ibogaine as an indirect serotonin agonist. Both also raised the stress hormones corticosterone and prolactin <a href="#ref-6">[6]</a>. Serotonergic action is a familiar route to anxiety reduction, though the hormone finding points in the opposite direction and the data are from rodents.</p>
+<p>Two threads are at least relevant. In rats, both ibogaine and <a href="noribogaine-pharmacokinetics.html">noribogaine</a> raised extracellular serotonin in the nucleus accumbens and inhibited serotonin uptake, with noribogaine roughly ten times more potent than ibogaine as an indirect serotonin agonist. Both also raised the stress hormones corticosterone and prolactin <a href="#ref-6">[6]</a>. Serotonergic action is a familiar route to anxiety reduction, though the hormone finding points in the opposite direction and the data are from rodents.</p>
 
 <p>Separately, cell-based work found noribogaine to be a kappa-opioid agonist biased toward G protein signalling over beta-arrestin recruitment, a profile the authors suggested might explain why it lacks the dysphoric effects usually associated with kappa activation <a href="#ref-7">[7]</a>. That is in vitro and has no human confirmation. Neither thread amounts to an explanation of the anxiety findings; they are the material from which hypotheses would be built.</p>
 
 <h2 id="the-risk-side">The risk side of the question</h2>
 
-<p>For anxiety specifically, the risk calculation differs from the one that applies in opioid dependence, and it differs in an unfavourable direction. The cardiac effect is the same regardless of why someone takes the drug. In a closely screened Dutch series of 14 patients, maximum QT prolongation averaged 95 milliseconds, 7 of 14 exceeded 500 milliseconds, and in 6 of 14 the abnormality persisted beyond 24 hours. All 14 experienced severe transient ataxia and were unable to walk unaided <a href="#ref-8">[8]</a>.</p>
+<p>For anxiety specifically, the risk calculation differs from the one that applies in opioid dependence, and it differs in an unfavourable direction. The cardiac effect is the same regardless of why someone takes the drug. In a closely screened Dutch series of 14 patients, maximum <a href="ibogaine-cardiac-risk.html">QT prolongation</a> averaged 95 milliseconds, 7 of 14 exceeded 500 milliseconds, and in 6 of 14 the abnormality persisted beyond 24 hours. All 14 experienced severe transient ataxia and were unable to walk unaided <a href="#ref-8">[8]</a>.</p>
 
 <p>There is a further consideration specific to anxiety. The treatment itself is a prolonged and intense psychoactive experience lasting most of a day, with vivid internal imagery and, in the Dutch series, an inability to walk unaided throughout <a href="#ref-8">[8]</a>. For a person whose presenting problem is anxiety, that is a demanding experience to enter, and the qualitative accounts from the veteran cohort describe re-encountering traumatic material as a central feature of it <a href="#ref-4">[4]</a>. Whether that is therapeutic or destabilising is not something the existing data can predict for an individual.</p>
 
@@ -3402,7 +3402,7 @@ ARTICLES.append({
 
 <h2 id="the-position">The position in brief</h2>
 
-<p>Ibogaine prolongs the QT interval on an electrocardiogram, a measure of how long the heart's electrical cycle takes to reset. Prolongation of that interval is associated with a particular form of dangerous arrhythmia, and a 2019 pharmacology review states directly that QT prolongation after ibogaine has been associated with cases of sudden death <a href="#ref-1">[1]</a>. A 2026 review of human research records serious adverse events in the literature, cardiotoxicity from QT prolongation in particular <a href="#ref-9">[9]</a>.</p>
+<p>Ibogaine prolongs the QT interval on an electrocardiogram, a measure of how long the heart's electrical cycle takes to reset. Prolongation of that interval is associated with a particular form of dangerous arrhythmia, and a 2019 pharmacology review states directly that <a href="ibogaine-cardiac-risk.html">QT prolongation</a> after ibogaine has been associated with cases of sudden death <a href="#ref-1">[1]</a>. A 2026 review of human research records serious adverse events in the literature, cardiotoxicity from QT prolongation in particular <a href="#ref-9">[9]</a>.</p>
 
 <p>Fatalities are documented mainly in medically unsupervised settings, and a 2026 review of emerging treatments notes exactly that, suggesting that prescreening and cardiac monitoring may reduce the risk <a href="#ref-8">[8]</a>. The word in that sentence doing the work is reduce. Screening and monitoring change the odds and the response time. They do not remove the drug's effect on the heart.</p>
 
@@ -3418,7 +3418,7 @@ ARTICLES.append({
 
 <p>The clearest numbers come from a Dutch study of 14 adults with opioid use disorder, conducted in a university psychiatry department with careful exclusions. Participants with a QT interval already above 450 milliseconds in men or 470 in women were excluded, as were those with potassium outside a normal range, severe liver or kidney dysfunction, or any QT-prolonging or CYP2D6-affecting medication. Magnesium was given if the interval passed 500 milliseconds <a href="#ref-4">[4]</a>.</p>
 
-<p>Even with that screening, maximum QT prolongation averaged 95 milliseconds, with a range from 29 to 146. Seven of the 14 passed 500 milliseconds. In 6 of 14 an interval above 450 milliseconds persisted beyond 24 hours. No torsades de pointes occurred. All 14 developed severe transient ataxia and could not walk unaided <a href="#ref-4">[4]</a>.</p>
+<p>Even with that screening, maximum QT prolongation averaged 95 milliseconds, with a range from 29 to 146. Seven of the 14 passed 500 milliseconds. In 6 of 14 an interval above 450 milliseconds persisted beyond 24 hours. No torsades de pointes occurred. All 14 developed <a href="ibogaine-side-effects.html">severe transient ataxia</a> and could not walk unaided <a href="#ref-4">[4]</a>.</p>
 
 <p>Those figures deserve to be read slowly. Half of a carefully screened group crossed a threshold that would trigger intervention in any hospital. The study recorded no arrhythmia, which is a reassuring outcome in 14 people and says nothing about what happens in the hundredth or the thousandth. A 191-person inpatient series in St Kitts, which screened with physical examination, safety labs and a 12-lead electrocardiogram and ran telemetry from an hour before dosing to 24 hours after, reported no serious adverse events and no deaths <a href="#ref-7">[7]</a>. Those two datasets together are the best available picture of what supervision achieves, and they total around 200 people.</p>
 
@@ -3434,7 +3434,7 @@ ARTICLES.append({
 
 <h2 id="why-doses-differ">Why the same dose is not the same exposure</h2>
 
-<p>A substantial part of the risk comes from variation between people in how fast they clear the drug. Ibogaine is converted to noribogaine primarily by the liver enzyme CYP2D6, whose activity is genetically variable. In the Dutch cohort, CYP2D6 genotype drove a more than tenfold spread in ibogaine clearance, and the study found that QT prolongation and ataxia tracked ibogaine levels rather than noribogaine levels <a href="#ref-6">[6]</a>.</p>
+<p>A substantial part of the risk comes from variation between people in how fast they clear the drug. Ibogaine is converted to noribogaine primarily by the liver enzyme CYP2D6, whose activity is genetically variable. In the Dutch cohort, <a href="cyp2d6-and-ibogaine-dosing.html">CYP2D6 genotype</a> drove a more than tenfold spread in ibogaine clearance, and the study found that QT prolongation and ataxia tracked ibogaine levels rather than noribogaine levels <a href="#ref-6">[6]</a>.</p>
 
 <p>The consequence is direct. Two people given an identical dose per kilogram can reach very different blood concentrations, and the one who clears the drug slowly is exposed to the cardiac effect for longer and more intensely. The cardiac review notes that CYP2D6 function is absent in roughly 5 to 10 percent of people of European ancestry <a href="#ref-3">[3]</a>, so slow metabolisers are not rare.</p>
 
@@ -3442,7 +3442,7 @@ ARTICLES.append({
 
 <h2 id="unsupervised-settings">Why unsupervised use carries the most risk</h2>
 
-<p>In an unsupervised setting none of the protective steps is available. There is no electrocardiogram to establish a baseline interval, so a person already above the threshold cannot be identified. There is no blood test, so low potassium or magnesium, which independently increase arrhythmia risk, goes undetected. There is no medication review, so a QT-prolonging drug or a CYP2D6 inhibitor may be in the system. And there is no monitoring, so an arrhythmia developing over hours is not seen and not treated.</p>
+<p>In an unsupervised setting none of the protective steps is available. There is no electrocardiogram to establish a baseline interval, so a person already above the threshold cannot be identified. There is no blood test, so low potassium or magnesium, which independently increase arrhythmia risk, goes undetected. There is no medication review, so a QT-prolonging drug or a <a href="ibogaine-drug-interactions.html">CYP2D6 inhibitor</a> may be in the system. And there is no monitoring, so an arrhythmia developing over hours is not seen and not treated.</p>
 
 <p>Added to that is the problem of the material itself. Purity and alkaloid content vary between preparations, so a stated dose may not correspond to the amount of ibogaine actually taken. A person cannot calculate their exposure from a label they cannot verify.</p>
 
@@ -3527,15 +3527,15 @@ ARTICLES.append({
 
 <h2 id="why-this-matters">Why interactions matter more here</h2>
 
-<p>With most medicines, an interaction that doubles exposure is managed by adjusting the dose. Ibogaine is given as a single large dose with no opportunity to titrate, and the margin between a therapeutic exposure and one that produces marked QT prolongation is not wide. In a carefully screened Dutch series, maximum QT prolongation averaged 95 milliseconds and 7 of 14 patients passed 500 milliseconds <a href="#ref-5">[5]</a>. An interaction that pushed exposure higher in that group would not have much room to work with.</p>
+<p>With most medicines, an interaction that doubles exposure is managed by adjusting the dose. Ibogaine is given as a single large dose with no opportunity to titrate, and the margin between a therapeutic exposure and one that produces marked <a href="ibogaine-cardiac-risk.html">QT prolongation</a> is not wide. In a carefully screened Dutch series, maximum QT prolongation averaged 95 milliseconds and 7 of 14 patients passed 500 milliseconds <a href="#ref-5">[5]</a>. An interaction that pushed exposure higher in that group would not have much room to work with.</p>
 
 <p>There is a second reason specific to this population. Many people seeking ibogaine for opioid dependence are already taking an opioid maintenance medication, and often psychiatric medication alongside it. The overlap between the drugs people are likely to be on and the drugs that interact with ibogaine is substantial, which is why protocols in published studies withdraw a long list of medicines rather than checking for a few.</p>
 
 <h2 id="the-enzyme">The enzyme at the centre of it</h2>
 
-<p>Ibogaine is converted in the body to noribogaine by removal of a methyl group, and work on human liver microsomes and recombinant enzymes established that this reaction is catalysed predominantly by CYP2D6. The high-affinity CYP2D6 pathway accounted for over 95 percent of intrinsic clearance, only recombinant CYP2D6 showed significant activity, and a liver sample from an apparent poor metaboliser retained only the slow alternative route <a href="#ref-1">[1]</a>.</p>
+<p>Ibogaine is converted in the body to <a href="noribogaine-pharmacokinetics.html">noribogaine</a> by removal of a methyl group, and work on human liver microsomes and recombinant enzymes established that this reaction is catalysed predominantly by CYP2D6. The high-affinity CYP2D6 pathway accounted for over 95 percent of intrinsic clearance, only recombinant CYP2D6 showed significant activity, and a liver sample from an apparent poor metaboliser retained only the slow alternative route <a href="#ref-1">[1]</a>.</p>
 
-<p>That finding has been confirmed in people. In a cohort of 14 patients given a single 10 milligram per kilogram dose with plasma sampling at 14 time points, ibogaine pharmacokinetics were highly variable and tied to CYP2D6 genotype, producing a more than tenfold spread in clearance. The same study found that QT prolongation and ataxia tracked ibogaine concentrations rather than noribogaine concentrations <a href="#ref-4">[4]</a>.</p>
+<p>That finding has been confirmed in people. In a cohort of 14 patients given a single 10 milligram per kilogram dose with plasma sampling at 14 time points, ibogaine pharmacokinetics were highly variable and tied to <a href="cyp2d6-and-ibogaine-dosing.html">CYP2D6 genotype</a>, producing a more than tenfold spread in clearance. The same study found that QT prolongation and ataxia tracked ibogaine concentrations rather than noribogaine concentrations <a href="#ref-4">[4]</a>.</p>
 
 <p>Two consequences follow. CYP2D6 activity is genetically variable, and the cardiac review of ibogaine notes that the enzyme is functionally absent in roughly 5 to 10 percent of people of European ancestry <a href="#ref-3">[3]</a>. And because the cardiac effect tracks the parent compound, slowing its conversion is the specific thing that raises risk, rather than a general change in overall exposure.</p>
 
@@ -3571,7 +3571,7 @@ ARTICLES.append({
 
 <h2 id="opioids">Opioids and the receptor picture</h2>
 
-<p>A persistent claim holds that ibogaine acts as an opioid agonist and can therefore substitute for an opioid. The laboratory evidence runs the other way. Work across three laboratories, including a replication of an earlier study that had reported full agonism, found that ibogaine, noribogaine and the analog 18-MC acted as mu-opioid antagonists in rat thalamic membranes. Ibogaine stimulated G protein binding in none of the receptor-expressing cell lines tested, and noribogaine was at most a weak partial agonist in one <a href="#ref-7">[7]</a>.</p>
+<p>A persistent claim holds that ibogaine acts as an opioid agonist and can therefore substitute for an opioid. The laboratory evidence runs the other way. Work across three laboratories, including a replication of an earlier study that had reported full agonism, found that ibogaine, noribogaine and the analog <a href="ibogaine-analogs.html">18-MC</a> acted as mu-opioid antagonists in rat thalamic membranes. Ibogaine stimulated G protein binding in none of the receptor-expressing cell lines tested, and noribogaine was at most a weak partial agonist in one <a href="#ref-7">[7]</a>.</p>
 
 <p>If ibogaine blocks rather than activates the mu receptor, then it does not provide opioid cover, and the interaction concern with opioids is not additive sedation but the possibility of precipitating or failing to prevent withdrawal. That is in vitro work in rodent tissue and cell lines, and the 2019 review emphasises that the mechanism behind ibogaine's clinical effects remains unresolved <a href="#ref-9">[9]</a>. It is nonetheless the best available evidence on the receptor question, and it does not support the substitution claim.</p>
 
@@ -3670,17 +3670,17 @@ ARTICLES.append({
 
 <h2 id="nicotinic">Nicotinic acetylcholine receptors</h2>
 
-<p>The best-characterised interaction is at the alpha3beta4 nicotinic receptor. Work on human alpha3beta4 receptors expressed in cells found that ibogaine blocked receptor-driven calcium influx about nine times more potently than phencyclidine, and bound a single site within the ion channel itself with a dissociation constant of 0.46 micromolar <a href="#ref-2">[2]</a>.</p>
+<p>The best-characterised interaction is at the alpha3beta4 <a href="ibogaine-and-smoking.html">nicotinic receptor</a>. Work on human alpha3beta4 receptors expressed in cells found that ibogaine blocked receptor-driven calcium influx about nine times more potently than phencyclidine, and bound a single site within the ion channel itself with a dissociation constant of 0.46 micromolar <a href="#ref-2">[2]</a>.</p>
 
 <p>That is a channel-blocking action rather than a receptor-activating one: ibogaine sits inside the pore and obstructs it. The authors also found binding slightly tighter when the receptor was in its desensitised state, and suggested this might hold the receptor desensitised for longer <a href="#ref-2">[2]</a>. This is the one place where ibogaine's affinity approaches a concentration low enough to be plausibly relevant at treatment exposures.</p>
 
-<p>The alpha3beta4 subtype attracted attention because structure-activity work on ibogaine analogs found that potency at this receptor correlated with effects on morphine self-administration in rats. The analog 18-MC is most potent as an alpha3beta4 antagonist, and reproduces much of ibogaine's effect on drug self-administration in rodents without ibogaine's tremor or cardiac action <a href="#ref-7">[7]</a>. That correlation is the strongest circumstantial case that this receptor matters, and it remains a correlation in rodents.</p>
+<p>The alpha3beta4 subtype attracted attention because structure-activity work on ibogaine analogs found that potency at this receptor correlated with effects on morphine self-administration in rats. The analog <a href="ibogaine-analogs.html">18-MC</a> is most potent as an alpha3beta4 antagonist, and reproduces much of ibogaine's effect on drug self-administration in rodents without ibogaine's tremor or cardiac action <a href="#ref-7">[7]</a>. That correlation is the strongest circumstantial case that this receptor matters, and it remains a correlation in rodents.</p>
 
 <h2 id="opioid">Opioid receptors: blocker, not activator</h2>
 
 <p>The claim that ibogaine acts as an opioid agonist, and therefore substitutes for an opioid during withdrawal, is common and not supported by the better evidence. An earlier study had reported full agonism at the mu receptor. A subsequent investigation across three laboratories, including a replication of that earlier method, found the opposite <a href="#ref-3">[3]</a>.</p>
 
-<p>In rat thalamic membranes, ibogaine, noribogaine and 18-MC all behaved as mu-opioid antagonists, with functional potencies of around 3 micromolar for ibogaine and 13 micromolar for noribogaine and 18-MC. Ibogaine stimulated G protein binding in none of the receptor-expressing cell lines tested. Noribogaine did not stimulate it in brain slices and was at most a weak partial agonist in a single cell line, and three separate laboratories found no stimulation by noribogaine in thalamic membranes <a href="#ref-3">[3]</a>.</p>
+<p>In rat thalamic membranes, ibogaine, <a href="noribogaine-pharmacokinetics.html">noribogaine</a> and 18-MC all behaved as mu-opioid antagonists, with functional potencies of around 3 micromolar for ibogaine and 13 micromolar for noribogaine and 18-MC. Ibogaine stimulated G protein binding in none of the receptor-expressing cell lines tested. Noribogaine did not stimulate it in brain slices and was at most a weak partial agonist in a single cell line, and three separate laboratories found no stimulation by noribogaine in thalamic membranes <a href="#ref-3">[3]</a>.</p>
 
 <p>The practical implication is direct. If ibogaine blocks the mu receptor rather than activating it, it is not providing opioid cover, and whatever relieves withdrawal is happening by some other route. That reframes the withdrawal question rather than answering it.</p>
 
@@ -3784,7 +3784,7 @@ ARTICLES.append({
 
 <h2 id="the-negative-finding">The direct measurement</h2>
 
-<p>The relevant experiment used microdialysis in rats, a technique that samples neurotransmitter concentrations from a specific brain region in a living animal. Rats received intravenous ibogaine or noribogaine at 1 and 10 milligrams per kilogram, and dopamine and serotonin were measured in the nucleus accumbens alongside motor behaviour and plasma hormones <a href="#ref-2">[2]</a>.</p>
+<p>The relevant experiment used microdialysis in rats, a technique that samples neurotransmitter concentrations from a specific brain region in a living animal. Rats received intravenous ibogaine or <a href="noribogaine-pharmacokinetics.html">noribogaine</a> at 1 and 10 milligrams per kilogram, and dopamine and serotonin were measured in the nucleus accumbens alongside motor behaviour and plasma hormones <a href="#ref-2">[2]</a>.</p>
 
 <p>Both compounds raised extracellular serotonin in the nucleus accumbens, and both inhibited serotonin uptake at the transporter, with noribogaine roughly ten times more potent than ibogaine as an indirect serotonin agonist. Both raised the stress hormones corticosterone and prolactin. Ibogaine produced dose-related tremor and noribogaine did not. And neither compound changed dopamine in the nucleus accumbens <a href="#ref-2">[2]</a>.</p>
 
@@ -3913,7 +3913,7 @@ ARTICLES.append({
 
 <h2 id="the-cell-culture-work">The cell culture evidence</h2>
 
-<p>The starting observation is that noribogaine, ibogaine's long-lived metabolite, promotes neuritogenesis in cultured rat cortical neurons <a href="#ref-1">[1]</a>. That is the finding underlying descriptions of ibogaine as a psychoplastogen, and it should be read for what it is: an in vitro result in rodent cells, graded as plausible in the review that reports it.</p>
+<p>The starting observation is that <a href="noribogaine-pharmacokinetics.html">noribogaine</a>, ibogaine's long-lived metabolite, promotes neuritogenesis in cultured rat cortical neurons <a href="#ref-1">[1]</a>. That is the finding underlying descriptions of ibogaine as a psychoplastogen, and it should be read for what it is: an in vitro result in rodent cells, graded as plausible in the review that reports it.</p>
 
 <p>Cultured neurons are a reduced system. They grow in a dish without the circuitry, the glial environment, the blood supply or the competing signals of an intact brain, and they are typically exposed to a fixed concentration of a compound for a sustained period. A living brain exposed to ibogaine experiences a rising and falling concentration of two different compounds, distributed unevenly across regions. Growth in culture establishes that the molecule can promote growth; it does not establish that it does so in a person at achievable concentrations.</p>
 
@@ -3921,7 +3921,7 @@ ARTICLES.append({
 
 <h2 id="growth-factors">Growth factors: the mRNA and protein gap</h2>
 
-<p>The growth factor data is where the most frequently repeated claims come from, and where the gap between claim and finding is widest. A single injection of ibogaine in rats, 36 animals with six per group, raised messenger RNA for GDNF twelvefold in the ventral tegmental area and sixfold in the substantia nigra, but only at the higher of two doses, only at 24 hours, and with protein increase confirmed in the ventral tegmental area alone at roughly twofold. The lower dose changed GDNF nowhere <a href="#ref-1">[1]</a>.</p>
+<p>The growth factor data is where the most frequently repeated claims come from, and where the gap between claim and finding is widest. A single injection of ibogaine in rats, 36 animals with six per group, raised messenger RNA for <a href="ibogaine-and-dopamine.html">GDNF</a> twelvefold in the ventral tegmental area and sixfold in the substantia nigra, but only at the higher of two doses, only at 24 hours, and with protein increase confirmed in the ventral tegmental area alone at roughly twofold. The lower dose changed GDNF nowhere <a href="#ref-1">[1]</a>.</p>
 
 <p>The BDNF result from the same work is the one that should temper confidence most. Messenger RNA for BDNF rose enormously, by up to 340-fold in the nucleus accumbens, and yet mature BDNF protein showed no significant increase in any region examined <a href="#ref-1">[1]</a>. The authors describe the mismatch as intriguing.</p>
 
@@ -3933,7 +3933,7 @@ ARTICLES.append({
 
 <h2 id="the-analog-evidence">What the analogs showed</h2>
 
-<p>The most rigorous plasticity work in this family was done not on ibogaine but on analogs built from it. A function-oriented synthesis programme stripped ibogaine's ring system down one ring at a time and screened the products for the ability to promote neuron growth, yielding tabernanthalog, a water-soluble compound made in a single step <a href="#ref-2">[2]</a>.</p>
+<p>The most rigorous plasticity work in this family was done not on ibogaine but on analogs built from it. A function-oriented synthesis programme stripped ibogaine's ring system down one ring at a time and screened the products for the ability to promote neuron growth, yielding <a href="ibogaine-analogs.html">tabernanthalog</a>, a water-soluble compound made in a single step <a href="#ref-2">[2]</a>.</p>
 
 <p>Tabernanthalog did not produce the head-twitch response that marks hallucinogenic action in mice, did not block the hERG cardiac channel in the way ibogaine does, and reduced both binge drinking in mice and heroin self-administration and cued relapse in rats <a href="#ref-2">[2]</a>. That combination is the single most important result in the area, because it separates the plasticity-promoting and anti-addictive properties from the psychoactive and cardiac ones.</p>
 
@@ -3943,7 +3943,7 @@ ARTICLES.append({
 
 <h2 id="human-imaging">The only human structural data</h2>
 
-<p>One dataset addresses structure in people. Thirty veterans with a history of traumatic brain injury, assessed at Stanford around treatment they arranged themselves at a clinic in Mexico, had structural MRI at baseline, immediately after treatment and at one month, with 25, 25 and 22 usable scans <a href="#ref-7">[7]</a>. Cortical thickness increased in 11 regions, there was subcortical expansion in 8 regions, and a machine-learning estimate of brain age fell by a mean of about 1.3 years at one month <a href="#ref-4">[4]</a>.</p>
+<p>One dataset addresses structure in people. Thirty veterans with a history of <a href="ibogaine-and-brain-injury.html">traumatic brain injury</a>, assessed at Stanford around treatment they arranged themselves at a clinic in Mexico, had structural MRI at baseline, immediately after treatment and at one month, with 25, 25 and 22 usable scans <a href="#ref-7">[7]</a>. Cortical thickness increased in 11 regions, there was subcortical expansion in 8 regions, and a machine-learning estimate of brain age fell by a mean of about 1.3 years at one month <a href="#ref-4">[4]</a>.</p>
 
 <p>The authors' caveats are substantial and specific. They warn that the brain-age result should not be read as brains becoming younger. They note that the T1-weighted scans used are sensitive to changes that are not structural, including hydration and blood flow, which can alter apparent thickness without tissue change. And they observe that lifestyle changes following an intense treatment experience could in principle affect brain structure, so the change need not be a direct pharmacological effect <a href="#ref-4">[4]</a>.</p>
 
@@ -4021,7 +4021,7 @@ ARTICLES.append({
 
 <h2 id="the-core-fact">The core fact</h2>
 
-<p>The enzyme is CYP2D6, part of the cytochrome P450 family that metabolises most drugs. Ibogaine is converted to noribogaine by removal of a methyl group, and work on human liver microsomes and recombinant enzymes established that CYP2D6 catalyses this reaction predominantly: the high-affinity CYP2D6 pathway accounted for more than 95 percent of intrinsic clearance, only recombinant CYP2D6 showed significant activity, and quinidine, a CYP2D6 inhibitor, blocked the reaction <a href="#ref-1">[1]</a>.</p>
+<p>The enzyme is CYP2D6, part of the cytochrome P450 family that metabolises most drugs. Ibogaine is converted to <a href="noribogaine-pharmacokinetics.html">noribogaine</a> by removal of a methyl group, and work on human liver microsomes and recombinant enzymes established that CYP2D6 catalyses this reaction predominantly: the high-affinity CYP2D6 pathway accounted for more than 95 percent of intrinsic clearance, only recombinant CYP2D6 showed significant activity, and quinidine, a <a href="ibogaine-drug-interactions.html">CYP2D6 inhibitor</a>, blocked the reaction <a href="#ref-1">[1]</a>.</p>
 
 <p>That study also examined a liver sample from an apparent poor metaboliser and found it retained only the slow, low-affinity alternative route <a href="#ref-1">[1]</a>. A person whose CYP2D6 does not function therefore clears ibogaine by a backup pathway several times slower than the normal one.</p>
 
@@ -4043,7 +4043,7 @@ ARTICLES.append({
 
 <p>That is a well-designed study and its sample is small. Fourteen patients establish the existence and rough magnitude of the effect; they do not characterise its full distribution. What they do establish is that the variation is not theoretical and not minor.</p>
 
-<p>The companion report on the same cohort shows what that variation produced clinically. Maximum QT prolongation averaged 95 milliseconds with a range from 29 to 146, seven of the fourteen passed 500 milliseconds, and in six of the fourteen an interval above 450 milliseconds persisted beyond 24 hours. All fourteen developed severe transient ataxia and could not walk unaided <a href="#ref-5">[5]</a>. A range of 29 to 146 milliseconds from a uniform dose per kilogram is the variation described above, expressed in the measure that matters.</p>
+<p>The companion report on the same cohort shows what that variation produced clinically. Maximum <a href="ibogaine-cardiac-risk.html">QT prolongation</a> averaged 95 milliseconds with a range from 29 to 146, seven of the fourteen passed 500 milliseconds, and in six of the fourteen an interval above 450 milliseconds persisted beyond 24 hours. All fourteen developed severe transient ataxia and could not walk unaided <a href="#ref-5">[5]</a>. A range of 29 to 146 milliseconds from a uniform dose per kilogram is the variation described above, expressed in the measure that matters.</p>
 
 <h2 id="which-compound-matters">Which compound carries the risk</h2>
 
@@ -4159,7 +4159,7 @@ ARTICLES.append({
 
 <p>Ethnobotanical fieldwork in Gabon describes Bwiti not as a single religion with a uniform liturgy but as a social and religious institution made up of secret societies, each with its own passage rites and ceremonies <a href="#ref-1">[1]</a>. That structure is important for understanding why generalisations are difficult. Practices differ between societies, and the material held within them is not public.</p>
 
-<p>A 2026 peer-reviewed commentary describes ibogaine as central to the Bwiti spiritual tradition of Gabon and Cameroon, and situates iboga alongside ayahuasca, psilocybin and peyote as substances applied within Indigenous medicine traditions over centuries <a href="#ref-2">[2]</a>. The relevant framing is that iboga has a long record of use inside a structured practice, under conditions set by that practice.</p>
+<p>A 2026 peer-reviewed commentary describes ibogaine as central to the Bwiti spiritual tradition of Gabon and Cameroon, and situates iboga alongside ayahuasca, <a href="ibogaine-vs-other-psychedelics.html">psilocybin</a> and peyote as substances applied within Indigenous medicine traditions over centuries <a href="#ref-2">[2]</a>. The relevant framing is that iboga has a long record of use inside a structured practice, under conditions set by that practice.</p>
 
 <p>What that practice is for is not the same as what a clinic is for. Initiation and passage rites are religious and social functions. Treating opioid dependence is a medical one. The overlap between them is real but partial, and describing Bwiti practice as traditional addiction treatment imports a purpose that the ethnographic description does not support.</p>
 
@@ -4189,7 +4189,7 @@ ARTICLES.append({
 
 <h2 id="the-reciprocity-question">The reciprocity question</h2>
 
-<p>This has moved from activism into the peer-reviewed literature. The 2026 commentary states that much contemporary clinical research on ibogaine, including the opioid and traumatic brain injury studies, has been conducted without substantive acknowledgement of or reciprocity toward Bwiti knowledge holders, and calls for co-developed research questions and equitable benefit-sharing <a href="#ref-2">[2]</a>.</p>
+<p>This has moved from activism into the peer-reviewed literature. The 2026 commentary states that much contemporary clinical research on ibogaine, including the opioid and <a href="ibogaine-and-brain-injury.html">traumatic brain injury</a> studies, has been conducted without substantive acknowledgement of or reciprocity toward Bwiti knowledge holders, and calls for co-developed research questions and equitable benefit-sharing <a href="#ref-2">[2]</a>.</p>
 
 <p>That is a specific charge rather than a general sentiment. The studies named are the ones that constitute the modern evidence base. The authors are not arguing that the research should not have happened; they are arguing that the people whose knowledge identified the plant have not shared in what followed, and that research practice should change.</p>
 
@@ -4201,7 +4201,7 @@ ARTICLES.append({
 
 <p>The arithmetic creates pressure. If ibogaine is around 0.3 percent of root bark <a href="#ref-5">[5]</a>, then producing a treatment-sized dose from the plant consumes a substantial quantity of root, and harvesting root bark is destructive in a way that taking leaves is not. Combined with the plant's status as a cultural keystone species in Gabon and its presence in herbal markets <a href="#ref-1">[1]</a>, demand from outside the region bears on both the species and the practice that depends on it.</p>
 
-<p>Chemistry has partly decoupled the two. Most ibogaine in circulation is semi-synthesised from voacangine, which makes up roughly 1 to 1.7 percent of the root bark of the more abundant <em>Voacanga africana</em>, by saponification followed by decarboxylation <a href="#ref-5">[5]</a> <a href="#ref-6">[6]</a>. A gram-scale seven-step total synthesis from pyridine has since been reported, using low-cost starting materials <a href="#ref-6">[6]</a>. A fully synthetic supply would remove the pressure on iboga, and it would also remove any remaining material connection between clinical ibogaine and the plant.</p>
+<p>Chemistry has partly decoupled the two. Most ibogaine in circulation is semi-synthesised from <a href="how-ibogaine-is-made.html">voacangine</a>, which makes up roughly 1 to 1.7 percent of the root bark of the more abundant <em>Voacanga africana</em>, by saponification followed by decarboxylation <a href="#ref-5">[5]</a> <a href="#ref-6">[6]</a>. A gram-scale seven-step total synthesis from pyridine has since been reported, using low-cost starting materials <a href="#ref-6">[6]</a>. A fully synthetic supply would remove the pressure on iboga, and it would also remove any remaining material connection between clinical ibogaine and the plant.</p>
 
 <p>That synthesis work produced an incidental finding that speaks to the chemistry of the molecule itself. The same programme reported the first enantioselective synthesis of the mirror-image form, and found that unnatural (+)-ibogaine lacked ibogaine-like effects on cortical neuron growth <a href="#ref-6">[6]</a>. The shape of the molecule, not merely its composition, is what matters, which is a reminder that the plant produces one specific form and that chemistry had to learn to match it.</p>
 
@@ -4281,7 +4281,7 @@ ARTICLES.append({
 
 <p>The constraint is abundance. Ibogaine makes up roughly 0.3 percent of iboga root bark by weight <a href="#ref-1">[1]</a>, with a later paper giving about 0.3 to 0.4 percent <a href="#ref-2">[2]</a>. At that concentration, a single treatment-sized dose of several hundred milligrams requires on the order of a hundred grams of root bark before any loss in processing, and harvesting root bark damages or kills the plant.</p>
 
-<p>Iboga is also not an ordinary crop. A 2026 review notes the species is endemic to Central Africa and traditionally used in Bwiti ritual practice, with root bark the main source <a href="#ref-3">[3]</a>. Extraction at commercial scale therefore competes with cultural use of a plant with a restricted range, which is both an ethical and a practical limit on this route.</p>
+<p>Iboga is also not an ordinary crop. A 2026 review notes the species is endemic to Central Africa and traditionally used in <a href="iboga-and-the-bwiti-tradition.html">Bwiti</a> ritual practice, with root bark the main source <a href="#ref-3">[3]</a>. Extraction at commercial scale therefore competes with cultural use of a plant with a restricted range, which is both an ethical and a practical limit on this route.</p>
 
 <p>Extraction also produces the least defined product. Root bark contains several iboga alkaloids, and how thoroughly ibogaine is separated from the others depends entirely on the process used. A crude extract and a purified hydrochloride salt are different materials with different compositions.</p>
 
@@ -4319,7 +4319,7 @@ ARTICLES.append({
 
 <p>The distinction that matters most in practice is between purified ibogaine hydrochloride and total alkaloid extract. The published studies that define what is known used purified ibogaine hydrochloride at a measured dose per kilogram, as in the Dutch cohort dosed at 10 milligrams per kilogram <a href="#ref-6">[6]</a>. Total alkaloid extract contains other iboga alkaloids in uncontrolled proportions, so a stated weight of extract does not correspond to a known quantity of ibogaine.</p>
 
-<p>Given how much individual variation already exists in how people clear the drug, with CYP2D6 genotype alone driving a more than tenfold spread in clearance <a href="#ref-6">[6]</a>, adding uncertainty about how much ibogaine was in the dose compounds a problem that is already difficult to manage.</p>
+<p>Given how much individual variation already exists in how people clear the drug, with <a href="cyp2d6-and-ibogaine-dosing.html">CYP2D6 genotype</a> alone driving a more than tenfold spread in clearance <a href="#ref-6">[6]</a>, adding uncertainty about how much ibogaine was in the dose compounds a problem that is already difficult to manage.</p>
 
 <p>There is a second reason the preparation question bears on safety specifically. The cardiac effect depends on the concentration of ibogaine reached in the blood, which depends on how much ibogaine was administered. An extract whose ibogaine content is unknown breaks the only link between a calculated dose and a predicted exposure. A person can be dosed carefully by weight and still receive substantially more or less of the active compound than the calculation assumed, in either direction.</p>
 
@@ -4419,7 +4419,7 @@ ARTICLES.append({
 
 <p>A second substantial record covers a phase 1 and 2a study of oral ibogaine in opioid withdrawal, run at two early-phase units in Manchester and London by a commercial developer. It enrolled 116 participants across both stages, with stage 1 in healthy volunteers and stage 2 in opioid-dependent adults seeking medically supervised withdrawal, who had to reach a defined withdrawal score before dosing <a href="#ref-2">[2]</a>.</p>
 
-<p>Its design included a placebo-controlled stage assessing the effect on the QT interval, and a randomised, double-blind, placebo-controlled single-dose stage in opioid withdrawal <a href="#ref-2">[2]</a>. A dedicated placebo-controlled QT assessment is the standard regulatory approach to characterising exactly the cardiac risk that dominates ibogaine safety discussion.</p>
+<p>Its design included a placebo-controlled stage assessing the effect on the <a href="ibogaine-cardiac-risk.html">QT interval</a>, and a randomised, double-blind, placebo-controlled single-dose stage in opioid withdrawal <a href="#ref-2">[2]</a>. A dedicated placebo-controlled QT assessment is the standard regulatory approach to characterising exactly the cardiac risk that dominates ibogaine safety discussion.</p>
 
 <p>This study is also recorded as completed, with no results posted <a href="#ref-2">[2]</a>. Taken together with the Spanish trial, that means two controlled studies totalling 136 enrolled participants, including a formal cardiac safety assessment, have produced no public findings.</p>
 
@@ -4429,7 +4429,7 @@ ARTICLES.append({
 
 <h2 id="missing-results">The missing results problem</h2>
 
-<p>The consequence is direct and it cuts in both directions. When a 2026 review of three decades of human research concludes that most positive efficacy data come from uncontrolled studies and that no double-blind randomised trial has shown ibogaine or noribogaine effective for opioid use disorder <a href="#ref-7">[7]</a>, that conclusion is drawn from what has been published. Controlled trials have been conducted. Their results are simply not in the literature to be reviewed.</p>
+<p>The consequence is direct and it cuts in both directions. When a 2026 review of three decades of human research concludes that most positive efficacy data come from uncontrolled studies and that no <a href="open-questions.html">double-blind randomised trial</a> has shown ibogaine or <a href="noribogaine-pharmacokinetics.html">noribogaine</a> effective for opioid use disorder <a href="#ref-7">[7]</a>, that conclusion is drawn from what has been published. Controlled trials have been conducted. Their results are simply not in the literature to be reviewed.</p>
 
 <p>It is a mistake to read unposted results as necessarily negative, and equally a mistake to assume they were positive and suppressed for other reasons. Trials go unreported for many reasons, including commercial decisions, loss of funding, recruitment problems and administrative failure. What can be said is that the information exists somewhere and that the people who took part contributed data which is doing no good.</p>
 
@@ -4455,7 +4455,7 @@ ARTICLES.append({
 
 <h2 id="what-is-not-registered">What is not being tested</h2>
 
-<p>The gaps are as informative as the entries. No registered trial examines ibogaine in a fentanyl-dependent population, which is now the dominant form of opioid dependence. No registered trial examines it for anxiety, depression or post-traumatic stress as a primary indication, despite those being where the largest reported effects have appeared. And no registered trial compares ibogaine against an active comparator such as buprenorphine or methadone, which is the comparison a clinician would need.</p>
+<p>The gaps are as informative as the entries. No registered trial examines ibogaine in a <a href="ibogaine-and-fentanyl.html">fentanyl</a>-dependent population, which is now the dominant form of opioid dependence. No registered trial examines it for anxiety, depression or post-traumatic stress as a primary indication, despite those being where the largest reported effects have appeared. And no registered trial compares ibogaine against an active comparator such as buprenorphine or methadone, which is the comparison a clinician would need.</p>
 
 <p>The one genuinely placebo-controlled randomised trial with published results in this family tested noribogaine rather than ibogaine, in 27 patients switched from methadone to morphine, and was designed as a safety study. It found a concentration-dependent rise in the QT interval, with mean effects of about 16, 28 and 42 milliseconds at the three doses, and a non-significant trend toward lower withdrawal ratings <a href="#ref-8">[8]</a>. That is the controlled evidence base in its entirety.</p>
 
@@ -4537,7 +4537,7 @@ ARTICLES.append({
 
 <p>Those studies differ in design quality and none of them establishes that ibogaine is effective. That is not what they are being used for here. They are being used as a record of what competent practitioners considered necessary before giving a large single dose of a drug with a documented cardiac effect, and on that narrow question they converge closely.</p>
 
-<p>The reasoning behind the benchmark is endorsed in review. A 2026 review notes that fatalities are documented in medically unsupervised settings and suggests prescreening and cardiac monitoring may reduce the risk <a href="#ref-8">[8]</a>. Screening and monitoring are the two levers, and they are both observable in advance.</p>
+<p>The reasoning behind the benchmark is endorsed in review. A 2026 review notes that <a href="ibogaine-deaths-what-is-known.html">fatalities are documented</a> in medically unsupervised settings and suggests prescreening and cardiac monitoring may reduce the risk <a href="#ref-8">[8]</a>. Screening and monitoring are the two levers, and they are both observable in advance.</p>
 
 <h2 id="screening-before">Screening before dosing</h2>
 
@@ -4561,7 +4561,7 @@ ARTICLES.append({
 
 <h2 id="medication-review">Medication review and washout</h2>
 
-<p>The most thorough documented washout comes from the clinic treating the veteran cohort, which stopped CYP2D6 inhibitors, serotonergic drugs, calcium channel blockers, beta blockers, benzodiazepines, stimulants, corticosteroids and all psychiatric medications before treatment <a href="#ref-3">[3]</a>. That breadth reflects an assumption that anything acting on the heart or on liver metabolism is a potential contributor.</p>
+<p>The most thorough documented washout comes from the clinic treating the veteran cohort, which stopped <a href="ibogaine-drug-interactions.html">CYP2D6 inhibitor</a>s, serotonergic drugs, calcium channel blockers, beta blockers, benzodiazepines, stimulants, corticosteroids and all psychiatric medications before treatment <a href="#ref-3">[3]</a>. That breadth reflects an assumption that anything acting on the heart or on liver metabolism is a potential contributor.</p>
 
 <p>Two things make this more than a formality. Blocking CYP2D6 roughly doubled exposure to ibogaine plus noribogaine in healthy volunteers <a href="#ref-9">[9]</a>, so an unidentified inhibitor meaningfully raises the dose that is effectively delivered. And methadone itself inhibits CYP2D6 and is likely to impair ibogaine metabolism <a href="#ref-6">[6]</a>, which is why the published series substituted morphine before dosing <a href="#ref-1">[1]</a> <a href="#ref-2">[2]</a>.</p>
 
@@ -4571,7 +4571,7 @@ ARTICLES.append({
 
 <h2 id="the-genotype-question">The genotype question</h2>
 
-<p>This is the question that most reliably separates thorough practice from adequate practice. CYP2D6 genotype drove a more than tenfold spread in ibogaine clearance among patients given the same dose per kilogram, and QT prolongation and ataxia tracked ibogaine concentrations rather than noribogaine concentrations <a href="#ref-5">[5]</a>. Slow metabolisers are therefore exposed to more of the compound that carries the cardiac risk, for longer.</p>
+<p>This is the question that most reliably separates thorough practice from adequate practice. <a href="cyp2d6-and-ibogaine-dosing.html">CYP2D6 genotype</a> drove a more than tenfold spread in ibogaine clearance among patients given the same dose per kilogram, and <a href="ibogaine-cardiac-risk.html">QT prolongation</a> and ataxia tracked ibogaine concentrations rather than noribogaine concentrations <a href="#ref-5">[5]</a>. Slow metabolisers are therefore exposed to more of the compound that carries the cardiac risk, for longer.</p>
 
 <p>The authors of the inhibitor study recommended that it may be prudent to genotype and to at least halve the intended dose in poor metabolisers <a href="#ref-9">[9]</a>. The St Kitts series genotyped CYP2D6 in a subset of participants <a href="#ref-1">[1]</a>, so the practice exists outside purely academic settings.</p>
 
@@ -4673,7 +4673,7 @@ ARTICLES.append({
 
 <h2 id="the-receptor-case">Why the receptor makes it plausible</h2>
 
-<p>The alpha3beta4 nicotinic receptor is the best-characterised target ibogaine has. Work on human alpha3beta4 receptors expressed in cells found that ibogaine blocked receptor-driven calcium influx about nine times more potently than phencyclidine, and bound a single site inside the ion channel with a dissociation constant of 0.46 micromolar <a href="#ref-1">[1]</a>.</p>
+<p>The <a href="ibogaine-receptors.html">alpha3beta4 nicotinic</a> receptor is the best-characterised target ibogaine has. Work on human alpha3beta4 receptors expressed in cells found that ibogaine blocked receptor-driven calcium influx about nine times more potently than phencyclidine, and bound a single site inside the ion channel with a dissociation constant of 0.46 micromolar <a href="#ref-1">[1]</a>.</p>
 
 <p>That figure matters because it is the lowest in ibogaine's binding profile. Most of its documented receptor interactions occur at micromolar concentrations <a href="#ref-2">[2]</a>, which is relatively weak. Sub-micromolar binding at a specific site within a channel is a sharper interaction, and it is the one place where ibogaine's affinity approaches a concentration plausibly reached in treatment.</p>
 
@@ -4693,7 +4693,7 @@ ARTICLES.append({
 
 <h2 id="the-analog-data">The analog data on nicotine</h2>
 
-<p>The nicotine evidence belongs to 18-MC, an ibogaine analog developed to retain the anti-addictive effects without the tremor, cerebellar toxicity and cardiac channel block <a href="#ref-5">[5]</a>. Crucially, 18-MC is most potent and somewhat selective as an alpha3beta4 nicotinic antagonist, which makes it a more targeted probe of that receptor than ibogaine is <a href="#ref-3">[3]</a>.</p>
+<p>The nicotine evidence belongs to <a href="ibogaine-analogs.html">18-MC</a>, an ibogaine analog developed to retain the anti-addictive effects without the tremor, cerebellar toxicity and cardiac channel block <a href="#ref-5">[5]</a>. Crucially, 18-MC is most potent and somewhat selective as an alpha3beta4 nicotinic antagonist, which makes it a more targeted probe of that receptor than ibogaine is <a href="#ref-3">[3]</a>.</p>
 
 <p>In animal models, 18-MC reduced intravenous morphine, cocaine, methamphetamine and nicotine self-administration and oral alcohol and nicotine intake, attenuated opioid withdrawal, did not affect responding for water, and produced no apparent toxicity. Low-dose combinations of other alpha3beta4 blockers reproduced those effects <a href="#ref-3">[3]</a>. That last point is the strongest part of the mechanistic argument, since reproducing an effect with different compounds hitting the same receptor is good evidence that the receptor is responsible.</p>
 
@@ -4713,7 +4713,7 @@ ARTICLES.append({
 
 <h2 id="no-human-studies">The absence of human studies</h2>
 
-<p>No human trial, case series or observational cohort has examined ibogaine for smoking or nicotine dependence. A 2026 review of three decades of human ibogaine research, covering 24 studies and 38 case reports and series published between 1990 and early 2025, describes observational data suggesting benefit in opioid use disorder, post-traumatic stress disorder and polysubstance dependence <a href="#ref-6">[6]</a>. Nicotine dependence is not among the indications with human data.</p>
+<p>No human trial, case series or observational cohort has examined ibogaine for smoking or nicotine dependence. A 2026 review of three decades of human ibogaine research, covering 24 studies and 38 case reports and series published between 1990 and early 2025, describes observational data suggesting benefit in opioid use disorder, <a href="ibogaine-and-ptsd.html">post-traumatic stress disorder</a> and polysubstance dependence <a href="#ref-6">[6]</a>. Nicotine dependence is not among the indications with human data.</p>
 
 <p>That absence is not an oversight waiting to be corrected. Research effort has concentrated where the observed effect is most distinctive and the existing treatments least adequate, and nicotine dependence has several approved pharmacological treatments with established safety profiles.</p>
 
@@ -4723,7 +4723,7 @@ ARTICLES.append({
 
 <p>This is where the question effectively settles, and it does so on risk rather than on the mechanism. Smoking causes enormous harm over decades, and stopping is valuable. But the alternatives are well characterised, inexpensive and do not require cardiac monitoring.</p>
 
-<p>Ibogaine does. In a closely screened Dutch series of 14 patients, maximum QT prolongation averaged 95 milliseconds, 7 of 14 passed 500 milliseconds, in 6 of 14 the abnormality persisted beyond 24 hours, and all 14 developed severe transient ataxia leaving them unable to walk unaided <a href="#ref-7">[7]</a>. Accepting that profile for opioid dependence, a condition with high short-term mortality, is a defensible calculation. Accepting it to stop smoking, when nicotine replacement and approved medicines exist, is a different proposition entirely.</p>
+<p>Ibogaine does. In a closely screened Dutch series of 14 patients, maximum <a href="ibogaine-cardiac-risk.html">QT prolongation</a> averaged 95 milliseconds, 7 of 14 passed 500 milliseconds, in 6 of 14 the abnormality persisted beyond 24 hours, and all 14 developed severe transient ataxia leaving them unable to walk unaided <a href="#ref-7">[7]</a>. Accepting that profile for opioid dependence, a condition with high short-term mortality, is a defensible calculation. Accepting it to stop smoking, when nicotine replacement and approved medicines exist, is a different proposition entirely.</p>
 
 <p>The duration of the experience bears on this too. A full dose produces a prolonged, intense psychoactive state lasting most of a day, which is a demanding intervention relative to the alternatives for this particular indication.</p>
 
@@ -4799,7 +4799,7 @@ ARTICLES.append({
 
 <h2 id="why-this-list">Why this list exists</h2>
 
-<p>Interest in these conditions is not unreasonable. Ibogaine is described as affecting neuroplasticity, it produces a profound psychological experience, and the reported effects in post-traumatic stress and depression were large. Any of those could support a hypothesis that it might help in other neurological or psychiatric conditions.</p>
+<p>Interest in these conditions is not unreasonable. Ibogaine is described as affecting <a href="ibogaine-and-neuroplasticity.html">neuroplasticity</a>, it produces a profound psychological experience, and the reported effects in post-traumatic stress and depression were large. Any of those could support a hypothesis that it might help in other neurological or psychiatric conditions.</p>
 
 <p>A hypothesis is where it stops. Moving from a plausible idea to a treatment requires studies that have not been done, and in the meantime a plausible idea provides no information about whether the treatment would help, do nothing, or cause harm in a given condition.</p>
 
@@ -4815,7 +4815,7 @@ ARTICLES.append({
 
 <h2 id="neurological">Parkinson's, MS and other neurological conditions</h2>
 
-<p>There is no human study of ibogaine in Parkinson's disease, multiple sclerosis, epilepsy, amyotrophic lateral sclerosis or dementia. The association that generates the interest in Parkinson's is indirect: ibogaine raises GDNF in rodents, a growth factor that supports dopamine-producing neurons, and Parkinson's involves the loss of those neurons.</p>
+<p>There is no human study of ibogaine in Parkinson's disease, multiple sclerosis, epilepsy, amyotrophic lateral sclerosis or dementia. The association that generates the interest in Parkinson's is indirect: ibogaine raises <a href="ibogaine-and-dopamine.html">GDNF</a> in rodents, a growth factor that supports dopamine-producing neurons, and Parkinson's involves the loss of those neurons.</p>
 
 <p>That connection is weaker than it sounds. The GDNF finding came from 36 rats with six per group, appeared only at the higher of two doses, only at 24 hours, and reached protein level in one brain region at roughly twofold <a href="#ref-2">[2]</a>. GDNF has itself been investigated as a Parkinson's treatment in its own right, with results that have not translated into an approved therapy, so even a reliable GDNF increase would not amount to a Parkinson's treatment.</p>
 
@@ -4835,7 +4835,7 @@ ARTICLES.append({
 
 <p>Chronic pain is asked about often, partly because of ibogaine's interaction with opioid receptors and partly because many people with chronic pain have become dependent on opioids prescribed for it. Those are two distinct questions and only the second connects to the evidence.</p>
 
-<p>For opioid dependence arising from pain treatment, the existing withdrawal literature applies, with all its limitations. For pain itself there is no evidence. The relevant pharmacology points away from an analgesic effect in any case: across three laboratories, ibogaine and noribogaine behaved as mu-opioid antagonists rather than agonists, and ibogaine stimulated G protein binding in no receptor-expressing cell line tested <a href="#ref-2">[2]</a>. A compound blocking the mu receptor would not be expected to relieve pain through it, and might complicate the use of opioid analgesics.</p>
+<p>For opioid dependence arising from pain treatment, the existing withdrawal literature applies, with all its limitations. For pain itself there is no evidence. The relevant pharmacology points away from an analgesic effect in any case: across three laboratories, ibogaine and <a href="noribogaine-pharmacokinetics.html">noribogaine</a> behaved as mu-opioid antagonists rather than agonists, and ibogaine stimulated G protein binding in no receptor-expressing cell line tested <a href="#ref-2">[2]</a>. A compound blocking the mu receptor would not be expected to relieve pain through it, and might complicate the use of opioid analgesics.</p>
 
 <h2 id="exclusion-criteria">When a condition is an exclusion, not an indication</h2>
 
@@ -4851,7 +4851,7 @@ ARTICLES.append({
 
 <h2 id="why-absence-matters">Why absence of evidence matters here</h2>
 
-<p>With a low-risk intervention, trying something unstudied carries limited cost. Ibogaine is not low risk. In a closely screened cohort, maximum QT prolongation averaged 95 milliseconds, 7 of 14 patients passed 500 milliseconds, in 6 of 14 the abnormality persisted beyond 24 hours, and all 14 were temporarily unable to walk unaided <a href="#ref-4">[4]</a>. The drug blocks the hERG potassium channel in heart muscle at relevant concentrations <a href="#ref-8">[8]</a>, and fatalities are documented, chiefly in unsupervised settings <a href="#ref-7">[7]</a>.</p>
+<p>With a low-risk intervention, trying something unstudied carries limited cost. Ibogaine is not low risk. In a closely screened cohort, maximum <a href="ibogaine-cardiac-risk.html">QT prolongation</a> averaged 95 milliseconds, 7 of 14 patients passed 500 milliseconds, in 6 of 14 the abnormality persisted beyond 24 hours, and all 14 were temporarily unable to walk unaided <a href="#ref-4">[4]</a>. The drug blocks the hERG potassium channel in heart muscle at relevant concentrations <a href="#ref-8">[8]</a>, and fatalities are documented, chiefly in unsupervised settings <a href="#ref-7">[7]</a>.</p>
 
 <p>That risk is constant regardless of why someone takes it. The case for accepting it rests entirely on the expected benefit, and where no evidence of benefit exists for a condition, there is nothing on the other side of the comparison. A 2026 scoping review also identifies the lack of standardised dosing, harmonised outcome measures and systematic long-term follow-up as structural limitations of the field <a href="#ref-6">[6]</a>, which means even the studied indications rest on shakier ground than is often assumed.</p>
 
@@ -4928,17 +4928,17 @@ ARTICLES.append({
 
 <h2 id="the-overall-picture">The overall picture</h2>
 
-<p>Across the published studies the same effects recur: loss of coordination, nausea and vomiting, tremor, prolonged insomnia, and changes in blood pressure and heart rate, alongside the QT prolongation that dominates the safety literature. The 191-person inpatient series in St Kitts recorded nausea, vomiting and gait ataxia as the most common side effects, with orthostatic hypotension in 5 percent of participants, and reported no serious adverse events and no deaths in that series <a href="#ref-2">[2]</a>.</p>
+<p>Across the published studies the same effects recur: loss of coordination, nausea and vomiting, tremor, prolonged insomnia, and changes in blood pressure and heart rate, alongside the <a href="ibogaine-cardiac-risk.html">QT prolongation</a> that dominates the safety literature. The 191-person inpatient series in St Kitts recorded nausea, vomiting and gait ataxia as the most common side effects, with orthostatic hypotension in 5 percent of participants, and reported no serious adverse events and no deaths in that series <a href="#ref-2">[2]</a>.</p>
 
 <p>Most of these effects are transient, which is not the same as trivial. They are also predictable enough that their management is a basic test of whether a setting is equipped for the treatment it is offering.</p>
 
-<p>One structural caveat applies to all of the figures below. Side effect rates come from studies with careful screening and exclusions, which means they describe what happens to people selected as suitable for treatment. A population that had not been screened for cardiac, liver and kidney problems, electrolyte abnormality and interacting medication would not be expected to produce the same numbers, and in the one direction that matters.</p>
+<p>One structural caveat applies to all of the figures below. Side effect rates come from studies with careful screening and exclusions, which means they describe what happens to people selected as suitable for treatment. A population that had not been screened for cardiac, liver and kidney problems, electrolyte abnormality and <a href="ibogaine-drug-interactions.html">interacting medication</a> would not be expected to produce the same numbers, and in the one direction that matters.</p>
 
 <h2 id="ataxia">Loss of coordination</h2>
 
 <p>Ataxia is the most consistently reported physical effect and the most underdescribed. In a Dutch study of 14 patients given a single 10 milligram per kilogram dose, severe transient ataxia leaving participants unable to walk unaided affected all 14 <a href="#ref-1">[1]</a>. Not most of them, and not the majority: all of them.</p>
 
-<p>The companion pharmacokinetic analysis measured ataxia formally with a standardised rating scale and found it tracked ibogaine concentrations rather than noribogaine concentrations <a href="#ref-3">[3]</a>. That links the severity directly to how much of the parent compound is in circulation, which in turn depends on how quickly the person clears it, with CYP2D6 genotype driving a more than tenfold spread in clearance <a href="#ref-3">[3]</a>.</p>
+<p>The companion pharmacokinetic analysis measured ataxia formally with a standardised rating scale and found it tracked ibogaine concentrations rather than <a href="noribogaine-pharmacokinetics.html">noribogaine</a> concentrations <a href="#ref-3">[3]</a>. That links the severity directly to how much of the parent compound is in circulation, which in turn depends on how quickly the person clears it, with CYP2D6 genotype driving a more than tenfold spread in clearance <a href="#ref-3">[3]</a>.</p>
 
 <p>The underlying cause is an effect on the cerebellum, the structure coordinating movement and balance. The analog literature makes the point indirectly: 18-MC was developed partly because it lacks ibogaine's cerebellar neurotoxicity <a href="#ref-6">[6]</a>, which is a statement about ibogaine as much as about the analog.</p>
 
@@ -5020,7 +5020,7 @@ ARTICLES.append({
 
 <h3>Why are side effects worse for some people?</h3>
 
-<p>Largely because of clearance. Ataxia and QT prolongation both tracked ibogaine concentrations rather than noribogaine concentrations, and CYP2D6 genotype drove a more than tenfold spread in clearance <a href="#ref-3">[3]</a>.</p>
+<p>Largely because of clearance. Ataxia and QT prolongation both tracked ibogaine concentrations rather than noribogaine concentrations, and <a href="cyp2d6-and-ibogaine-dosing.html">CYP2D6 genotype</a> drove a more than tenfold spread in clearance <a href="#ref-3">[3]</a>.</p>
 
 <div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>"""
 })
@@ -5080,7 +5080,7 @@ ARTICLES.append({
 
 <h2 id="the-mortality-data">The mortality data on stopping treatment</h2>
 
-<p>The larger evidence comes from a systematic review and meta-analysis covering 15 randomised trials with 3,852 participants and 36 cohort studies with 749,634 participants, examining mortality during and outside opioid agonist treatment <a href="#ref-2">[2]</a>.</p>
+<p>The larger evidence comes from a systematic review and meta-analysis covering 15 randomised trials with 3,852 participants and 36 cohort studies with 749,634 participants, examining mortality during and outside <a href="ibogaine-vs-medications.html">opioid agonist treatment</a> <a href="#ref-2">[2]</a>.</p>
 
 <p>During treatment, all-cause mortality was about half the rate outside it, and the finding held consistently across sex, age, location and other characteristics. Lower rates were observed for suicide, drug-related, alcohol-related and cardiovascular deaths. In the four weeks after treatment ceased, all-cause mortality was about six times higher than during the remainder of time in treatment, and remained roughly double for the rest of the time out of treatment <a href="#ref-2">[2]</a>.</p>
 
@@ -5106,13 +5106,13 @@ ARTICLES.append({
 
 <p>A retrospective survey of 88 people treated at a residential clinic in Mexico reported that most had their withdrawal eliminated or sharply reduced <a href="#ref-6">[6]</a>. That study depended on an anonymous online survey reaching a fraction of former patients, with two authors on the clinic's staff, so it carries obvious limitations as a source on longer-term outcomes.</p>
 
-<p>Across the literature a 2026 review found that most positive efficacy data come from uncontrolled, open-label or retrospective studies at high risk of bias <a href="#ref-8">[8]</a>. None of these studies was designed to measure post-treatment mortality, which means the ibogaine-specific evidence on this exact question does not exist.</p>
+<p>Across the literature a 2026 review found that most positive efficacy data come from uncontrolled, open-label or retrospective studies at <a href="ibogaine-evidence-overview.html">high risk of bias</a> <a href="#ref-8">[8]</a>. None of these studies was designed to measure post-treatment mortality, which means the ibogaine-specific evidence on this exact question does not exist.</p>
 
 <p>There is also a selection effect to keep in view when reading these follow-up figures. People who travel abroad and pay for ibogaine treatment are, as a group, more motivated and better resourced than the general population of people with opioid dependence, and the studies above mostly recruited from among those who had already done so. Outcomes in such a group would be expected to look better than outcomes in an unselected population, independent of what the drug did.</p>
 
 <h2 id="the-fentanyl-factor">Why fentanyl narrows the margin</h2>
 
-<p>The general tolerance problem becomes sharper with fentanyl. Its potency by weight is far higher than heroin's, and the illicit supply varies in concentration, so the relationship between a quantity used and a dose received is unpredictable. A person with reduced tolerance encountering an unpredictable supply has very little room for error.</p>
+<p>The general tolerance problem becomes sharper with <a href="ibogaine-and-fentanyl.html">fentanyl</a>. Its potency by weight is far higher than heroin's, and the illicit supply varies in concentration, so the relationship between a quantity used and a dose received is unpredictable. A person with reduced tolerance encountering an unpredictable supply has very little room for error.</p>
 
 <p>This also compounds an evidence gap. A 2026 review notes that ibogaine's evidence base for opioid use disorder largely predates the fentanyl era <a href="#ref-7">[7]</a>, so the follow-up data above describes outcomes in populations using heroin and methadone rather than fentanyl.</p>
 
@@ -5122,7 +5122,7 @@ ARTICLES.append({
 
 <p>Knowing that tolerance is gone is itself protective, because the specific danger is returning to a previously familiar amount. The risk arises from a dose that was routine before becoming dangerous, and that only operates on someone who does not realise it.</p>
 
-<p>Structured aftercare is the other element with support in the ibogaine literature specifically, where the Brazilian cohort combined ibogaine with psychotherapy and reported longer abstinence with repeat treatment <a href="#ref-5">[5]</a>. That study cannot separate the contribution of the psychotherapy from the ibogaine, which is a limitation, and either way the aftercare was part of what was delivered.</p>
+<p>Structured <a href="after-ibogaine-the-first-weeks.html">aftercare</a> is the other element with support in the ibogaine literature specifically, where the Brazilian cohort combined ibogaine with psychotherapy and reported longer abstinence with repeat treatment <a href="#ref-5">[5]</a>. That study cannot separate the contribution of the psychotherapy from the ibogaine, which is a limitation, and either way the aftercare was part of what was delivered.</p>
 
 <p>Anyone considering ibogaine as a route out of agonist treatment should also weigh that the mortality evidence for remaining in agonist treatment is the strongest in the field <a href="#ref-2">[2]</a>. That comparison belongs in the decision whatever conclusion someone reaches.</p>
 
@@ -5199,7 +5199,7 @@ ARTICLES.append({
 
 <h2 id="what-low-dose-studies-did">What the low-dose studies actually did</h2>
 
-<p>Two studies bear directly on this and both were conducted as formal clinical pharmacology. The first gave 36 healthy, drug-free men oral noribogaine at 3, 10, 30 or 60 milligrams, or placebo, in a randomised, double-blind, placebo-controlled ascending single-dose design, with sampling to 216 hours and pharmacodynamic tests chosen to detect opioid agonist effects <a href="#ref-1">[1]</a>.</p>
+<p>Two studies bear directly on this and both were conducted as formal clinical pharmacology. The first gave 36 healthy, drug-free men oral <a href="noribogaine-pharmacokinetics.html">noribogaine</a> at 3, 10, 30 or 60 milligrams, or placebo, in a randomised, double-blind, placebo-controlled ascending single-dose design, with sampling to 216 hours and pharmacodynamic tests chosen to detect opioid agonist effects <a href="#ref-1">[1]</a>.</p>
 
 <p>Absorption was rapid with a peak at 2 to 3 hours, exposure was dose-linear from 3 to 60 milligrams, and elimination was slow, with mean half-life estimates of 28 to 49 hours across dose groups. The apparent volume of distribution was very high. No opioid agonist effects appeared on pupil size or cold-pressor testing, and no safety or tolerability issues were reported at these doses <a href="#ref-1">[1]</a>.</p>
 
@@ -5217,7 +5217,7 @@ ARTICLES.append({
 
 @@CTA@@
 
-<p>The populations in these studies also differ in a way that matters. The healthy-volunteer work used drug-free men screened for fitness, with no cardiac disease, no interacting medication and normal liver function <a href="#ref-1">[1]</a> <a href="#ref-2">[2]</a>. The patient study used people on opioid maintenance switched to morphine <a href="#ref-3">[3]</a>, which is closer to the population that would actually consider low-dose use. Safety findings from a screened healthy cohort are the most favourable case available, not a general result.</p>
+<p>The populations in these studies also differ in a way that matters. The healthy-volunteer work used drug-free men screened for fitness, with no cardiac disease, no <a href="ibogaine-drug-interactions.html">interacting medication</a> and normal liver function <a href="#ref-1">[1]</a> <a href="#ref-2">[2]</a>. The patient study used people on opioid maintenance switched to morphine <a href="#ref-3">[3]</a>, which is closer to the population that would actually consider low-dose use. Safety findings from a screened healthy cohort are the most favourable case available, not a general result.</p>
 
 <h2 id="no-threshold">The absence of a no-effect threshold</h2>
 
@@ -5237,7 +5237,7 @@ ARTICLES.append({
 
 <p>Put together, repeated low dosing is the scenario in which the pharmacology is least characterised and the accumulation potential greatest. It is precisely what the volunteer studies did not test.</p>
 
-<p>There is a monitoring consequence that rarely gets raised. The reason full-dose treatment involves an electrocardiogram and continuous telemetry is that QT prolongation is invisible without measurement. A person taking repeated low doses at home has no way of knowing what their QT interval is doing, and the effect they are relying on being absent is precisely the one they cannot observe. In that respect unsupervised low-dose use removes the monitoring while retaining a smaller version of the hazard it exists to detect.</p>
+<p>There is a monitoring consequence that rarely gets raised. The reason full-dose treatment involves an electrocardiogram and continuous telemetry is that <a href="ibogaine-cardiac-risk.html">QT prolongation</a> is invisible without measurement. A person taking repeated low doses at home has no way of knowing what their QT interval is doing, and the effect they are relying on being absent is precisely the one they cannot observe. In that respect unsupervised low-dose use removes the monitoring while retaining a smaller version of the hazard it exists to detect.</p>
 
 <h2 id="no-efficacy-data">No efficacy data at any low dose</h2>
 
@@ -5249,7 +5249,7 @@ ARTICLES.append({
 
 <h2 id="variation">Variation makes a small dose unpredictable</h2>
 
-<p>A further complication applies with particular force to small amounts. CYP2D6 genotype drove a more than tenfold spread in ibogaine clearance among patients, and QT prolongation tracked ibogaine concentrations rather than noribogaine concentrations <a href="#ref-4">[4]</a>.</p>
+<p>A further complication applies with particular force to small amounts. <a href="cyp2d6-and-ibogaine-dosing.html">CYP2D6 genotype</a> drove a more than tenfold spread in ibogaine clearance among patients, and QT prolongation tracked ibogaine concentrations rather than noribogaine concentrations <a href="#ref-4">[4]</a>.</p>
 
 <p>A tenfold spread means a nominally small dose can produce a concentration an order of magnitude higher in one person than another. Someone designing a regimen around what they tolerated at a given amount has learned something about themselves and nothing transferable. For a person who clears the drug slowly, a repeated small dose is the combination most likely to accumulate.</p>
 
@@ -5345,9 +5345,9 @@ ARTICLES.append({
 
 <h2 id="the-cardiac-tail">The cardiac tail</h2>
 
-<p>One reason not to travel immediately is measurable. In a closely screened Dutch series of 14 patients, an interval above 450 milliseconds persisted beyond 24 hours in 6 of 14, and all 14 had experienced severe transient ataxia leaving them unable to walk unaided <a href="#ref-5">[5]</a>.</p>
+<p>One reason not to travel immediately is measurable. In a closely screened Dutch series of 14 patients, an interval above 450 milliseconds persisted beyond 24 hours in 6 of 14, and all 14 had experienced <a href="ibogaine-side-effects.html">severe transient ataxia</a> leaving them unable to walk unaided <a href="#ref-5">[5]</a>.</p>
 
-<p>The cardiac abnormality therefore outlasts the subjective experience in a substantial minority of people. Someone discharged once they can stand and walk may still have a prolonged QT interval, which is invisible without an electrocardiogram. This is the specific reason monitoring periods in published protocols extend to 24 hours at minimum and 72 in the most cautious case.</p>
+<p>The cardiac abnormality therefore outlasts the subjective experience in a substantial minority of people. Someone discharged once they can stand and walk may still have a prolonged <a href="ibogaine-cardiac-risk.html">QT interval</a>, which is invisible without an electrocardiogram. This is the specific reason monitoring periods in published protocols extend to 24 hours at minimum and 72 in the most cautious case.</p>
 
 <p>One further physical point belongs here. Nausea and vomiting are standard features of the treatment, and fluid and electrolyte loss lowers potassium and magnesium, both of which affect cardiac repolarisation. The Dutch protocol required potassium within a defined range before dosing <a href="#ref-5">[5]</a>, and the same reasoning applies afterwards: correcting what was lost is part of the recovery rather than an optional comfort measure.</p>
 
@@ -5383,7 +5383,7 @@ ARTICLES.append({
 
 <h2 id="the-tolerance-point">The tolerance point</h2>
 
-<p>One fact about this period is more consequential than anything else in this entry. Opioid tolerance falls when use stops, and a dose that was previously routine can be fatal afterwards. Meta-analysis of opioid agonist treatment found all-cause mortality about six times higher in the four weeks after treatment ceased than during the remainder of time in treatment <a href="#ref-7">[7]</a>.</p>
+<p>One fact about this period is more consequential than anything else in this entry. Opioid tolerance falls when use stops, and a dose that was previously routine can be fatal afterwards. Meta-analysis of <a href="ibogaine-vs-medications.html">opioid agonist treatment</a> found all-cause mortality about six times higher in the four weeks after treatment ceased than during the remainder of time in treatment <a href="#ref-7">[7]</a>.</p>
 
 <p>That window coincides exactly with the weeks this entry describes. Naloxone available, someone else present, and an explicit understanding that previous amounts are now dangerous are the measures that address it.</p>
 

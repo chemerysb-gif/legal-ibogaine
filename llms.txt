@@ -22,11 +22,30 @@ Key facts: ibogaine is a psychoactive alkaloid from the Tabernanthe iboga shrub,
 
 ## Research library
 
-- [Evidence overview](https://legal-ibogaine.com/library/ibogaine-evidence-overview.html)
-- [Pharmacology of ibogaine](https://legal-ibogaine.com/library/pharmacology-of-ibogaine.html)
-- [How ibogaine interrupts withdrawal](https://legal-ibogaine.com/library/withdrawal-interruption-mechanisms.html)
-- [Noribogaine pharmacokinetics](https://legal-ibogaine.com/library/noribogaine-pharmacokinetics.html)
-- [Clinical studies summarized](https://legal-ibogaine.com/library/clinical-studies-summarized.html)
+### Evidence
+
+- [What does ibogaine do to opioid withdrawal?](https://legal-ibogaine.com/library/ibogaine-opioid-withdrawal.html)
+- [Every major ibogaine study, summarized](https://legal-ibogaine.com/library/clinical-studies-summarized.html)
+- [What does the evidence on ibogaine show in 2026?](https://legal-ibogaine.com/library/ibogaine-evidence-overview.html)
+- [Ibogaine vs. Suboxone and methadone: how do the approaches differ?](https://legal-ibogaine.com/library/ibogaine-vs-medications.html)
+- [The Stanford MISTIC study: what did ibogaine do for veterans with brain injury?](https://legal-ibogaine.com/library/mistic-study-close-read.html)
+
+### History
+
+- [How did ibogaine science develop from 1901 to 2026?](https://legal-ibogaine.com/library/history-of-ibogaine-science.html)
+
+### Pharmacology
+
+- [The Pharmacology of Ibogaine: Targets, Kinetics, Metabolism](https://legal-ibogaine.com/library/pharmacology-of-ibogaine.html)
+- [How does ibogaine interrupt opioid withdrawal?](https://legal-ibogaine.com/library/withdrawal-interruption-mechanisms.html)
+- [Noribogaine: how long does ibogaine's metabolite last?](https://legal-ibogaine.com/library/noribogaine-pharmacokinetics.html)
+- [What is ibogaine?](https://legal-ibogaine.com/library/what-is-ibogaine.html)
+
+### Research
+
+- [What must rigorous ibogaine trials answer?](https://legal-ibogaine.com/library/open-questions.html)
+- [Tabernanthalog and other ibogaine analogs: can they work without the long experience?](https://legal-ibogaine.com/library/ibogaine-analogs.html)
+
 - [All articles](https://legal-ibogaine.com/library/index.html)
 
 ## Policies

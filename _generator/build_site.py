@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Legal Ibogaine site generator v3 — full IA: root pages, library, sitemap."""
-import os, sys, datetime, re, json, hashlib
+import os, sys, datetime, re, json, hashlib, glob
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from review_data_1 import ARTICLES as A1
@@ -628,6 +628,36 @@ def render_home():
         f.write(html)
     print("wrote index.html")
 
+def render_llms_txt():
+    """llms.txt, with the article list generated from what is published.
+
+    It was hand-maintained and had drifted to 5 of the library's articles,
+    because nothing updated it when an article shipped. The prose stays
+    hand-written in _generator/llms_head.txt; only the list is generated, so it
+    follows the publish queue on its own."""
+    head_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "llms_head.txt")
+    head = open(head_path, encoding="utf-8").read()
+
+    by_topic = {}
+    for a in ARTICLES:
+        by_topic.setdefault(a["topic"], []).append(a)
+
+    lines = []
+    for topic in sorted(by_topic):
+        lines.append("### %s" % topic)
+        lines.append("")
+        for a in by_topic[topic]:
+            lines.append("- [%s](%s/library/%s.html)" % (a["title"], SITE, a["slug"]))
+        lines.append("")
+    lines.append("- [All articles](%s/library/index.html)" % SITE)
+
+    out = head.replace("@@ARTICLES@@", "\n".join(lines))
+    assert "@@" not in out, "llms.txt left a placeholder unsubstituted"
+    with open(os.path.join(OUT, "llms.txt"), "w", encoding="utf-8") as f:
+        f.write(out)
+    print("llms.txt:", len(ARTICLES), "articles listed")
+
+
 def render_404():
     P = ""
     html = HEAD.replace("@@HTITLE@@", "Page Not Found").replace("@@DESC@@", "That page doesn't exist. Start from the guide's main routes.") \
@@ -740,6 +770,37 @@ def inject_img_dims():
             open(f, "w").write(new)
     print("img dims injected:", n)
 
+QUEUED_SLUGS = {a["slug"] for a in QUEUED}
+_ANCHOR_RE = re.compile(
+    r'<a\s[^>]*href="(?:library/)?([a-z0-9-]+)\.html"[^>]*>(.*?)</a>', re.S)
+
+
+def gate_queued_links():
+    """Unwrap links that point at an article whose publish date has not come.
+
+    Contextual cross-links are written once, in the article body, for the whole
+    library. A link to a queued article would 404 until its day, so instead of
+    maintaining the links alongside the queue by hand, the anchor is removed
+    here and the sentence keeps its wording. Each link starts working on the
+    morning its target publishes, with no edit."""
+    n = 0
+    for f in (glob.glob(os.path.join(OUT, "*.html"))
+              + glob.glob(os.path.join(OUT, "library", "*.html"))):
+        html = open(f, encoding="utf-8").read()
+
+        def unwrap(m):
+            nonlocal n
+            if m.group(1) in QUEUED_SLUGS:
+                n += 1
+                return m.group(2)
+            return m.group(0)
+
+        new_html = _ANCHOR_RE.sub(unwrap, html)
+        if new_html != html:
+            open(f, "w", encoding="utf-8").write(new_html)
+    print("links to queued articles unwrapped:", n)
+
+
 def reap_queued_pages():
     """Delete built pages for articles whose publish date has not arrived.
 
@@ -791,6 +852,8 @@ if __name__ == "__main__":
     render_home()
     render_404()
     reap_queued_pages()
+    render_llms_txt()
+    gate_queued_links()
     inject_img_dims()
     render_sitemap()
     verify_no_placeholders()

@@ -114,11 +114,11 @@ ARTICLES = [
 
 <p>One line of rat research looks at growth factors. These are proteins that act like fertilizer for nerve cells. They help cells grow and hold on to their links with each other.</p>
 
-<p><strong>In rats, a high dose of ibogaine raised a growth factor called GDNF</strong> in the brain's reward area a day later <a href="#ref-7">[7]</a>. A lower dose left GDNF unchanged in every region tested <a href="#ref-7">[7]</a>. One idea under study is that GDNF keeps itself going in a loop after the drug has cleared <a href="#ref-7">[7]</a>.</p>
+<p><strong>In rats, a high dose of ibogaine raised a growth factor called <a href="ibogaine-and-dopamine.html">GDNF</a></strong> in the brain's reward area a day later <a href="#ref-7">[7]</a>. A lower dose left GDNF unchanged in every region tested <a href="#ref-7">[7]</a>. One idea under study is that GDNF keeps itself going in a loop after the drug has cleared <a href="#ref-7">[7]</a>.</p>
 
 <p>In the same rat study, the genetic message for a second growth factor, BDNF, rose steeply <a href="#ref-7">[7]</a>. The finished BDNF protein did not rise by a significant amount <a href="#ref-7">[7]</a>.</p>
 
-<p>In rat nerve cells grown in a dish, noribogaine helps the cells sprout new branches <a href="#ref-7">[7]</a>. Branching of this kind is one way nerve cells form new links <a href="#ref-7">[7]</a>.</p>
+<p>In rat nerve cells grown in a dish, <a href="noribogaine-pharmacokinetics.html">noribogaine</a> helps the cells sprout new branches <a href="#ref-7">[7]</a>. Branching of this kind is one way nerve cells form new links <a href="#ref-7">[7]</a>.</p>
 
 <h2 id="long-ibogaine-stay-body">How long does ibogaine stay in the body?</h2>
 
@@ -130,7 +130,7 @@ ARTICLES = [
 
 <p>A liver enzyme called CYP2D6 does the conversion <a href="#ref-2">[2]</a>. People do not all run it at the same speed. Between 5 and 10 percent of people of European descent lack the gene for it <a href="#ref-4">[4]</a>. In these slow processors, combined drug levels are expected to run about twice as high <a href="#ref-4">[4]</a>.</p>
 
-<p>Both compounds affect the heart. They lengthen the QT interval, the heart's electrical reset between beats <a href="#ref-5">[5]</a><a href="#ref-8">[8]</a>.</p>
+<p>Both compounds affect the heart. They lengthen the <a href="ibogaine-cardiac-risk.html">QT interval</a>, the heart's electrical reset between beats <a href="#ref-5">[5]</a><a href="#ref-8">[8]</a>.</p>
 
 <p>In a Dutch hospital study of people with opioid use disorder, the QT interval grew by about 95 milliseconds at its peak after one dose <a href="#ref-5">[5]</a>. <strong>Half the patients passed 500 milliseconds</strong> <a href="#ref-5">[5]</a>. In close to half, the lengthening lasted beyond a full day <a href="#ref-5">[5]</a>.</p>
 
@@ -184,7 +184,7 @@ ARTICLES = [
 
 <h3>Is ibogaine safe?</h3>
 
-<p>Ibogaine lengthens the heart's QT interval, which has been linked to sudden deaths <a href="#ref-7">[7]</a>. In a hospital study of opioid treatment, half the patients passed a QT of 500 milliseconds after a single dose <a href="#ref-5">[5]</a>. Treatment needs heart checks first and constant heart monitoring during treatment. These lower the risk without removing it <a href="#ref-2">[2]</a><a href="#ref-5">[5]</a>.</p>
+<p>Ibogaine lengthens the heart's QT interval, which has been linked to <a href="ibogaine-deaths-what-is-known.html">sudden death</a>s <a href="#ref-7">[7]</a>. In a hospital study of opioid treatment, half the patients passed a QT of 500 milliseconds after a single dose <a href="#ref-5">[5]</a>. Treatment needs heart checks first and constant heart monitoring during treatment. These lower the risk without removing it <a href="#ref-2">[2]</a><a href="#ref-5">[5]</a>.</p>
 
 <div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>""",
 "htitle": "Ibogaine Evidence in 2026: What Studies Show"
@@ -248,7 +248,7 @@ ARTICLES = [
 
 <p>A loose grip matters only if enough drug reaches the target. In patients given a treatment dose, the free drug in the blood reaches that same micromolar range <a href="#ref-5">[5]</a>.</p>
 
-<p>In rats, noribogaine, the compound the body makes from ibogaine, was about ten times as potent as ibogaine at raising serotonin <a href="#ref-8">[8]</a>.</p>
+<p>In rats, <a href="noribogaine-pharmacokinetics.html">noribogaine</a>, the compound the body makes from ibogaine, was about ten times as potent as ibogaine at raising serotonin <a href="#ref-8">[8]</a>.</p>
 
 <p>Binding shows where ibogaine can act. Which contact causes which effect is a separate question. A 2019 research paper calls the route to its effect on drug-seeking unresolved <a href="#ref-1">[1]</a>. In rodent research, these receptor contacts do not seem to explain the drug's long-lasting effects <a href="#ref-1">[1]</a>.</p>
 
@@ -292,7 +292,7 @@ ARTICLES = [
 
 <p>Exposure also shapes the drug's effect on the heart. In cell studies, ibogaine blocks hERG, a potassium channel the heart uses to reset between beats <a href="#ref-10">[10]</a>. It does so at levels found in the blood of treated patients <a href="#ref-5">[5]</a>.</p>
 
-<p>In the Dutch study, the lengthening of the QT interval tracked ibogaine levels <a href="#ref-4">[4]</a>. <strong>Slower CYP2D6 activity meant more ibogaine for longer</strong> <a href="#ref-4">[4]</a>.</p>
+<p>In the Dutch study, the lengthening of the <a href="ibogaine-cardiac-risk.html">QT interval</a> tracked ibogaine levels <a href="#ref-4">[4]</a>. <strong>Slower CYP2D6 activity meant more ibogaine for longer</strong> <a href="#ref-4">[4]</a>.</p>
 
 <p>Reported deaths after ibogaine often involve doses above 20 mg per kilogram, or several doses stacked over time <a href="#ref-2">[2]</a>. The Dutch team calls for lower doses, ideally tailored to each person's CYP2D6 genes <a href="#ref-4">[4]</a>. The volunteer study's authors suggest gene testing before treatment, and at least halving the dose for poor processors <a href="#ref-6">[6]</a>.</p>
 
@@ -354,7 +354,7 @@ ARTICLES = [
 
 <h3>How long do ibogaine's effects last?</h3>
 
-<p>The vivid, dream-like stage usually lasts 4 to 8 hours <a href="#ref-2">[2]</a>. A quieter, reflective stage of 8 to 20 hours follows <a href="#ref-13">[13]</a>. Poor sleep can continue for up to three days <a href="#ref-13">[13]</a>.</p>
+<p>The vivid, <a href="what-an-ibogaine-session-is-like.html">dream-like</a> stage usually lasts 4 to 8 hours <a href="#ref-2">[2]</a>. A quieter, reflective stage of 8 to 20 hours follows <a href="#ref-13">[13]</a>. Poor sleep can continue for up to three days <a href="#ref-13">[13]</a>.</p>
 
 <h3>What does ibogaine do to the heart?</h3>
 
@@ -424,7 +424,7 @@ ARTICLES = [
 
 <p>Most medicines are built to press one button. Ibogaine presses many at the same time. That makes it hard to trace any one effect back to one cause.</p>
 
-<p><strong>The body turns ibogaine into a second active compound, noribogaine.</strong> An enzyme called CYP2D6 does most of the work <a href="#ref-1">[1]</a><a href="#ref-10">[10]</a>. Ibogaine itself clears from the blood within a day in most people <a href="#ref-1">[1]</a>. Noribogaine stays for days <a href="#ref-11">[11]</a><a href="#ref-12">[12]</a>.</p>
+<p><strong>The body turns ibogaine into a second active compound, <a href="noribogaine-pharmacokinetics.html">noribogaine</a>.</strong> An enzyme called CYP2D6 does most of the work <a href="#ref-1">[1]</a><a href="#ref-10">[10]</a>. Ibogaine itself clears from the blood within a day in most people <a href="#ref-1">[1]</a>. Noribogaine stays for days <a href="#ref-11">[11]</a><a href="#ref-12">[12]</a>.</p>
 
 <p>The team behind the St Kitts study points to noribogaine as the likely reason relief lasts longer than the first dose <a href="#ref-1">[1]</a>. In rodent research, ibogaine's direct contact with receptors does not seem to explain its long-lasting effects <a href="#ref-6">[6]</a>.</p>
 
@@ -469,7 +469,7 @@ ARTICLES = [
 
 <p><strong>Schenberg et al. 2014.</strong> In Brazil, people who had used alcohol, cannabis, cocaine or crack took ibogaine with psychotherapy, and 61 percent were abstinent when the records were reviewed <a href="#ref-8">[8]</a>.</p>
 
-<p><strong>Rocha et al. 2026.</strong> In a hospital pilot in adults with alcohol use disorder, most said they drank less after ibogaine <a href="#ref-14">[14]</a>.</p>
+<p><strong>Rocha et al. 2026.</strong> In a hospital pilot in adults with <a href="ibogaine-and-alcohol.html">alcohol use disorder</a>, most said they drank less after ibogaine <a href="#ref-14">[14]</a>.</p>
 
 <p><strong>Knuijver et al. 2022.</strong> In a Dutch university hospital, people on methadone or buprenorphine switched to morphine, then took one dose <a href="#ref-5">[5]</a>. Most did not go back to morphine over the next 24 hours <a href="#ref-5">[5]</a>. This study's heart findings are covered below.</p>
 
@@ -499,7 +499,7 @@ ARTICLES = [
 
 <p>Studies that measured the heart found that ibogaine and noribogaine both lengthen its electrical recovery time <a href="#ref-5">[5]</a><a href="#ref-11">[11]</a>. Doctors measure this as the QT interval. A long QT interval has been linked to sudden deaths after ibogaine <a href="#ref-6">[6]</a>.</p>
 
-<p>The QT interval works a little like a camera flash. After each beat, the heart needs time to recharge before the next one. When that recharge runs long, the rhythm can go dangerously wrong <a href="#ref-6">[6]</a>.</p>
+<p>The <a href="ibogaine-cardiac-risk.html">QT interval</a> works a little like a camera flash. After each beat, the heart needs time to recharge before the next one. When that recharge runs long, the rhythm can go dangerously wrong <a href="#ref-6">[6]</a>.</p>
 
 <p>In a Dutch hospital study, the QT interval rose by about 95 milliseconds at its peak <a href="#ref-5">[5]</a>. <strong>Half the patients passed 500 milliseconds</strong> <a href="#ref-5">[5]</a>. At that point, staff gave magnesium <a href="#ref-5">[5]</a>. In close to half, the interval stayed long beyond the first day <a href="#ref-5">[5]</a>.</p>
 
@@ -559,7 +559,7 @@ ARTICLES = [
 
 <h3>Is ibogaine safe?</h3>
 
-<p>Ibogaine lengthens the heart's QT interval, which has been linked to sudden deaths <a href="#ref-6">[6]</a>. In one hospital study half the patients passed 500 milliseconds, and two studies here each had a death <a href="#ref-3">[3]</a><a href="#ref-5">[5]</a><a href="#ref-7">[7]</a>. Screening and constant heart monitoring lower the risk without removing it <a href="#ref-1">[1]</a><a href="#ref-5">[5]</a>.</p>
+<p>Ibogaine lengthens the heart's QT interval, which has been linked to <a href="ibogaine-deaths-what-is-known.html">sudden death</a>s <a href="#ref-6">[6]</a>. In one hospital study half the patients passed 500 milliseconds, and two studies here each had a death <a href="#ref-3">[3]</a><a href="#ref-5">[5]</a><a href="#ref-7">[7]</a>. Screening and constant heart monitoring lower the risk without removing it <a href="#ref-1">[1]</a><a href="#ref-5">[5]</a>.</p>
 
 <div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>""",
 "htitle": "Every Major Ibogaine Study, Summarized",
@@ -631,7 +631,7 @@ ARTICLES = [
 
 <h2 id="receptors-ibogaine-work">What receptors does ibogaine work on?</h2>
 
-<p>Ibogaine attaches to many targets in the brain, including opioid, NMDA and nicotinic receptors <a href="#ref-5">[5]</a>. It also binds the pumps that mop up serotonin and dopamine <a href="#ref-5">[5]</a>.</p>
+<p>Ibogaine attaches to many targets in the brain, including opioid, NMDA and <a href="ibogaine-and-smoking.html">nicotinic receptor</a>s <a href="#ref-5">[5]</a>. It also binds the pumps that mop up serotonin and dopamine <a href="#ref-5">[5]</a>.</p>
 
 <p>A typical drug works like a dimmer on one circuit. Ibogaine reaches across the whole fuse board.</p>
 
@@ -643,7 +643,7 @@ ARTICLES = [
 
 <h2 id="ibogaine-work-opioid-receptors">Does ibogaine work on opioid receptors?</h2>
 
-<p>Ibogaine and noribogaine act on opioid receptors without behaving like opioid drugs <a href="#ref-3">[3]</a><a href="#ref-4">[4]</a>. In healthy volunteers, noribogaine showed no opioid-like effect on pupil size <a href="#ref-3">[3]</a>. It showed none on pain tolerance in a cold-water test either <a href="#ref-3">[3]</a>. Both tests are sensitive to opioid drugs <a href="#ref-3">[3]</a>.</p>
+<p>Ibogaine and <a href="noribogaine-pharmacokinetics.html">noribogaine</a> act on opioid receptors without behaving like opioid drugs <a href="#ref-3">[3]</a><a href="#ref-4">[4]</a>. In healthy volunteers, noribogaine showed no opioid-like effect on pupil size <a href="#ref-3">[3]</a>. It showed none on pain tolerance in a cold-water test either <a href="#ref-3">[3]</a>. Both tests are sensitive to opioid drugs <a href="#ref-3">[3]</a>.</p>
 
 <p>Lab work points the same way. In rat brain tissue, ibogaine and noribogaine blocked the mu receptor instead of switching it on <a href="#ref-4">[4]</a>. The team concluded that switching on the mu receptor <strong>does not appear to explain ibogaine's effect on withdrawal</strong> <a href="#ref-4">[4]</a>. How this differs from methadone and buprenorphine is covered in <a href="ibogaine-vs-medications.html">Ibogaine vs. Suboxone and Methadone</a>.</p>
 
@@ -686,9 +686,9 @@ ARTICLES = [
 
 <p>Think of ibogaine as a match and noribogaine as the slow log it lights. The match flares and goes out within hours. The log keeps burning well into the following days.</p>
 
-<p>The handover runs at a different speed in each person. Genes set how active CYP2D6 is. In Dutch patients, that drove a more than tenfold spread in how fast ibogaine was cleared <a href="#ref-14">[14]</a>. In healthy volunteers, blocking CYP2D6 with another medicine roughly doubled exposure to ibogaine and noribogaine combined <a href="#ref-19">[19]</a>.</p>
+<p>The handover runs at a different speed in each person. Genes set how active CYP2D6 is. In Dutch patients, that drove a <a href="cyp2d6-and-ibogaine-dosing.html">more than tenfold spread</a> in how fast ibogaine was cleared <a href="#ref-14">[14]</a>. In healthy volunteers, blocking CYP2D6 with another medicine roughly doubled exposure to ibogaine and noribogaine combined <a href="#ref-19">[19]</a>.</p>
 
-<p><strong>Noribogaine is active in people on its own.</strong> Given alone to people switching off methadone, it lengthened the heart's QT interval <a href="#ref-15">[15]</a>. The rise grew with the dose and with the level in the blood <a href="#ref-15">[15]</a>. That is a cardiac risk. In a Dutch study of ibogaine, the QT interval stayed long past the first day in almost half the patients <a href="#ref-2">[2]</a>.</p>
+<p><strong>Noribogaine is active in people on its own.</strong> Given alone to people switching off methadone, it lengthened the heart's <a href="ibogaine-cardiac-risk.html">QT interval</a> <a href="#ref-15">[15]</a>. The rise grew with the dose and with the level in the blood <a href="#ref-15">[15]</a>. That is a cardiac risk. In a Dutch study of ibogaine, the QT interval stayed long past the first day in almost half the patients <a href="#ref-2">[2]</a>.</p>
 
 <p>Animal work supports the noribogaine idea. In mice dependent on morphine, oral noribogaine cut withdrawal signs brought on by an opioid blocker by up to 88 percent <a href="#ref-16">[16]</a>. Those authors concluded that noribogaine, rather than ibogaine, blocks this kind of withdrawal <a href="#ref-16">[16]</a>.</p>
 
@@ -872,7 +872,7 @@ ARTICLES = [
 
 <p>Ibogaine levels also shape the heart effect. In Dutch patients, QT lengthening and unsteadiness on the feet tracked ibogaine blood levels during the first day, more closely than noribogaine levels <a href="#ref-4">[4]</a>. Slow processors keep ibogaine in the blood for longer <a href="#ref-4">[4]</a><a href="#ref-6">[6]</a>.</p>
 
-<p><strong>The heart effect outlasts ibogaine itself.</strong> QT prolongation after ibogaine typically lasts more than 24 hours <a href="#ref-5">[5]</a>. In a Dutch hospital study, it lasted beyond the first day in close to half the patients <a href="#ref-11">[11]</a>. In case reports, it has sometimes persisted for more than a week <a href="#ref-5">[5]</a>.</p>
+<p><strong>The heart effect outlasts ibogaine itself.</strong> <a href="ibogaine-cardiac-risk.html">QT prolongation</a> after ibogaine typically lasts more than 24 hours <a href="#ref-5">[5]</a>. In a Dutch hospital study, it lasted beyond the first day in close to half the patients <a href="#ref-11">[11]</a>. In case reports, it has sometimes persisted for more than a week <a href="#ref-5">[5]</a>.</p>
 
 <p>Deaths linked to ibogaine have been reported from about an hour and a half to around three days after it was taken <a href="#ref-5">[5]</a>. Cardiac events can occur several days, and in some cases weeks, after intake <a href="#ref-5">[5]</a>.</p>
 
@@ -880,7 +880,7 @@ ARTICLES = [
 
 <h2 id="ibogaine-feel-like-as">What does ibogaine feel like as the levels rise and fall?</h2>
 
-<p>The experience comes in two stages, and they line up with the drug's timeline. A vivid, dream-like stage comes first. A calm, thoughtful one follows <a href="#ref-1">[1]</a><a href="#ref-12">[12]</a>.</p>
+<p>The experience comes in two stages, and they line up with the drug's timeline. A vivid, <a href="what-an-ibogaine-session-is-like.html">dream-like</a> stage comes first. A calm, thoughtful one follows <a href="#ref-1">[1]</a><a href="#ref-12">[12]</a>.</p>
 
 <p>The first stage begins between about half an hour and three hours after the dose <a href="#ref-1">[1]</a><a href="#ref-12">[12]</a>. This stage lasts about 4 to 8 hours <a href="#ref-1">[1]</a><a href="#ref-12">[12]</a>. It covers the first hours after dosing, when ibogaine levels are highest <a href="#ref-4">[4]</a>.</p>
 
@@ -926,7 +926,7 @@ ARTICLES = [
 
 <h3>Is ibogaine dangerous?</h3>
 
-<p>Ibogaine lengthens the heart's QT interval, which has been linked to sudden deaths <a href="#ref-8">[8]</a>. In one hospital study, patients were screened beforehand and closely monitored, and half still passed a QT of 500 milliseconds after a single dose <a href="#ref-11">[11]</a>. Cardiac events can occur several days, and in some cases weeks, after intake <a href="#ref-5">[5]</a>.</p>
+<p>Ibogaine lengthens the heart's QT interval, which has been linked to <a href="ibogaine-deaths-what-is-known.html">sudden death</a>s <a href="#ref-8">[8]</a>. In one hospital study, patients were screened beforehand and closely monitored, and half still passed a QT of 500 milliseconds after a single dose <a href="#ref-11">[11]</a>. Cardiac events can occur several days, and in some cases weeks, after intake <a href="#ref-5">[5]</a>.</p>
 
 <div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>"""
 },
