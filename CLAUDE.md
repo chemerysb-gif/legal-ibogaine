@@ -26,6 +26,19 @@ partner" stays per Bogdan (multiple partners planned).
     and a post-pass that injects `width`/`height` into every `<img>` (via sips).
   - `site_pages_1/2/3/4.py` — page bodies. `site_pages_4.py` = the two surveys. `home_body.html` = homepage.
   - `review_data_1/2.py` — the 10 library articles.
+- **Scheduled publishing (added 2026-10-22).** An article is public on and after its
+  `date` field. `build_site.py` renders only articles whose date has arrived; later ones are
+  held out of `library/`, the library index, the sitemap, the related blocks and the article
+  numbering, and `reap_queued_pages()` deletes any page left over from a previous build. So
+  queueing an article is just setting a future `date`; un-publishing one is setting a later date.
+  `SITE_TODAY=YYYY-MM-DD` overrides the date to test the queue without waiting.
+  - `.github/workflows/publish-next.yml` runs daily at 01:00 UTC: rebuild, `precheck.py --all`
+    as a gate, then commit and push only if something came due, then request a Pages build
+    (a `GITHUB_TOKEN` push does not trigger `pages-build-deployment` on its own). It never
+    writes or edits content. A failing gate means nothing is committed and nothing deploys.
+  - `promote_next.py` is the older, separate mechanism for *rewrites* of pages that are
+    already live and indexed; those are swapped in place and never date-gated, because a
+    future date would pull a live page offline. Do not use it for new articles.
 - `css/styles.css` and `js/*.js` are hand-maintained (not generated).
 - **Deploy procedure**: rebuild, then rsync everything except `_generator`, `README.md`, `.netlify`, `.DS_Store`
   into a staging dir with a `CNAME` file (`legal-ibogaine.com`) + `.nojekyll`, commit, push to

@@ -8,7 +8,17 @@ from review_data_2 import ARTICLES as A2
 import site_pages_1, site_pages_2, site_pages_3, site_pages_4
 from site_pages_3 import resource_card
 
-ARTICLES = A1 + A2
+ARTICLES_ALL = A1 + A2
+
+# Scheduled publishing. An article is public on and after its `date`; a future
+# date keeps it out of library/, the library index, the sitemap, the related
+# blocks and the article numbering, so finished work can sit in the repo
+# without being reachable. SITE_TODAY overrides the date for testing.
+TODAY = os.environ.get("SITE_TODAY") or datetime.date.today().isoformat()
+ARTICLES = sorted((a for a in ARTICLES_ALL if a["date"] <= TODAY),
+                  key=lambda a: (a["date"], a["slug"]))
+QUEUED = [a for a in ARTICLES_ALL if a["date"] > TODAY]
+
 ROOT_PAGES = site_pages_1.PAGES + site_pages_2.PAGES + site_pages_3.PAGES + site_pages_4.PAGES
 
 # Eligibility page: the embedded quiz became its own page; leave a bridge card.
@@ -730,6 +740,22 @@ def inject_img_dims():
             open(f, "w").write(new)
     print("img dims injected:", n)
 
+def reap_queued_pages():
+    """Delete built pages for articles whose publish date has not arrived.
+
+    Without this, un-publishing an article leaves the previous build's HTML on
+    disk and committed, so the page stays live and only disappears from the
+    index and sitemap. Only files this generator owns are touched: a page is
+    removed solely because its slug is a known article that is still queued."""
+    n = 0
+    for a in QUEUED:
+        path = os.path.join(OUT, "library", a["slug"] + ".html")
+        if os.path.exists(path):
+            os.remove(path)
+            n += 1
+    print("queued articles held back:", len(QUEUED), "| pages removed:", n)
+
+
 def verify_no_placeholders():
     """Refuse to finish a build that left a template variable in a page.
 
@@ -764,6 +790,7 @@ if __name__ == "__main__":
     render_library_index()
     render_home()
     render_404()
+    reap_queued_pages()
     inject_img_dims()
     render_sitemap()
     verify_no_placeholders()
