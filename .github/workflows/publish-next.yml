@@ -19,6 +19,7 @@ on:
 permissions:
   contents: write
   pages: write
+  issues: write
 
 concurrency:
   group: publish-next
@@ -66,5 +67,22 @@ jobs:
       - name: Request a GitHub Pages build
         if: env.published == '1'
         run: gh api -X POST "repos/${{ github.repository }}/pages/builds"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      # A run that BREAKS is now visible. Note what this does NOT cover: the
+      # outage before this workflow existed was silent precisely because
+      # nothing ran, and a job cannot report its own absence.
+      - name: File an issue if the run broke
+        if: failure()
+        run: |
+          set -euo pipefail
+          printf '%s\n' \
+            "The daily publishing run failed. The rule gate blocks the deploy on any failure, so nothing was committed, the live site is unchanged, and every queued article is still queued. A missed day self-heals on the next run, which publishes everything whose date has arrived." \
+            "" \
+            "The usual cause is a precheck.py rule failing on an article that just came due: open the run log, read the first FAIL line, fix the article in _generator/review_data_2.py, then wait for tomorrow or re-run from the Actions tab." \
+            "" \
+            "Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" > body.md
+          gh issue create --title "Publishing run failed on $(date -u +%Y-%m-%d)" --body-file body.md
         env:
           GH_TOKEN: ${{ github.token }}
