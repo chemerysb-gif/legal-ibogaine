@@ -1,0 +1,70 @@
+name: Publish next queued article
+
+# Publishes finished, already-reviewed articles on their scheduled date, one per
+# day, and deploys by pushing to main (GitHub Pages builds from main).
+#
+# It never writes, edits or generates content. build_site.py renders only the
+# articles whose `date` has arrived; everything later stays out of library/, the
+# index and the sitemap. precheck.py then gates the result, so a build that
+# breaks a house rule is never committed and never reaches the live site.
+#
+# To change the schedule, edit the `date` field on the article in
+# _generator/review_data_1.py or _generator/review_data_2.py.
+
+on:
+  schedule:
+    - cron: '0 1 * * *'        # 01:00 UTC daily (08:00 Bangkok)
+  workflow_dispatch:            # and on demand, from the Actions tab
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: publish-next
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build the site
+        run: python3 _generator/build_site.py
+
+      - name: Rule gate (blocks the deploy on any failure)
+        run: python3 _generator/precheck.py --all
+
+      - name: Commit and deploy, only if something came due
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing due today; site unchanged."
+            exit 0
+          fi
+          NEW=$(git status --porcelain library/ \
+                | awk '$1 == "??" || $1 == "A" { print $2 }' \
+                | xargs -r -n1 basename | sed 's/\.html$//' | paste -sd', ' -)
+          git config user.name  'Bogdan'
+          git config user.email 'chemerys.b@gmail.com'
+          git add -A
+          git commit -m "Publish scheduled article${NEW:+: $NEW}"
+          git push
+          echo "published=1" >> "$GITHUB_ENV"
+          echo "Published: ${NEW:-(no new article page; other output changed)}"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      # A push made with GITHUB_TOKEN does not trigger pages-build-deployment,
+      # so the commit would land without ever going live. Ask for the build
+      # explicitly. Harmless if Pages is already building.
+      - name: Request a GitHub Pages build
+        if: env.published == '1'
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"
+        env:
+          GH_TOKEN: ${{ github.token }}
