@@ -121,3 +121,35 @@ decided by the site owner on 2026-10-07.
 and the related-article cards masked out, so a rebuild, or a change to another
 article's card, does not re-date a page. The stamp is then rewritten to the
 page's content date.
+
+## Keeping the scheduler running
+
+`.github/workflows/publish-next.yml` runs at 01:00 UTC (08:00 Bangkok) and
+publishes every article whose `date` has arrived. A missed day needs no repair:
+the next run renders everything due, so a gap closes itself.
+
+Two ways it stops, and only one of them is noisy.
+
+A run that **fails** files a GitHub issue (the last step in the workflow). The
+rule gate blocks the deploy on any failure, so a broken build commits nothing
+and the live site keeps the last good version.
+
+A run that **never happens** reports nothing, because a job cannot observe its
+own absence. That is what the 2026-10-22 to 11-04 outage was: the workflow had
+never been pushed, so there was no run to fail, and nothing published for 13
+days without a single alert. Two causes to watch for:
+
+- **The `workflow` OAuth scope.** Pushing any file under `.github/workflows/`
+  needs it; a token without it gets a 404 from the contents API, which reads
+  like the path is missing rather than like a permission problem. `gh auth
+  status` lists the scopes.
+- **GitHub disables scheduled workflows after 60 days of repository
+  inactivity.** Daily publish commits count as activity, so the schedule stays
+  alive while the queue has articles in it. The queue currently ends
+  2026-11-20; if nothing is added, expect the schedule to be switched off
+  silently around late January 2027 and to need re-enabling from the Actions
+  tab.
+
+The cheap check, from anywhere: the newest `<lastmod>` in
+`https://legal-ibogaine.com/sitemap.xml` should be within a day or two of
+today whenever articles remain queued.
