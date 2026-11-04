@@ -52,56 +52,108 @@
   "hash": "1a7825da256788181c08905e61b3288d51f15b8d9a96a565d6627cb220086c76"
  },
  "https://legal-ibogaine.com/library/clinical-studies-summarized.html": {
-  "date": "2026-10-22",
-  "hash": "cd4def7c4522c6abb515d1c66d9d48b12d08cb14c1a44e6d988227e7c7b09538"
+  "date": "2026-11-04",
+  "hash": "94b2009ef26a16f81328de8a51b449ec8810336e9dc8c0fab883517f5f0d1329"
+ },
+ "https://legal-ibogaine.com/library/does-ibogaine-reset-the-brain.html": {
+  "date": "2026-11-04",
+  "hash": "088b2a71d2263db77ed71611b88400bee8d469667113b9c4dbc440ab12ccdcfa"
  },
  "https://legal-ibogaine.com/library/history-of-ibogaine-science.html": {
-  "date": "2026-10-22",
-  "hash": "6f871775a73f9138e8362e190584caa385ed0347f14faba3071ff82d93d229a6"
+  "date": "2026-11-04",
+  "hash": "a107d9ceac51e2fce3c779b839f48d39fa79ba75acfc6fd3bf128195f2b531e8"
+ },
+ "https://legal-ibogaine.com/library/how-long-do-ibogaine-effects-last.html": {
+  "date": "2026-11-04",
+  "hash": "732a1ec4e5afebf9d13521ad4c2405f98b602fa0321e535cdee7d7466d256efe"
  },
  "https://legal-ibogaine.com/library/ibogaine-analogs.html": {
-  "date": "2026-10-22",
-  "hash": "b920acb364513613fe5b89c13b00fc5c424acc6db12ad40d7fa0b8e7cb14f448"
+  "date": "2026-11-04",
+  "hash": "687bb493265a42a7fbf27bc36d6dfa0bc8840d05392eab18b2e30572535c3707"
+ },
+ "https://legal-ibogaine.com/library/ibogaine-and-alcohol.html": {
+  "date": "2026-11-04",
+  "hash": "e26aad497d5d2b7f07fac1c1b9d598855c8b9daf133e830c7029734c1f1c615b"
+ },
+ "https://legal-ibogaine.com/library/ibogaine-and-brain-injury.html": {
+  "date": "2026-11-04",
+  "hash": "7dc774b02cf343ca43f0f62371cb6724b8dae1632f6792e0061ea3d7a44eaaff"
+ },
+ "https://legal-ibogaine.com/library/ibogaine-and-depression.html": {
+  "date": "2026-11-04",
+  "hash": "ed0c1abb50cf370950b0855f7434cf4a83f9a34c4969b1c193b15b36517b6923"
+ },
+ "https://legal-ibogaine.com/library/ibogaine-and-fentanyl.html": {
+  "date": "2026-11-04",
+  "hash": "31c89cd2c159daf5006c08d93e1736e506d023d758e807adc25b22b0b90fb2ae"
+ },
+ "https://legal-ibogaine.com/library/ibogaine-and-ptsd.html": {
+  "date": "2026-11-04",
+  "hash": "1bf21c3684af7a153d16029295d091da32110cb274339ff75048d82f950e0768"
+ },
+ "https://legal-ibogaine.com/library/ibogaine-cardiac-risk.html": {
+  "date": "2026-11-04",
+  "hash": "ad4dd4dd4ff059a67d1f222452b61e02d31de247444463056c5fd619066b8c87"
+ },
+ "https://legal-ibogaine.com/library/ibogaine-contraindications.html": {
+  "date": "2026-11-04",
+  "hash": "dcee3f03222eb73303b7766a65ac8d944b00e0ebc40609ec349b14d31eb2c8ce"
+ },
+ "https://legal-ibogaine.com/library/ibogaine-deaths-what-is-known.html": {
+  "date": "2026-11-04",
+  "hash": "9b089a18d743e27d58cd40acdac11d47ee1c7df3dc80edfdc4c30d79f7358ee4"
  },
  "https://legal-ibogaine.com/library/ibogaine-evidence-overview.html": {
-  "date": "2026-10-22",
-  "hash": "46230d53424518f9847ff4a8a0e0c23b2653babc1a4ce2574bcea59c5f6645c3"
+  "date": "2026-11-04",
+  "hash": "8b7b7face49d108b636ad5502c1d45b895ce190106a4ec34385fc81e846790c4"
  },
  "https://legal-ibogaine.com/library/ibogaine-opioid-withdrawal.html": {
-  "date": "2026-10-22",
-  "hash": "57a78ba487af5d3f1f979da185364b5f76e141e9a6d815d460a42b71ce0193d1"
+  "date": "2026-11-04",
+  "hash": "691dd10b1b9afd21c1850dd2ffacdda34572672c8285c7644b275fb91b49e480"
+ },
+ "https://legal-ibogaine.com/library/ibogaine-side-effects.html": {
+  "date": "2026-11-04",
+  "hash": "c8772d6d91b9b94abc99b7a4cc6beda46e0b8a200d350b6d12b0f057bfd45e76"
  },
  "https://legal-ibogaine.com/library/ibogaine-vs-medications.html": {
-  "date": "2026-10-22",
-  "hash": "d78e1fd08914078b6d2f4c6b47eaa5f59e077b842a961afbc424466f4d3f5400"
+  "date": "2026-11-04",
+  "hash": "1f745914778ec984b102846f2b63e6cd29b15ed4c5fc7041a763fa2ca3de2a91"
  },
  "https://legal-ibogaine.com/library/index.html": {
-  "date": "2026-10-22",
-  "hash": "d7bc89754da5acf26de1c97a4096382bde5c73041bea67dc6a19d818bc320f73"
+  "date": "2026-11-04",
+  "hash": "4e5f0dbe43d1172a0d40a3a19f5d5fa7127fde9edc2a57da52950d1ae4955d63"
  },
  "https://legal-ibogaine.com/library/mistic-study-close-read.html": {
-  "date": "2026-10-22",
-  "hash": "6c3acab6e672fe6e95a8c903f8a64519ad5a71e3ae0dce0b8139d1b3bccbf384"
+  "date": "2026-11-04",
+  "hash": "78b1cda0c9764f5f2016f086f34a032faa47ddfd0d03d9e2404979ad0e06c139"
  },
  "https://legal-ibogaine.com/library/noribogaine-pharmacokinetics.html": {
-  "date": "2026-10-22",
-  "hash": "7b2a07dfeb7e1d2bd8c17a35623dd2fcf66a5fd793763c96138cf5bf245278ad"
+  "date": "2026-11-04",
+  "hash": "1f77601f1a239cea5ed3c87358e5ca0a2682bc61879f604123497061d6c7f335"
  },
  "https://legal-ibogaine.com/library/open-questions.html": {
-  "date": "2026-10-22",
-  "hash": "3a7932867f73e95dc03b3c5c8d759e6c92796127b8e4e06e34f939f39e6a42b7"
+  "date": "2026-11-04",
+  "hash": "8c0a21c50bf7fde2dc1838418bb8d04d2b837d17dc109f84dd35543bba1aab36"
  },
  "https://legal-ibogaine.com/library/pharmacology-of-ibogaine.html": {
-  "date": "2026-10-22",
-  "hash": "9a2a143932b92defe9f6875f684d59762bbd7170f7b1e772e19331f201de0b8e"
+  "date": "2026-11-04",
+  "hash": "d950c6025a0b3a5007f303c596fe153f268663804ec846e5e6f5a0e1ca04c75d"
+ },
+ "https://legal-ibogaine.com/library/what-an-ibogaine-session-is-like.html": {
+  "date": "2026-11-04",
+  "hash": "02a69caf41ca88b11fd81af052035a4095e6c9a12c49810330d7011e50edf2cc"
  },
  "https://legal-ibogaine.com/library/what-is-ibogaine.html": {
-  "date": "2026-10-22",
-  "hash": "0548dbbc4327641b14706cb2195ab17b39d39ae949993805660e1ee3ca9c797e"
+  "date": "2026-11-04",
+  "hash": "28e23dc886ac5a6b168a84be53f50a216c4918b5b45875eccd5b7e628e4c3052"
+ },
+ "https://legal-ibogaine.com/library/where-is-ibogaine-legal.html": {
+  "date": "2026-11-04",
+  "hash": "305d5872a5c064488d9f1df5496d663b64ef47d4e7e186bb590e68e62fcc72db"
  },
  "https://legal-ibogaine.com/library/withdrawal-interruption-mechanisms.html": {
-  "date": "2026-10-22",
-  "hash": "9ae72f66706a10da5f84ec3c1088187bc5a128ff47cdfc7ad54ebf382ae31e94"
+  "date": "2026-11-04",
+  "hash": "6ae365e836356b43c3d315becbaa6831d7cffc4bb3fee238beadf2bc6985a6ce"
  },
  "https://legal-ibogaine.com/medical-disclaimer.html": {
   "date": "2026-10-21",
