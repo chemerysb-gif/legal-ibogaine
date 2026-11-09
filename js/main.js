@@ -28,9 +28,38 @@
   }
 
   /* Events are dropped silently without consent, so callers never need to check. */
+  /* Two sinks, deliberately different.
+
+     Ahrefs Web Analytics is cookieless and already loads on every page
+     outside the consent gate, so events go there for every visitor. GA4 sets
+     cookies, so it only ever hears about an event once consent is granted.
+
+     Before this, every event went to GA4 alone, which meant the site
+     measured nothing whatsoever for anyone who declined the banner or
+     ignored it -- most people, on most sites. Four generate_lead calls were
+     the entire instrumentation, and they only fired for consenters.
+
+     Ahrefs shows a custom event only after the name is registered under
+     Tracked events in its report UI. Sending an unregistered name is not an
+     error and raises nothing here, but it will not appear either, so every
+     name below has to be added there once. Property names must not contain
+     dashes and values are coerced to strings by Ahrefs, so that is done
+     here rather than left to chance. */
   window.IGTrack = function (name, params) {
+    params = params || {};
+    if (window.AhrefsAnalytics != null) {
+      var props = {};
+      Object.keys(params).forEach(function (k) {
+        if (k.indexOf("-") === -1) props[k] = String(params[k]);
+      });
+      try {
+        window.AhrefsAnalytics.sendEvent(name, { props: props });
+      } catch (e) {
+        /* Never let measurement break the page it is measuring. */
+      }
+    }
     if (read() !== "granted" || typeof window.gtag !== "function") return;
-    window.gtag("event", name, params || {});
+    window.gtag("event", name, params);
   };
 
   function dismiss(el) {
@@ -94,8 +123,19 @@
   var PLACEHOLDER = /PASTE_YOUR|REPLACE_WITH/;
 
   /* done(outcome) — "placeholder" | "ok" | "fail" */
+  /* Measurement must never be the reason a form breaks, so every call is
+     guarded: main.js is also served on pages where the consent block has
+     not run yet. */
+  function track(name, form) {
+    if (typeof window.IGTrack === "function") window.IGTrack(name, { form: form });
+  }
+
   function post(form, fields, files, done) {
-    if (PLACEHOLDER.test(ENDPOINT) || PLACEHOLDER.test(TOKEN)) { done("placeholder"); return; }
+    if (PLACEHOLDER.test(ENDPOINT) || PLACEHOLDER.test(TOKEN)) {
+      track("form_not_configured", form);
+      done("placeholder");
+      return;
+    }
     readFiles(files, function (encoded) {
       fetch(ENDPOINT, {
         method: "POST",
@@ -103,8 +143,12 @@
         headers: { "Content-Type": "text/plain;charset=utf-8" }
       })
         .then(function (r) { return r.json(); })
-        .then(function (d) { done(d && d.status === "ok" ? "ok" : "fail"); })
-        .catch(function () { done("fail"); });
+        .then(function (d) {
+          var ok = d && d.status === "ok";
+          if (!ok) track("form_send_fail", form);
+          done(ok ? "ok" : "fail");
+        })
+        .catch(function () { track("form_send_fail", form); done("fail"); });
     });
   }
 
@@ -364,4 +408,33 @@
   var map = { opioid: "Opioid dependence", alcohol: "Alcohol", trauma: "PTSD / trauma", pattern: "A pattern I can't break" };
   var c = new URLSearchParams(window.location.search).get("concern");
   if (c && map[c]) sel.value = map[c];
+})();
+
+/* Legal Ibogaine -- CTA clicks.
+
+   Delegated from the document so it also covers buttons the surveys render
+   after load, and so a new CTA anywhere on the site is measured without
+   wiring itself up. Records where the click happened and where it was going;
+   nothing a person typed. */
+(function () {
+  "use strict";
+  var SEL = "a.btn, a.router-card, .inline-cta a, .cta-band a";
+
+  function slug(href) {
+    if (!href || href.charAt(0) === "#") return "";
+    return href.replace(/[?#].*$/, "").replace(/^.*\//, "").replace(/\.html$/, "") || "home";
+  }
+
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest(SEL) : null;
+    if (!a) return;
+    var target = slug(a.getAttribute("href"));
+    if (!target) return;
+    if (typeof window.IGTrack === "function") {
+      window.IGTrack("cta_click", {
+        target: target,
+        from: slug(location.pathname) || "home"
+      });
+    }
+  });
 })();
