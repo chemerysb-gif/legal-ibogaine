@@ -144,7 +144,7 @@ RESCARDS
 {
 "slug": "quiz",
 "noindex": True,
-"canonical": "is-ibogaine-right-for-me.html",
+"canonical": None,
 "kicker": "Eligibility quiz",
 "title": "The quiz has moved",
 "htitle": "Eligibility Quiz",

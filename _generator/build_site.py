@@ -161,7 +161,7 @@ def header(P):
   <header class="site-header">
     <div class="container">
       <nav class="nav-shell" aria-label="Main navigation">
-        <a class="brand" href="{P}index.html" aria-label="Legal Ibogaine — home"><span class="mark" aria-hidden="true">I*</span> LEGAL IBOGAINE</a>
+        <a class="brand" href="/" aria-label="Legal Ibogaine — home"><span class="mark" aria-hidden="true">I*</span> LEGAL IBOGAINE</a>
         <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         </button>
@@ -206,7 +206,7 @@ def footer(P):
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a class="brand" href="{P}index.html"><span class="mark" aria-hidden="true">I*</span> LEGAL IBOGAINE</a>
+          <a class="brand" href="/"><span class="mark" aria-hidden="true">I*</span> LEGAL IBOGAINE</a>
           <p style="font-size:0.9rem; color:var(--muted); max-width:36ch;">Independent ibogaine treatment information for people who've exhausted conventional options.</p>
           <p class="availability">We respond within 24 hours.</p>
         </div>
@@ -312,6 +312,9 @@ def render_root_page(pg):
                .replace("@@URL@@", f"{SITE}/{canon}").replace("@@P@@", P).replace("@@OGIMG@@", ogimg)
     if pg.get("noindex"):
         html = html.replace('<meta name="viewport"', '<meta name="robots" content="noindex,follow">\n  <meta name="viewport"')
+    if "canonical" in pg and pg["canonical"] is None:
+        # A retired stub asserts nothing about which URL is preferred.
+        html = html.replace(f'  <link rel="canonical" href="{SITE}/{canon}">\n', "")
     blocks = ORG_LD + page_ld(pg, canon)
     if faq_ld:
         blocks += faq_ld
@@ -539,7 +542,9 @@ def render_article(a, no):
         .replace("@@TOC@@", toc)
         .replace("@@BODY@@", body)
         .replace("@@REFS@@", refs)
-        .replace("@@RELATED@@", related_for(a)))
+        .replace("@@RELATED@@", related_for(a))
+        # The consent banner builds its privacy link from this (TRK-5).
+        .replace("<body>", f'<body data-root="{P}">', 1))
     with open(os.path.join(OUT, "library", a['slug'] + ".html"), "w") as f:
         f.write(html)
     print("wrote library/" + a['slug'] + ".html")
@@ -550,6 +555,8 @@ def render_library_index():
     html = HEAD.replace("@@HTITLE@@", "Articles").replace("@@DESC@@", "Every Legal Ibogaine article: evidence summaries, pharmacology, history, and research analysis. Filter by topic.") \
                .replace("@@MDESC@@", "Every Legal Ibogaine article in one place: cardiac risk and safety, legal status, the evidence by condition, and pharmacology. Filter by topic.") \
                .replace("@@URL@@", f"{SITE}/library/index.html").replace("@@P@@", P).replace("@@OGIMG@@", SITE + "/assets/img/iboga-leaves.jpg").replace("@@JSONLD@@", LIBRARY_LD)
+    # The consent banner builds its privacy link from this.
+    html = html.replace("<body>", f'<body data-root="{P}">', 1)
     html += header(P)
     html += f'''
   <main id="main">
@@ -723,7 +730,8 @@ def render_llms_txt():
 
 
 def render_404():
-    P = ""
+    # Absolute: this page is served for missing paths at any depth.
+    P = "/"
     html = HEAD.replace("@@HTITLE@@", "Page Not Found").replace("@@DESC@@", "That page doesn't exist. Start from the guide's main routes.") \
                .replace("@@MDESC@@", "That page does not exist. Start from the main routes: safety, legal status, the evidence by condition, or the full article library.") \
                .replace("@@URL@@", SITE + "/404.html").replace("@@P@@", P).replace("@@OGIMG@@", SITE + "/assets/img/hero-forest.jpg").replace("@@JSONLD@@", ORG_LD)
@@ -738,10 +746,10 @@ def render_404():
         <p class="lead">The link may be old, or the page may have moved. These routes cover everything on the site.</p>
       </div>
       <div class="router-grid" style="margin-bottom: 80px;">
-        <a class="router-card" href="index.html"><span class="rc-k">Start</span><h2 class="c3">Home</h2><p>Orientation, trust, and where to go next.</p><span class="go">Go home →</span></a>
-        <a class="router-card" href="what-is-ibogaine.html"><span class="rc-k">Learn</span><h2 class="c3">What is ibogaine</h2><p>The plain-language picture, from zero.</p><span class="go">Read →</span></a>
-        <a class="router-card" href="library/index.html"><span class="rc-k">Browse</span><h2 class="c3">Articles</h2><p>The full evidence library, filterable by topic.</p><span class="go">Browse →</span></a>
-        <a class="router-card" href="find-a-provider.html"><span class="rc-k">Match</span><h2 class="c3">Find a provider</h2><p>A five-minute profile, read personally.</p><span class="go">Start →</span></a>
+        <a class="router-card" href="/"><span class="rc-k">Start</span><h2 class="c3">Home</h2><p>Orientation, trust, and where to go next.</p><span class="go">Go home →</span></a>
+        <a class="router-card" href="/what-is-ibogaine.html"><span class="rc-k">Learn</span><h2 class="c3">What is ibogaine</h2><p>The plain-language picture, from zero.</p><span class="go">Read →</span></a>
+        <a class="router-card" href="/library/index.html"><span class="rc-k">Browse</span><h2 class="c3">Articles</h2><p>The full evidence library, filterable by topic.</p><span class="go">Browse →</span></a>
+        <a class="router-card" href="/find-a-provider.html"><span class="rc-k">Match</span><h2 class="c3">Find a provider</h2><p>A five-minute profile, read personally.</p><span class="go">Start →</span></a>
       </div>
     </div>
   </main>

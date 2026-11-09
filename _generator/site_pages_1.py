@@ -282,7 +282,7 @@ PAGES = [
 <h2 class="sec-label">Next step</h2>
 <div class="router-grid cols-2" style="max-width: 640px;">
   <a class="router-card" href="choosing-a-provider.html"><span class="rc-k">Apply this</span><h3>Choosing a provider</h3><p>The 12 questions that expose whether any of the above is real.</p><span class="go">Get the questions →</span></a>
-  <a class="router-card" href="quiz.html"><span class="rc-k">Orient</span><h3>Eligibility quiz</h3><p>Two minutes, directional, honest.</p><span class="go">Take it →</span></a>
+  <a class="router-card" href="is-ibogaine-right-for-me.html"><span class="rc-k">Orient</span><h3>Eligibility quiz</h3><p>Two minutes, directional, honest.</p><span class="go">Take it →</span></a>
 </div>
 
 <h2 class="sec-label">Sources</h2>
