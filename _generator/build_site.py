@@ -228,6 +228,7 @@ def footer(P):
             <li><a href="{P}safety-protocols.html">Safety &amp; protocols</a></li>
             <li><a href="{P}legal-status.html">Legal status</a> · <a href="{P}cost.html">Cost</a> · <a href="{P}choosing-a-provider.html">Providers</a></li>
             <li><a href="{P}what-to-expect.html">What to expect</a> · <a href="{P}aftercare.html">Aftercare</a></li>
+            <li><a href="{P}vetting-standard.html">Vetting standard</a> · <a href="{P}alternatives.html">If it is not an option</a></li>
             <li><a href="{P}find-a-provider.html">Find a provider</a> · <a href="{P}contact.html">Contact</a></li>
           </ul>
         </div>
@@ -342,6 +343,7 @@ def render_root_page(pg):
         </div>{figure}
       </div>
 {body}
+{deeper_block(pg)}
     </div>
 '''
     if pg.get("cta"):
@@ -432,6 +434,37 @@ def post_html(a):
               <span class="go">Read entry →</span>
             </span>
           </a>'''
+
+def deeper_block(pg):
+    """Links from a hub down into the library.
+
+    The hubs hold the nav links and so most of what little authority this
+    site has. Measured on 2026-11-09, nine of them linked to no library
+    article at all: a reader who wanted the detail had to go looking for it,
+    and a crawler reaching a hub had no path down to the 30 articles below
+    it. Each hub now names three entries that answer the question it raises.
+
+    The picks live in the page record's `deeper` key as (slug, kicker,
+    heading, line). A slug whose article is not published yet is skipped, so
+    a hub may name a queued article and its card appears on the day the
+    article goes live -- the same rule the rest of the build follows.
+    """
+    live = {a['slug'] for a in ARTICLES}
+    picks = [p for p in pg.get("deeper", ()) if p[0] in live]
+    if not picks:
+        return ""
+    cards = "\n".join(
+        f'  <a class="router-card" href="library/{slug}.html">'
+        f'<span class="rc-k">{kicker}</span><h3>{head}</h3><p>{line}</p>'
+        f'<span class="go">Read →</span></a>'
+        for slug, kicker, head, line in picks)
+    return f'''<div class="page-body">
+<h2 class="sec-label">Go deeper in the library</h2>
+<div class="router-grid cols-3">
+{cards}
+</div>
+</div>'''
+
 
 def related_for(a):
     """Four articles to continue with, picked so that every article is linked.

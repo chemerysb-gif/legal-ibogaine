@@ -135,6 +135,10 @@ PAGES = [
 # ============================================================ cost
 {
 "slug": "cost",
+"deeper": [
+             ("what-an-ibogaine-session-is-like", "Included", "What a session is like", "Hour by hour, what the time actually involves."),
+             ("how-to-evaluate-an-ibogaine-provider", "Compare", "Evaluating a provider", "What to check before paying anyone."),
+             ("ibogaine-vs-medications", "Alternatives", "Against Suboxone and methadone", "How the approaches differ, and what each costs in time.")],
 "kicker": "Practical info",
 "title": "How much does ibogaine treatment cost?",
 "htitle": "How Much Does Ibogaine Treatment Cost?",
@@ -205,6 +209,10 @@ PAGES = [
 # ============================================================ provider
 {
 "slug": "choosing-a-provider",
+"deeper": [
+             ("how-to-evaluate-an-ibogaine-provider", "Checklist", "Evaluating a provider", "The questions worth asking before committing."),
+             ("ibogaine-deaths-what-is-known", "Record", "What is known about deaths", "What the published cases have in common."),
+             ("ibogaine-cardiac-risk", "Screening", "Ibogaine and the heart", "The test a provider must run, and read.")],
 "mdesc": "How to vet an ibogaine provider: the questions that separate medical programs from marketing operations, and the red flags that should end a call.",
 "kicker": "Practical info",
 "title": "Choosing an ibogaine provider",
@@ -297,6 +305,10 @@ PAGES = [
 # ============================================================ faq
 {
 "slug": "faq",
+"deeper": [
+             ("ibogaine-side-effects", "Common", "Side effects", "What the studies recorded, and how often."),
+             ("ibogaine-contraindications", "Limits", "Who it is not for", "The conditions and medications that rule it out."),
+             ("how-long-do-ibogaine-effects-last", "Timing", "How long it lasts", "The acute hours, then the weeks after.")],
 "kicker": "FAQ",
 "title": "Ibogaine: frequently asked questions",
 "htitle": "Ibogaine FAQ: Common Questions",
@@ -310,6 +322,10 @@ PAGES = [
 # ============================================================ alternatives
 PAGES.append({
 "slug": "alternatives",
+"deeper": [
+             ("ibogaine-vs-medications", "Compare", "Against Suboxone and methadone", "How the approaches differ in aim and evidence."),
+             ("ibogaine-vs-other-psychedelics", "Compare", "Against other psychedelics", "How it differs from psilocybin, ayahuasca and ketamine."),
+             ("ibogaine-contraindications", "Limits", "Who it is not for", "The conditions and medications that rule it out.")],
 "mdesc": "If ibogaine is ruled out, these evidence-backed alternatives still work: what each offers, the success rates, and how to choose a path that fits.",
 "kicker": "Is it right for me?",
 "title": "Ruled out? Here's what still works.",

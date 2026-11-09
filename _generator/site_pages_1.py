@@ -65,6 +65,10 @@ PAGES = [
 # ============================================================ how it works
 {
 "slug": "how-it-works",
+"deeper": [
+             ("withdrawal-interruption-mechanisms", "Mechanism", "Interrupting withdrawal", "How a single dose does it, as far as is known."),
+             ("ibogaine-receptors", "Targets", "What receptors it acts on", "The many targets, and which ones matter."),
+             ("noribogaine-pharmacokinetics", "Metabolite", "Noribogaine", "The long-acting metabolite, and how long it stays.")],
 "kicker": "Ibogaine",
 "title": "How does ibogaine work? A plain-language overview",
 "htitle": "How Does Ibogaine Work? A Plain Overview",
@@ -154,6 +158,10 @@ PAGES = [
 # ============================================================ eligibility
 {
 "slug": "eligibility",
+"deeper": [
+             ("ibogaine-contraindications", "Limits", "Who it is not for", "The conditions and medications that rule it out."),
+             ("ibogaine-cardiac-risk", "Heart", "Ibogaine and the heart", "The QT interval, and why screening is not optional."),
+             ("ibogaine-drug-interactions", "Medications", "Drug interactions", "What slows ibogaine's clearance, and why it matters.")],
 "kicker": "Is it right for me?",
 "title": "Eligibility",
 "htitle": "Ibogaine Eligibility",
@@ -193,6 +201,10 @@ PAGES = [
 # ============================================================ vetting standard
 {
 "slug": "vetting-standard",
+"deeper": [
+             ("how-to-evaluate-an-ibogaine-provider", "Apply it", "Evaluating a provider", "The same questions, put to any provider."),
+             ("ibogaine-cardiac-risk", "Why", "Ibogaine and the heart", "The reason cardiac screening leads the standard."),
+             ("ibogaine-deaths-what-is-known", "Record", "What is known about deaths", "What the published cases have in common.")],
 "kicker": "Our standard",
 "title": "Our ibogaine provider vetting standard",
 "htitle": "Ibogaine Provider Vetting Standard",
@@ -235,6 +247,10 @@ PAGES = [
 
 {
 "slug": "safety-protocols",
+"deeper": [
+             ("ibogaine-cardiac-risk", "Heart", "Ibogaine and the heart", "The QT interval, and what monitoring is for."),
+             ("ibogaine-contraindications", "Limits", "Who it is not for", "The conditions and medications that rule it out."),
+             ("ibogaine-drug-interactions", "Medications", "Drug interactions", "What slows ibogaine's clearance, and why it matters.")],
 "mdesc": "Ibogaine's real risks and how proper screening manages them: ECG, blood work, continuous cardiac monitoring, and the protocols that save lives.",
 "kicker": "Is it right for me?",
 "title": "Safety &amp; protocols",
@@ -283,6 +299,10 @@ PAGES = [
 # ============================================================ what to expect
 {
 "slug": "what-to-expect",
+"deeper": [
+             ("what-an-ibogaine-session-is-like", "Session", "What a session is like", "Hour by hour, from dosing to the morning after."),
+             ("how-long-do-ibogaine-effects-last", "Timing", "How long it lasts", "The acute hours, then the weeks after."),
+             ("ibogaine-side-effects", "Effects", "Side effects", "What the studies recorded, and how often.")],
 "kicker": "Is it right for me?",
 "title": "What to expect from ibogaine treatment",
 "htitle": "What to Expect From Ibogaine Treatment",
@@ -346,6 +366,10 @@ PAGES = [
 # ============================================================ aftercare
 PAGES.append({
 "slug": "aftercare",
+"deeper": [
+             ("how-long-do-ibogaine-effects-last", "Window", "How long it lasts", "Why the weeks after the dose are the ones that count."),
+             ("noribogaine-pharmacokinetics", "Metabolite", "Noribogaine", "The long-acting metabolite, and how long it stays."),
+             ("does-ibogaine-reset-the-brain", "Claims", "Does it reset the brain?", "What the reset language does and does not mean.")],
 "kicker": "Is it right for me?",
 "title": "Ibogaine aftercare and integration",
 "htitle": "Ibogaine Aftercare and Integration",
