@@ -133,8 +133,8 @@ PAGES = [
 {
 "slug": "cost",
 "kicker": "Practical info",
-"title": "Cost",
-"htitle": "Ibogaine Treatment Cost",
+"title": "How much does ibogaine treatment cost?",
+"htitle": "How Much Does Ibogaine Treatment Cost?",
 "desc": "What ibogaine treatment actually costs, what drives the price, and why the cheapest option is usually the most expensive decision you can make.",
 "body": """
 <div class="page-body">
@@ -204,7 +204,7 @@ PAGES = [
 "slug": "choosing-a-provider",
 "mdesc": "How to vet an ibogaine provider: the questions that separate medical programs from marketing operations, and the red flags that should end a call.",
 "kicker": "Practical info",
-"title": "Choosing a provider",
+"title": "Choosing an ibogaine provider",
 "htitle": "Choosing an Ibogaine Provider",
 "desc": "In an unregulated field, the questions you ask are the only inspection a clinic will ever face. Twelve of them — with the answers you should hear — plus the red flags that end the conversation.",
 "body": """
@@ -246,7 +246,7 @@ PAGES = [
 "slug": "about",
 "kicker": "About",
 "title": "About Legal Ibogaine",
-"htitle": "About",
+"htitle": "About Legal Ibogaine",
 "desc": "Independent ibogaine treatment information for people who've exhausted conventional options — written to inform a serious decision, not to sell one.",
 "body": """
 <div class="prose">
@@ -295,8 +295,8 @@ PAGES = [
 {
 "slug": "faq",
 "kicker": "FAQ",
-"title": "Frequently asked questions",
-"htitle": "FAQ",
+"title": "Ibogaine: frequently asked questions",
+"htitle": "Ibogaine FAQ: Common Questions",
 "desc": "Straight answers, grouped by topic — from “what is it” to “what does it cost” to “who should never take it.”",
 "body": "@@FAQ@@",
 "cta": True,

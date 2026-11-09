@@ -101,7 +101,7 @@ PAGES = [
 "slug": "contact",
 "kicker": "Contact",
 "title": "Contact",
-"htitle": "Contact",
+"htitle": "Contact Legal Ibogaine",
 "desc": "Questions, corrections, or your own situation — reach us any of these ways. We respond within 24 hours.",
 "body": """
 <form class="form-card" id="contact-form" data-guide-form method="POST" novalidate style="max-width: 640px;">

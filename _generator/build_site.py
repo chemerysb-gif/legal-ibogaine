@@ -523,7 +523,7 @@ def render_library_index():
     <div class="container">
       <div class="article-hero">
         <div class="kicker"><span class="t">Articles</span><span>{len(ARTICLES)} entries and growing</span></div>
-        <h1>Articles</h1>
+        <h1>Ibogaine articles: evidence, pharmacology and legal status</h1>
         <p class="lead">Every entry is sourced, dated, and written for a careful non-specialist. Start with the overview; go as deep as you like.</p>
       </div>
       <div class="filter-bar" role="group" aria-label="Filter entries by topic">

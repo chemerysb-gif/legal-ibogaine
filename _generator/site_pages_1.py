@@ -65,8 +65,8 @@ PAGES = [
 {
 "slug": "how-it-works",
 "kicker": "Ibogaine",
-"title": "How ibogaine works",
-"htitle": "How Ibogaine Works",
+"title": "How does ibogaine work? A plain-language overview",
+"htitle": "How Does Ibogaine Work? A Plain Overview",
 "desc": "Most drugs aim at one target. Ibogaine touches many at once — which may be exactly why it does what it does.",
 "body": """
 <div class="page-body">
@@ -117,8 +117,8 @@ PAGES = [
 {
 "slug": "research",
 "kicker": "Ibogaine",
-"title": "The research",
-"htitle": "Ibogaine Research",
+"title": "Ibogaine research: what the studies show",
+"htitle": "Ibogaine Research: What the Studies Show",
 "desc": "Six decades of observation, one landmark study, and a funded trial pipeline. The state of the science — including what nobody can promise you yet.",
 "body": """
 <div class="fact-grid" style="margin-bottom: 64px;">
@@ -193,8 +193,8 @@ PAGES = [
 {
 "slug": "vetting-standard",
 "kicker": "Our standard",
-"title": "The vetting standard",
-"htitle": "Provider Vetting Standard",
+"title": "Our ibogaine provider vetting standard",
+"htitle": "Ibogaine Provider Vetting Standard",
 "desc": "What we require before a provider receives a single introduction — and what gets a provider declined. Published in full, applied to everyone.",
 "body": """
 <div class="page-body">
@@ -283,8 +283,8 @@ PAGES = [
 {
 "slug": "what-to-expect",
 "kicker": "Is it right for me?",
-"title": "What to expect",
-"htitle": "What to Expect",
+"title": "What to expect from ibogaine treatment",
+"htitle": "What to Expect From Ibogaine Treatment",
 "desc": "From the first phone call to the flight home — the honest, stage-by-stage shape of a properly run ibogaine treatment.",
 "body": """
 <div class="page-body">
@@ -346,8 +346,8 @@ PAGES = [
 PAGES.append({
 "slug": "aftercare",
 "kicker": "Is it right for me?",
-"title": "Aftercare &amp; integration",
-"htitle": "Aftercare & Integration",
+"title": "Ibogaine aftercare and integration",
+"htitle": "Ibogaine Aftercare and Integration",
 "desc": "Every follow-up study agrees: the treatment opens a window, and what you build inside it decides the outcome. This page is the second half of ibogaine treatment.",
 "body": """
 <div class="page-body">

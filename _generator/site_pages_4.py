@@ -261,7 +261,7 @@ MATCH_PAGE_BODY = '''
 <div class="survey-wrap">
 
   <section class="sv-screen active" id="p0">
-    <h1 style="margin-bottom:18px;">Find a provider that fits your case.</h1>
+    <h1 style="margin-bottom:18px;">Find a vetted ibogaine provider</h1>
     <p style="max-width:62ch;">About five minutes. We read it ourselves, speak to the providers we think can handle your case, and come back to you with the ones who say yes.</p>
     <p style="max-width:62ch;">This is for people who have decided to go ahead. If you are still working out whether ibogaine makes sense for you, start with the two-minute quiz instead: <a href="is-ibogaine-right-for-me.html">Is ibogaine worth a serious look in my case?</a></p>
     <p style="max-width:62ch;">Nothing here is automated. No software matches you to anyone. We take what you tell us to providers we know, describe your case before we describe you, and only bring you a name once they have confirmed they can treat you safely.</p>
@@ -560,7 +560,7 @@ PAGES = [
 "slug": "is-ibogaine-right-for-me",
 "kicker": "Is it right for me?",
 "title": "Is ibogaine worth a look for me?",
-"htitle": "Screening Quiz",
+"htitle": "Ibogaine Screening Quiz: Is It for Me?",
 "desc": "Six questions, about two minutes. Not a medical assessment: a straight answer to whether ibogaine is worth taking further in your situation.",
 "body": QUIZ_PAGE_BODY,
 "cta": False,
@@ -570,8 +570,8 @@ PAGES = [
 {
 "slug": "find-a-provider",
 "kicker": "Get matched",
-"title": "Find a provider that fits your case",
-"htitle": "Find a Provider",
+"title": "Find a vetted ibogaine provider",
+"htitle": "Find a Vetted Ibogaine Provider",
 "desc": "A five-minute profile. We read it ourselves, take your case to vetted providers, and come back with the ones who say yes.",
 "body": MATCH_PAGE_BODY,
 "cta": False,
