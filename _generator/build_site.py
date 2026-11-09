@@ -434,9 +434,40 @@ def post_html(a):
           </a>'''
 
 def related_for(a):
-    same = [x for x in ARTICLES if x['topic'] == a['topic'] and x['slug'] != a['slug']]
-    others = [x for x in ARTICLES if x['topic'] != a['topic'] and x['slug'] != a['slug']]
-    return "\n".join(row_html(x) for x in (same + others)[:3])
+    """Four articles to continue with, picked so that every article is linked.
+
+    The first version took (same topic + others)[:3], which is the same three
+    earliest articles for every page in a topic. On 2026-11-09 that left 14 of
+    30 articles with no inbound link from any related block at all, while two
+    collected 17 each -- and an article nothing links to is one a crawler has
+    little reason to fetch and a reader no way to reach.
+
+    So the picker walks the date order and takes each article's neighbours:
+    the two before and the two after, wrapping at the ends. Every article is
+    then linked exactly four times, whatever the topic mix happens to be.
+    Neighbours in date order are also near each other in subject, because the
+    queue was written in runs of related pieces.
+
+    An article can name its own picks with a `related` key (a list of slugs).
+    Slugs that are unknown or not yet published are dropped rather than
+    raising, so a key may point at an article that is still queued.
+    """
+    by_slug = {x['slug']: x for x in ARTICLES}
+    chosen = [by_slug[s] for s in a.get('related', ()) if s in by_slug and s != a['slug']]
+
+    if not chosen:
+        n = len(ARTICLES)
+        i = ARTICLES.index(a)
+        # Wrapping means a short list can offer the same article twice, or
+        # the article itself; both are dropped rather than rendered.
+        seen = set()
+        for d in (-2, -1, 1, 2):
+            x = ARTICLES[(i + d) % n]
+            if x['slug'] != a['slug'] and x['slug'] not in seen:
+                seen.add(x['slug'])
+                chosen.append(x)
+
+    return "\n".join(row_html(x) for x in chosen[:4])
 
 def render_article(a, no):
     P = "../"
