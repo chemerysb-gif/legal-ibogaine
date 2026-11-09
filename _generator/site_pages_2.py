@@ -56,20 +56,23 @@ PAGES = [
 # ============================================================ legal status
 {
 "slug": "legal-status",
-"mdesc": "Where ibogaine is legal, restricted, or unregulated, country by country, and why unregulated never means safe.",
+"mdesc": "Is ibogaine legal? Where it is banned, restricted or unregulated, how countries fall into three legal patterns, and why unregulated is not the same as approved.",
 "kicker": "Practical info",
-"title": "Legal status",
-"htitle": "Ibogaine Legal Status by Country",
+"title": "Is ibogaine legal? Status by country",
+"htitle": "Is Ibogaine Legal? Status by Country",
 "desc": "Ibogaine is banned in some countries, a prescription medicine in others, and simply unregulated in many more. The global picture — and why “unregulated” does not mean “safe”.",
 "body": """
 <div class="page-body">
+<h2 class="sec-label">Is ibogaine legal?</h2>
+<p style="max-width: 68ch;">It depends on the country, and the answers fall into three patterns rather than a single line between legal and illegal. In the United States it is prohibited outright: Schedule I of the Controlled Substances Act, DEA code 7260. In New Zealand and Australia it is a prescription medicine. In many other countries it is neither scheduled nor licensed, which leaves it unregulated rather than approved — clinics there operate with no oversight. The table below gives every status we can tie to a primary source.</p>
+
 <h2 class="sec-label">Three legal categories</h2>
 <div class="qcard-grid cols-3">
   <div class="qcard"><span class="qn">A</span><h3>Prohibited</h3><p>Possession and supply are criminal offences.</p></div>
   <div class="qcard"><span class="qn">B</span><h3>Medically restricted</h3><p>Classified as a medicine — lawful only through medical channels.</p></div>
   <div class="qcard"><span class="qn">C</span><h3>Unregulated</h3><p>Not scheduled; clinics operate with no oversight at all.</p></div>
 </div>
-<p style="color: var(--muted); font-size: 0.92rem;">Ibogaine is not scheduled under the UN drug conventions — every country decides for itself, which is why the map is a patchwork.</p>
+<p style="color: var(--muted); font-size: 0.92rem;">Ibogaine is not scheduled under the UN drug conventions — every country decides for itself, which is why the map is a patchwork. The library sets out <a href="library/where-is-ibogaine-legal.html">why countries fall into these three patterns</a>.</p>
 
 <h2 class="sec-label">Status we can tie to a primary source</h2>
 <p style="max-width: 68ch;">Every row below links to the statute, regulation or regulator's own record it rests on. Scheduling is amended regularly, so check the linked text for the version in force before you rely on it.</p>

@@ -11,12 +11,13 @@ PAGES = [
 "slug": "what-is-ibogaine",
 "mdesc": "What ibogaine is, where it comes from, and what it can and cannot do. The plain-language starting point for understanding this treatment.",
 "kicker": "Ibogaine",
-"title": "What is ibogaine?",
-"htitle": "What Is Ibogaine?",
+"title": "Ibogaine explained: the short version",
+"htitle": "Ibogaine Explained: The Short Version",
 "desc": "A psychoactive alkaloid from a Central African shrub, best known for interrupting patterns — chemical and psychological — that people have spent years trying to out-think.",
 "body": """
 <div class="page-body">
 <div class="prose">
+<p style="margin-top:0;"><a href="library/what-is-ibogaine.html">Read the full entry on ibogaine</a> — the plant, the molecule and what the studies show, at length.</p>
 <h2 class="sec-label">The short version</h2>
 <p>Ibogaine comes from the root bark of <em>Tabernanthe iboga</em>, a shrub native to Gabon, used for generations in Bwiti spiritual practice. It entered Western awareness in 1962, when a young New Yorker with a heroin habit took it for the experience — and noticed afterward that his withdrawal never came. That accidental observation has since been documented, in the same direction, by independent clinical teams on three continents.</p>
 </div>
@@ -35,16 +36,16 @@ PAGES = [
 
 <h2 class="sec-label">What people use it for</h2>
 <div class="evidence-grid cols-2" style="gap: 32px 40px;">
-  <div class="evidence-item"><span class="num">01</span><h2 class="c3">Opioid dependence</h2><p>The most-studied application: interruption of withdrawal and craving, without substituting another opioid.</p></div>
+  <div class="evidence-item"><span class="num">01</span><h2 class="c3">Opioid dependence</h2><p>The most-studied application: interruption of withdrawal and craving, without substituting another opioid. <a href="library/ibogaine-and-fentanyl.html">What this means where fentanyl is involved</a>.</p></div>
   <div class="evidence-item"><span class="num">02</span><h2 class="c3">Alcohol &amp; other substances</h2><p>Reported benefit across dependencies, with a thinner evidence base than opioids.</p></div>
-  <div class="evidence-item"><span class="num">03</span><h2 class="c3">PTSD, trauma &amp; mood</h2><p>The 2024 Stanford veterans study documented large improvements in PTSD, depression, and anxiety.</p></div>
+  <div class="evidence-item"><span class="num">03</span><h2 class="c3">PTSD, trauma &amp; mood</h2><p>The 2024 Stanford veterans study documented large improvements in PTSD, depression, and anxiety. Read what the studies measured for <a href="library/ibogaine-and-ptsd.html">PTSD</a> and for <a href="library/ibogaine-and-depression.html">depression</a>.</p></div>
   <div class="evidence-item"><span class="num">04</span><h2 class="c3">Patterns that won't move</h2><p>A growing group comes not in crisis but stuck: burnout, compulsion, a loop that willpower hasn't broken.</p></div>
 </div>
 
 <h2 class="sec-label">What it is not</h2>
 <ul class="icon-list">
   <li>""" + CROSS + """<span><strong>Not a cure.</strong> It interrupts; what happens in the weeks after decides the outcome.</span></li>
-  <li>""" + CROSS + """<span><strong>Not an approved medicine.</strong> No large controlled trial completed yet — formal trials are funded and underway.</span></li>
+  <li>""" + CROSS + """<span><strong>Not an approved medicine.</strong> No large controlled trial completed yet — formal trials are funded and underway. <a href="library/history-of-ibogaine-science.html">How the science got here</a>.</span></li>
   <li>""" + CROSS + """<span><strong>Not casual.</strong> A serious medical undertaking that belongs in a screened, supervised setting.</span></li>
 </ul>
 

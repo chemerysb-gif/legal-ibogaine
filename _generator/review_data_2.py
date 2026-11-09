@@ -2542,9 +2542,9 @@ ARTICLES.append({
 # ============================================================ 20
 ARTICLES.append({
 "slug": "where-is-ibogaine-legal",
-"htitle": "Where Ibogaine Is Legal",
-"mdesc": "Ibogaine's legal status falls into three patterns rather than a list: prohibited, a prescription medicine with no approved product, and simply unregulated. What each means in practice.",
-"title": "Where is ibogaine legal?",
+"htitle": "Why Ibogaine Is Banned or Unregulated",
+"mdesc": "Ibogaine's legal status falls into three patterns: prohibited, a prescription medicine with no approved product, and unregulated. What each pattern means.",
+"title": "Why is ibogaine banned in some countries and unregulated in others?",
 "topic": "Access",
 "desc": "Most countries fall into one of three categories, and the differences matter more than a map suggests. This entry sets out what prohibition, prescription-only status and absence of regulation each mean for someone seeking treatment.",
 "date": "2026-10-23",
@@ -2575,7 +2575,7 @@ ARTICLES.append({
     '<span id="ref-6"></span>Knuijver T, Schellekens A, Belgers M, et al. 2022, Addiction 117(1):118-128. doi:10.1111/add.15448. <a href="https://doi.org/10.1111/add.15448" rel="noopener">doi.org/10.1111/add.15448</a>',
     '<span id="ref-7"></span>US Drug Enforcement Administration, press release, 25 September 2025. <a href="https://www.dea.gov/press-releases/2025/09/25/broomfield-man-sentenced-48-months-for-ibogaine-distribution" rel="noopener">dea.gov/press-releases/2025/09/25/broomfield-man-sentenced-48-months-for-ibogaine-distribution</a>',
 ],
-"body": """<p>Countries fall into three patterns rather than onto a spectrum. Ibogaine is prohibited outright in some, classified as a prescription medicine with no approved product in others, and in a third group it is not addressed by law at all. The third category is the one most treatment takes place in, and it is the one people misread most often.</p>
+"body": """<p>Ibogaine is prohibited outright in some countries, classified as a prescription medicine with no approved product in others, and in a third group it is not addressed by law at all. The pattern looks arbitrary because three different kinds of decision produced it, taken by different authorities at different times, and none of them was a ruling on whether ibogaine works or whether it is safe. This entry sets out why those three outcomes exist and what each one does and does not imply; the status of a particular country is in the <a href="../legal-status.html">status table</a>. The third category is the one most treatment takes place in, and the one people misread most often.</p>
 
 <h2 id="three-patterns">Three patterns, not a list</h2>
 
