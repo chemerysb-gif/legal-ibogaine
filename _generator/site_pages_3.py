@@ -99,10 +99,11 @@ PAGES = [
 # ============================================================ contact
 {
 "slug": "contact",
+"mdesc": "Send Legal Ibogaine a question, a correction or an enquiry about your situation. A person reads each message, usually within one business day.",
 "kicker": "Contact",
 "title": "Contact",
 "htitle": "Contact Legal Ibogaine",
-"desc": "Questions, corrections, or your own situation — reach us any of these ways. We respond within 24 hours.",
+"desc": "Questions, corrections, or your own situation — reach us any of these ways. We reply, usually within one business day.",
 "body": """
 <form class="form-card" id="contact-form" data-guide-form method="POST" novalidate style="max-width: 640px;">
   <input type="hidden" name="topic" value="Contact page message">
@@ -111,7 +112,7 @@ PAGES = [
   <div class="field"><label for="c-message">Your message</label><textarea id="c-message" name="message" required></textarea></div>
   <button class="btn btn-ink" type="submit">Send message</button>
   <div class="form-status" role="status" aria-live="polite"></div>
-  <p class="quiz-note" style="margin-top: 18px;">A person reads every message and replies by email, within 24 hours. Your message is stored privately and never shared with a provider.</p>
+  <p class="quiz-note" style="margin-top: 18px;">A person reads every message and replies by email, usually within one business day. Your message is stored privately and never shared with a provider.</p>
 </form>
 <ul class="info-list" style="margin-top: 40px;">
   <li><span class="k">Provider match</span><span><a href="find-a-provider.html">Start a provider match profile</a></span></li>
@@ -161,6 +162,7 @@ RESCARDS
 # ============================================================ legal: disclaimer
 {
 "slug": "medical-disclaimer",
+"mdesc": "Read this medical disclaimer before relying on any information published on Legal Ibogaine.",
 "kicker": "Legal",
 "title": "Medical disclaimer",
 "htitle": "Medical Disclaimer",
@@ -184,6 +186,7 @@ RESCARDS
 # ============================================================ legal: privacy
 {
 "slug": "privacy",
+"mdesc": "What Legal Ibogaine collects, why, and what it will never do with it. Written in plain language.",
 "kicker": "Legal",
 "title": "Privacy policy",
 "htitle": "Privacy Policy",
@@ -223,6 +226,7 @@ RESCARDS
 # ============================================================ legal: terms
 {
 "slug": "terms",
+"mdesc": "The terms for using Legal Ibogaine, written in plain language.",
 "kicker": "Legal",
 "title": "Terms of use",
 "htitle": "Terms of Use",

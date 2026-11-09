@@ -57,7 +57,7 @@ PAGE_IMG = {
     "about": ("jungle-mist.jpg", "Mist drifting through tropical forest", "Fig. — Iboga's native range"),
     "faq": ("leaves.jpg", "Dense green tropical leaves", "Fig. — The source plant family"),
     "consultation": ("support.jpg", "Two people talking over coffee at a table", "Fig. — A conversation, not a pitch"),
-    "contact": ("desk.jpg", "A person at a sunlit desk talking on the phone", "Fig. — We respond within 24 hours"),
+    "contact": ("desk.jpg", "A person at a sunlit desk talking on the phone", "Fig. — A person reads every message"),
     "resources": ("checklist.jpg", "A hand ticking items in a checklist notebook", "Fig. — Tools for the decision"),
     "quiz": ("forest-path.jpg", "Stone steps rising through sunlit forest", "Fig. — Orient yourself first"),
     "aftercare": ("support.jpg", "Two people talking over coffee at a table", "Fig. — The second half of treatment"),
@@ -208,7 +208,7 @@ def footer(P):
         <div>
           <a class="brand" href="/"><span class="mark" aria-hidden="true">I*</span> LEGAL IBOGAINE</a>
           <p style="font-size:0.9rem; color:var(--muted); max-width:36ch;">Independent ibogaine treatment information for people who've exhausted conventional options.</p>
-          <p class="availability">We respond within 24 hours.</p>
+          <p class="availability">We reply, usually within one business day.</p>
         </div>
         <div>
           <p class="fh">Understand</p>

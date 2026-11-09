@@ -12,7 +12,7 @@ PAGES = [
 "mdesc": "What ibogaine is, where it comes from, and what it can and cannot do. The plain-language starting point for understanding this treatment.",
 "kicker": "Ibogaine",
 "title": "Ibogaine explained: the short version",
-"htitle": "Ibogaine Explained: The Short Version",
+"htitle": "What Is Ibogaine? Plant, Molecule, Evidence",
 "desc": "A psychoactive alkaloid from a Central African shrub, best known for interrupting patterns — chemical and psychological — that people have spent years trying to out-think.",
 "body": """
 <div class="page-body">
@@ -65,6 +65,7 @@ PAGES = [
 # ============================================================ how it works
 {
 "slug": "how-it-works",
+"mdesc": "A plain-language overview of how ibogaine acts in the body: many targets at once, a long-lasting metabolite, and where the evidence stops.",
 "deeper": [
              ("withdrawal-interruption-mechanisms", "Mechanism", "Interrupting withdrawal", "How a single dose does it, as far as is known."),
              ("ibogaine-receptors", "Targets", "What receptors it acts on", "The many targets, and which ones matter."),
@@ -299,6 +300,7 @@ PAGES = [
 # ============================================================ what to expect
 {
 "slug": "what-to-expect",
+"mdesc": "The stage-by-stage shape of a properly run ibogaine treatment, from the first message to the weeks after.",
 "deeper": [
              ("what-an-ibogaine-session-is-like", "Session", "What a session is like", "Hour by hour, from dosing to the morning after."),
              ("how-long-do-ibogaine-effects-last", "Timing", "How long it lasts", "The acute hours, then the weeks after."),
@@ -306,7 +308,7 @@ PAGES = [
 "kicker": "Is it right for me?",
 "title": "What to expect from ibogaine treatment",
 "htitle": "What to Expect From Ibogaine Treatment",
-"desc": "From the first phone call to the flight home — the honest, stage-by-stage shape of a properly run ibogaine treatment.",
+"desc": "From the first message to the flight home — the honest, stage-by-stage shape of a properly run ibogaine treatment.",
 "body": """
 <div class="page-body">
 <div class="timeline">
@@ -366,6 +368,7 @@ PAGES = [
 # ============================================================ aftercare
 PAGES.append({
 "slug": "aftercare",
+"mdesc": "What ibogaine aftercare and integration involve in the weeks and months after treatment, and how to plan support in advance.",
 "deeper": [
              ("how-long-do-ibogaine-effects-last", "Window", "How long it lasts", "Why the weeks after the dose are the ones that count."),
              ("noribogaine-pharmacokinetics", "Metabolite", "Noribogaine", "The long-acting metabolite, and how long it stays."),
@@ -397,7 +400,7 @@ PAGES.append({
 
 <div class="keybox warn">""" + INFO + """<p><strong>The one non-negotiable:</strong> tolerance reset. It is the single most dangerous fact in post-ibogaine life, and the reason every plan above exists. If someone relapses, the dose that was once routine can now kill. Everyone around the person should know it.</p></div>
 
-<h2 class="sec-label">Get the template</h2>
+<h2 class="sec-label">Write the plan down</h2>
 <p style="max-width: 66ch;">Turn the five questions into a written plan before treatment, when it works best. Providers who ask to see a plan like this before accepting you are showing you a mark of quality.</p>
 </div>
 """,

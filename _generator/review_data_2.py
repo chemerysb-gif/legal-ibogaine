@@ -994,7 +994,7 @@ ARTICLES.append({
 
 ARTICLES.append({
 "slug": "ibogaine-opioid-withdrawal",
-"htitle": "Ibogaine and Opioid Withdrawal: What Studies Show",
+"htitle": "Ibogaine and Opioid Withdrawal: The Studies",
 "mdesc": "In three human studies, opioid withdrawal eased within about three days of one supervised ibogaine treatment. What the data show, and the heart risk involved.",
 "title": "What does ibogaine do to opioid withdrawal?",
 "topic": "Evidence",
@@ -1159,7 +1159,7 @@ ARTICLES.append({
 ARTICLES.append({
 "slug": "does-ibogaine-reset-the-brain",
 "htitle": "Does Ibogaine Reset the Brain?",
-"mdesc": "The idea that ibogaine resets the brain comes mostly from one rat study. What that study found, what human scans have shown since, and what the research does not say.",
+"mdesc": "The idea that ibogaine resets the brain comes mostly from one rat study. What it found, what human scans have shown since, and what the research does not say.",
 "title": "Does ibogaine reset the brain?",
 "topic": "Pharmacology",
 "desc": "The phrase travels further than the evidence behind it. The reset idea rests largely on a rat experiment with six animals per group, while the review that reported it says ibogaine's mechanism is unresolved. This entry sets out what was measured and what it supports.",
@@ -1319,7 +1319,7 @@ ARTICLES.append({
 ARTICLES.append({
 "slug": "ibogaine-cardiac-risk",
 "htitle": "Ibogaine and the Heart",
-"mdesc": "Ibogaine lengthens the heart's QT interval. What a single dose did in a hospital study, why it happens, how long it lasts, and what screening and monitoring can and cannot do.",
+"mdesc": "Ibogaine lengthens the heart's QT interval. What one dose did in a hospital study, why it happens and how long it lasts.",
 "title": "What does ibogaine do to the heart?",
 "topic": "Safety",
 "desc": "In a Dutch hospital study, a single ibogaine dose lengthened the QT interval by an average of 95 milliseconds and half the patients passed 500 milliseconds. This entry sets out the measurements, the mechanism behind them, and what screening and monitoring change.",
@@ -1658,7 +1658,7 @@ ARTICLES.append({
 ARTICLES.append({
 "slug": "ibogaine-and-ptsd",
 "htitle": "Ibogaine and PTSD",
-"mdesc": "PTSD scores fell sharply in 30 veterans given ibogaine with magnesium. What the study measured, how large the change was, what came with the dose, and what the design cannot show.",
+"mdesc": "PTSD scores fell in 30 veterans given ibogaine with magnesium. What the study measured, how large the change was, and what the design cannot show.",
 "title": "What has ibogaine done for PTSD?",
 "topic": "Evidence",
 "desc": "In the Stanford MISTIC cohort, PTSD scores fell from 31.7 to under 5 within a month and held for a year in most participants. This entry sets out the numbers, the package of care around the dose, and the limits of a study with no control group.",
@@ -1819,7 +1819,7 @@ ARTICLES.append({
 ARTICLES.append({
 "slug": "ibogaine-and-depression",
 "htitle": "Ibogaine and Depression",
-"mdesc": "Depression scores fell sharply in 30 veterans given ibogaine with magnesium. What was measured, how it compares with the wider evidence, and why no controlled trial has tested it.",
+"mdesc": "No controlled trial has tested ibogaine for depression. What depression scores did in 30 veterans given ibogaine with magnesium, and what that can show.",
 "title": "What has ibogaine done for depression?",
 "topic": "Evidence",
 "desc": "Depression scores in the Stanford cohort fell from 25.6 to under 4 within a month, with most participants in remission. This entry sets out those numbers, the suicidal-thinking finding, the recurrences the authors recorded, and why the design cannot establish cause.",
@@ -1994,7 +1994,7 @@ ARTICLES.append({
 ARTICLES.append({
 "slug": "ibogaine-and-alcohol",
 "htitle": "Ibogaine and Alcohol",
-"mdesc": "What the human research on ibogaine and alcohol use actually consists of: a nine-person pilot, a Brazilian records review, and rodent work. What each shows and what none of them settles.",
+"mdesc": "What the human research on ibogaine and alcohol use consists of: a nine-person pilot, a Brazilian records review and rodent work, and what none of them settles.",
 "title": "What has ibogaine done for alcohol use?",
 "topic": "Evidence",
 "desc": "The human evidence on ibogaine and alcohol is thinner than for opioids: one nine-person safety pilot and a retrospective review of clinic records. This entry sets out what each found, including the cardiac changes in five of nine participants.",
@@ -2171,7 +2171,7 @@ ARTICLES.append({
 ARTICLES.append({
 "slug": "what-an-ibogaine-session-is-like",
 "htitle": "What an Ibogaine Session Is Like",
-"mdesc": "The documented phases of an ibogaine session: onset, a visual recall state lasting four to eight hours, a long reflective phase, ataxia, nausea and insomnia that can run for three days.",
+"mdesc": "The documented phases of an ibogaine session, from onset to a four-to-eight-hour visual state, a long reflective phase and up to three days of recovery.",
 "title": "What is an ibogaine session like?",
 "topic": "Treatment",
 "desc": "Published case series describe a predictable sequence: onset within hours, a visual recall state, then a long reflective phase. This entry sets out the documented phases, the physical effects that accompany them, and what veterans in one study described.",
@@ -2356,7 +2356,7 @@ ARTICLES.append({
 ARTICLES.append({
 "slug": "how-long-do-ibogaine-effects-last",
 "htitle": "How Long Ibogaine's Effects Last",
-"mdesc": "The drug clears in a day, the heart effect can last a week, and the behavioural changes reported in follow-up studies run to twelve months. Four different timescales, set out separately.",
+"mdesc": "Four timescales set out separately: the drug clears in about a day, the heart effect can last a week, and follow-up studies report changes up to twelve months.",
 "title": "How long do ibogaine's effects last?",
 "topic": "Evidence",
 "desc": "Four timescales answer this question, and they differ by orders of magnitude. This entry separates how long the drug stays, how long the heart effect lasts, how long the experience runs, and what twelve-month follow-ups have found.",
@@ -2722,7 +2722,7 @@ ARTICLES.append({
 ARTICLES.append({
 "slug": "ibogaine-vs-other-psychedelics",
 "htitle": "Ibogaine vs Other Psychedelics",
-"mdesc": "How ibogaine differs from psilocybin, ayahuasca and ketamine: duration measured in days rather than hours, a cardiac risk the others do not carry, and a much thinner evidence base.",
+"mdesc": "How ibogaine differs from psilocybin, ayahuasca and ketamine: duration, mechanism, cardiac risk and what each has actually been tested for.",
 "title": "How does ibogaine differ from psilocybin, ayahuasca and ketamine?",
 "topic": "Pharmacology",
 "desc": "Ibogaine is often grouped with other psychedelics, and the grouping hides more than it explains. This entry sets out the differences that matter: duration, cardiac risk, the content of the experience, and how far the evidence has got.",
@@ -2901,7 +2901,7 @@ ARTICLES.append({
 
 ARTICLES.append({
 "slug": 'what-is-ibogaine',
-"htitle": 'What Is Ibogaine? Plant, Molecule and Evidence',
+"htitle": "What Is Ibogaine? Plant, Molecule, Evidence",
 "mdesc": 'Ibogaine is an alkaloid from the iboga shrub, studied for opioid withdrawal. What it is, where it comes from, what it does and what the evidence shows.',
 "title": 'What is ibogaine?',
 "topic": 'Pharmacology',
@@ -3016,7 +3016,7 @@ ARTICLES.append({
 
 ARTICLES.append({
 "slug": 'ibogaine-and-brain-injury',
-"htitle": 'Ibogaine and Brain Injury: What the Studies Measured',
+"htitle": "Ibogaine and Brain Injury Studies",
 "mdesc": 'The Stanford MISTIC study treated 30 veterans with traumatic brain injury. What it measured, what the brain imaging showed, and what it cannot establish.',
 "title": 'Ibogaine and traumatic brain injury',
 "topic": 'Evidence',
@@ -3248,8 +3248,8 @@ ARTICLES.append({
 
 ARTICLES.append({
 "slug": 'ibogaine-and-anxiety',
-"htitle": 'Ibogaine and Anxiety: What Has Been Measured',
-"mdesc": 'Anxiety scores fell sharply in the one cohort where they were formally measured. What that study showed, and why anxiety has never been its own research question.',
+"htitle": "Ibogaine and Anxiety: What Was Measured",
+"mdesc": "Anxiety scores fell sharply in the one cohort where they were formally measured. What that study did, and what a single uncontrolled cohort can show.",
 "title": 'Ibogaine and anxiety',
 "topic": 'Evidence',
 "desc": 'Anxiety has never been the primary target of an ibogaine study. It has been measured as a secondary outcome, once, in 30 veterans, and the result was large. Here is what that does and does not support.',
@@ -3363,8 +3363,8 @@ ARTICLES.append({
 
 ARTICLES.append({
 "slug": 'ibogaine-deaths-what-is-known',
-"htitle": 'Ibogaine Deaths: What the Record Actually Shows',
-"mdesc": 'Deaths after ibogaine have been documented, mostly in unsupervised settings. What the case record shows, what caused them, and what monitoring can and cannot prevent.',
+"htitle": "Ibogaine Deaths: What the Record Shows",
+"mdesc": "Deaths after ibogaine have been documented, mostly in unsupervised settings. What the case record shows and what caused them.",
 "title": 'Ibogaine deaths: what is known',
 "topic": 'Safety',
 "desc": 'Deaths associated with ibogaine are documented in the medical literature. This entry sets out what is known about how they happened, what the physiology behind them is, and what supervision changes.',
@@ -3489,7 +3489,7 @@ ARTICLES.append({
 
 ARTICLES.append({
 "slug": 'ibogaine-drug-interactions',
-"htitle": 'Ibogaine Drug Interactions: The Documented Risks',
+"htitle": "Ibogaine Drug Interactions",
 "mdesc": 'Ibogaine is cleared by CYP2D6, and blocking that enzyme doubles exposure. Which drugs interact, why methadone matters, and what clinics withdraw before dosing.',
 "title": 'Ibogaine drug interactions',
 "topic": 'Safety',
@@ -4890,7 +4890,7 @@ ARTICLES.append({
 
 ARTICLES.append({
 "slug": 'ibogaine-side-effects',
-"htitle": 'Ibogaine Side Effects: What Studies Recorded',
+"htitle": "Ibogaine Side Effects in Studies",
 "mdesc": 'Ataxia in all patients, nausea and vomiting, tremor, 72 hours of insomnia, QT prolongation. The side effects recorded in published ibogaine studies.',
 "title": 'Ibogaine side effects',
 "topic": 'Safety',

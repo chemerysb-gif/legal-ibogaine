@@ -5,6 +5,7 @@ ARTICLES = [
 # ============================================================ 1
 {
 "slug": "ibogaine-evidence-overview",
+"htitle": "Ibogaine Evidence 2026: What Studies Show",
 "mdesc": "What human studies of ibogaine have found for opioid withdrawal, craving, PTSD and depression, how strong each finding is, and the heart risk it carries.",
 "title": "What does the evidence on ibogaine show in 2026?",
 "topic": "Evidence",
@@ -187,7 +188,6 @@ ARTICLES = [
 <p>Ibogaine lengthens the heart's QT interval, which has been linked to <a href="ibogaine-deaths-what-is-known.html">sudden death</a>s <a href="#ref-7">[7]</a>. In a hospital study of opioid treatment, half the patients passed a QT of 500 milliseconds after a single dose <a href="#ref-5">[5]</a>. Treatment needs heart checks first and constant heart monitoring during treatment. These lower the risk without removing it <a href="#ref-2">[2]</a><a href="#ref-5">[5]</a>.</p>
 
 <div class="article-note"><strong>Safety.</strong> Ibogaine prolongs the heart's QT interval and can trigger dangerous arrhythmias. Treatment requires an EKG and bloodwork before dosing, continuous cardiac monitoring during, and medically trained staff present. Ibogaine is not safe to take unsupervised.</div>""",
-"htitle": "Ibogaine Evidence in 2026: What Studies Show"
 },
 
 # ============================================================ 2

@@ -569,6 +569,7 @@ PAGES = [
 },
 {
 "slug": "find-a-provider",
+"mdesc": "Tell us about your situation and we take your case to providers that meet our published vetting standard, then report back who says yes.",
 "kicker": "Get matched",
 "title": "Find a vetted ibogaine provider",
 "htitle": "Find a Vetted Ibogaine Provider",
