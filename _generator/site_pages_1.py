@@ -12,7 +12,7 @@ PAGES = [
 "mdesc": "What ibogaine is, where it comes from, and what it can and cannot do. The plain-language starting point for understanding this treatment.",
 "kicker": "Ibogaine",
 "title": "Ibogaine explained: the short version",
-"htitle": "What Is Ibogaine? Plant, Molecule, Evidence",
+"htitle": "Ibogaine Explained: The Short Version",
 "desc": "A psychoactive alkaloid from a Central African shrub, best known for interrupting patterns — chemical and psychological — that people have spent years trying to out-think.",
 "body": """
 <div class="page-body">
